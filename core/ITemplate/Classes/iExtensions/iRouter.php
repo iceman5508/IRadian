@@ -17,6 +17,13 @@ class iRouter
     private static $component=null;
 
     /**
+     * Check if the router is called
+     * @return bool
+     */
+    public static function callMade(){
+        return (isset($_GET[self::$route_param])? true : false);
+    }
+    /**
      * Get the current instance of the route param as well as  set the  router url value
      * @param $route_param - The url param to use to pull routes
      */
@@ -33,7 +40,7 @@ class iRouter
      */
     public static function call($route, $componentLocation){
        self::$route_list[$route] = '';
-       require_once 'app/'.$componentLocation;
+       require_once $componentLocation;
 
    }
 
