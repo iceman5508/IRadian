@@ -15,7 +15,8 @@ class iRouter
     private static $route_list = array();
     private static $route_param = null;
     private static $component=null;
-
+    public static $route = null;
+    
     /**
      * Check if the router is called
      * @return bool
@@ -39,10 +40,10 @@ class iRouter
      * @param $componentLocation - The location of the php file containing the component
      */
     public static function call($route, $componentLocation){
-       self::$route_list[$route] = '';
-       require_once $componentLocation;
+        self::$route_list[$route] = '';
+        require_once $componentLocation;
 
-   }
+    }
 
     /**The answer method that goes on the answering component page
      * @param $route
@@ -58,34 +59,35 @@ class iRouter
     /**
      * Scan page for any routes
      */
-   public static function scanner(){
-      if(count(self::$route_list)>0 && isset($_GET[self::$route_param])){
-          $path_parts = pathinfo($_GET[self::$route_param]);
-          $data =  $path_parts['filename'];
-          foreach (self::$route_list as $route => $component){
-              if($data == $route){
-                  self::$component = $component;
-              }
-          }
-      }else{
-          self::$component = null;
-      }
-   }
+    public static function scanner(){
+        if(count(self::$route_list)>0 && isset($_GET[self::$route_param])){
+            $path_parts = pathinfo($_GET[self::$route_param]);
+            $data =  $path_parts['filename'];
+            foreach (self::$route_list as $route => $component){
+                if($data == $route){
+                    self::$component = $component;
+                    self::$route = $route;
+                }
+            }
+        }else{
+            self::$component = null;
+        }
+    }
 
     /**
      * Render the current route
      */
-   public static function render(){
-      if(isset(self::$component)) {
-          self::$component->render();
-      }
+    public static function render(){
+        if(isset(self::$component)) {
+            self::$component->render();
+        }
     }
 
     /**
- * Set a router link
- * @param $linkName
- * @return string
- */
+     * Set a router link
+     * @param $linkName
+     * @return string
+     */
     public static function routerLink($linkName){
         return '?'.self::$route_param.'='.$linkName;
     }
