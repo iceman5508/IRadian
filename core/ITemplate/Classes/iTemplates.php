@@ -34,7 +34,7 @@ class iTemplates
      * Render the template
      */
     final public function render() {
-        eval("?>".$this->template."<?");
+        eval("?>".$this->template);
     }
 
 }
