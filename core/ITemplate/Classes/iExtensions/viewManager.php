@@ -57,7 +57,7 @@ abstract class viewManager
     public static function router(){
         if(iRouter::callMade()) {
             iRouter::scanner();
-            viewManager::registerComponent(iRouter::$route.'/'.iRouter::$route.'.php');
+            viewManager::registerComponent(iRouter::$route);
         }
     }
 
