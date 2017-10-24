@@ -14,8 +14,18 @@ define('VENDORS', iWeb::projectUrl().'\vendors');
 class iConfig
 {
 
+    public static $project = [
+        'title' => 'My Project'
+        ,'author' => 'Isaac Parker'
+    ];
 
-    public static $name, $author;
+    public static $database = [
+       'host'  => 'localhost'
+        ,'username' => 'root'
+        ,'password' => ''
+        ,'database' => ' '
+    ];
+
     public static $jquery = [
         'main' => PROJECT.'/vendors/jquery/jquery.js'
         ,'ui' =>   PROJECT.'/vendors/jquery/jquery-ui.min.js'
@@ -29,7 +39,5 @@ class iConfig
     ];
 }
 
-iConfig::$name = 'Project Name';
 
-iConfig::$author = 'Isaac Parker';
 

@@ -17,7 +17,7 @@ class header extends iComponent {
 
 $header = new header('header/header.html');
 $header->menu = 'Welcome To IRadian';
-$header->title = iConfig::$name;
+$header->title = iConfig::$project['title'];
 
 
 iTags::setTag('header',$header);
