@@ -7,21 +7,17 @@
  * The bootstrap file for loading files
  */
 
-//include config file
-require_once 'iConfig.php';
-
 define('BASEPATH', __DIR__);
 define('CORE', BASEPATH.'\core');
-define('LIBS', BASEPATH.'\libs');
-define('VENDORS', BASEPATH.'\vendors');
-
-
 
 //include IEngine Library
 require_once 'core/IEngine/IEngine.php';
 
 //include ITemplate library
 require_once 'core/ITemplate/ITemplate.php';
+
+//include config file
+require_once 'iConfig.php';
 
 //function for loading all library functions
 function loadFunctions(){
