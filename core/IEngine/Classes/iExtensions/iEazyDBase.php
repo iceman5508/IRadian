@@ -14,17 +14,17 @@ use IEngine\ibase\iDatabase;
 
 class iEazyDBase
 {
+
     /**
-     * Update sql, only updates one field
-     * @param $table - table to update
-     * @param $id - the row id the update will occur on
-     * @param $field - the field name to update
-     * @param $fieldData - the data that the $field will be set to
+     * Update data in a table
+     * @param $table - The table to update
+     * @param $id - the id to update at
+     * @param array $data - associative array example
+     * ('fieldname' => 'value')
      * @return bool
      */
-    public static function update($table, $id, $field, $fieldData){
-        $sql = "UPDATE ".$table." SET ".$table.".".$field."='".$fieldData."' WHERE {$table}.id=".$id."";
-        $get = iDatabase::getInstance()->simpleQuery($sql);
+    public static function update($table, $id,  $data = array()){
+        $get = iDatabase::getInstance()->updateQuery($table, $id, $data);
         if($get->error()==false) {
             return true;
         } else {
@@ -33,17 +33,15 @@ class iEazyDBase
     }
 
     /**
-     * A customized update query only updates one field
+     * A customized update query with custom where checkers
      * @param $table - the table to update
      * @param $whereField - the field name in the table
      * @param $whereEqual - the equal value of the field to check for
-     * @param $field - the field to update
      * @param $fieldData - the data to update the field to
      * @return bool
      */
-    public static function updateCustom($table, $whereField,$whereEqual, $field, $fieldData){
-        $sql = "UPDATE ".$table." SET ".$field."='".$fieldData."' WHERE ".$whereField."=".$whereEqual."";
-        $get = iDatabase::getInstance()->simpleQuery($sql);
+    public static function updateCustom($table, $whereField,$whereEqual, $fieldData = array()){
+        $get = iDatabase::getInstance()->updateQueryC($table,$whereField,$whereEqual,$fieldData);
         if($get->error()==false) {
             return true;
         } else {
@@ -82,64 +80,30 @@ class iEazyDBase
 
     /**
      * a get query from the table - returns only one result from the table
-     * @param $id
-     * @param $table
+     * @param $table - the table to run the get query against
+     * @param $where array - takes an 3 element array such as array('id', '=', '1')
      * @return null
      */
-    public static function get($id, $table){
-        $sql = "SELECT * FROM ".$table." WHERE ".$table.".id=".$id."";
-        $get = iDatabase::getInstance()->simpleQuery($sql);
+    public static function get($table, $where=array()){
+        $get = iDatabase::getInstance()->getQuery($table,$where);
         if($get->count()>0) {
-            return $get->first();
+            return $get->results();
         } else {
             return null;
         }
     }
 
     /**
-     * Delete a row from the table - only one row
-     * @param $table
-     * @param $field
-     * @param $equalField
+     * Delete a row from the table
+     * @param $table - the table to run the delete query against
+     * @param $where array - takes an 3 element array such as array('id', '=', '1')
      * @return bool
      */
-    public static function delete($table,$field, $equalField){
-        $sql = "DELETE FROM ".$table." WHERE ".$table.".".$field."=".$equalField."";
-        if( iDatabase::getInstance()->simpleQuery($sql)) {
+    public static function delete($table, $where=array()){
+        if( iDatabase::getInstance()->deleteQuery($table,$where)) {
             return true;
         }else { return false; }
     }
 
-    /**
-     * A customized get query
-     * @param $table
-     * @param $field - the field to check against
-     * @param $equalField - the field data to check against
-     * @return null
-     */
-    public static function getCustom($table,$field, $equalField){
-        $sql = "SELECT * FROM ".$table." WHERE ".$table.".".$field."=".$equalField."";
-        $get = iDatabase::getInstance()->simpleQuery($sql);
-        if($get->count()>0) {
-            return $get->results();
-        } else {
-            return null;
-        }
-
-    }
-
-    /**
-     * A sql get query
-     * @param $sql
-     * @return null
-     */
-    public static function sqlGet($sql){
-        $get = iDatabase::getInstance()->simpleQuery($sql);
-        if($get->count()>0) {
-            return $get->results();
-        } else {
-            return null;
-        }
-    }
 
 }

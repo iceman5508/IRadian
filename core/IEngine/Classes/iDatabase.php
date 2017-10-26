@@ -171,6 +171,36 @@ class iDatabase
         }else {
             return false;
         }
+    }
+
+
+    /**
+     * Run a update query to the database
+     * @param $table
+     * @param $whereColumn - the column to check
+     * @param $whereValue - The value to match where at
+     * @param $fields
+     * @return mixed
+     */
+    public function updateQueryC($table, $whereColumn,$whereValue, $fields){
+        $set = ' ';
+        $x=1;
+        foreach($fields as $field => $value)
+        {
+            $set .= ''.$field.' = ? ';
+            if($x < count($fields))
+            {
+                $set .= ' , ';
+            }
+            $x++;
+        }
+
+        $sql = 'UPDATE '.$table.' SET '.$set.' WHERE '.$whereColumn.' = '.$whereValue.' ';
+        if(!$this->query($sql, $fields)->error()) {
+            return true;
+        }else {
+            return false;
+        }
 
     }
     /**
