@@ -16,7 +16,7 @@ class middle extends iComponent {
 }
 
 $middle = new middle('content/content.html');
-$middle->section = "IRadian shop";
+$middle->section = "IRadian 1";
 iTags::setTag('middle',$middle);
 iComponent::export('middle');
 

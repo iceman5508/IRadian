@@ -16,7 +16,7 @@ class footer extends iComponent {
 }
 
 $footer = new footer('footer/footer.html');
-$footer->cpw = 'IRadian 2017';
+$footer->cwp = 'IRadian 2017';
 iTags::setTag('footer',$footer);
 iComponent::export('footer');
 
