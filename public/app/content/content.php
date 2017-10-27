@@ -13,6 +13,11 @@ class middle extends iComponent {
     {
         // TODO: Implement render() method.
     }
+
+    public  function attributes()
+    {
+        // TODO: Implement attributes() method.
+    }
 }
 
 $middle = new middle('content/content.html');

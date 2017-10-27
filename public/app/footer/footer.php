@@ -13,6 +13,11 @@ class footer extends iComponent {
     {
         // TODO: Implement render() method.
     }
+
+    public  function attributes()
+    {
+        // TODO: Implement attributes() method.
+    }
 }
 
 $footer = new footer('footer/footer.html');

@@ -20,6 +20,12 @@ abstract class iComponent
     public abstract function render();
 
     /**
+     * @return mixed
+     * Can set all class var through this method, but not required
+     */
+    public abstract function attributes();
+
+    /**
      * Component class entry point
      * iComponent constructor.
      * @param $page - The template page the component is for
@@ -27,6 +33,7 @@ abstract class iComponent
     public function __construct($page){
         $this->component = new iComponents();
         $this->page = 'app/'.$page;
+        $this->attributes();
     }
 
     /**
@@ -86,6 +93,8 @@ abstract class iComponent
     public final function getView(){
         return $this->view;
     }
+
+
 
 
 }

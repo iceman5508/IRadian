@@ -13,6 +13,11 @@ class header extends iComponent {
     {
         // TODO: Implement render() method.
     }
+
+    public  function attributes()
+    {
+        // TODO: Implement attributes() method.
+    }
 }
 
 $header = new header('header/header.html');
