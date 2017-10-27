@@ -27,27 +27,35 @@ function loadFunctions(){
 
     foreach(glob(LIBS.'/*.php') as $function)
     {
-        require_once($function);
+        if(basename($function) != 'index.php'){
+            require_once($function);
+        }
     }
 }
 
-/**
- * Auto load classes as needed
- * @param $classname - the class name
- * @throws Exception
- */
-function __autoload($classname){
-    if(file_exists(CORE.'/IEngine/Classes/'.basename($classname).'.php')){
-        require_once CORE.'/IEngine/Classes/'.basename($classname).'.php';
-    }else if(file_exists(CORE.'/IEngine/Classes/iExtensions/'.basename($classname).'.php')){
-        require_once CORE.'/IEngine/Classes/iExtensions/'.basename($classname).'.php';
-    }else if(file_exists(CORE.'/ITemplate/Classes/'.basename($classname).'.php')){
-        require_once CORE.'/ITemplate/Classes/'.basename($classname).'.php';
-    }else if(file_exists(CORE.'/ITemplate/Classes/iExtensions/'.basename($classname).'.php')){
-        require_once CORE.'/ITemplate/Classes/iExtensions/'.basename($classname).'.php';
-    }
+    /**
+     * Auto load classes as needed
+     * @param $classname - the class name
+     * @throws Exception
+     */
+    function __autoload($classname){
+        if(file_exists(CORE.'/IEngine/Classes/'.basename($classname).'.php')){
+            require_once CORE.'/IEngine/Classes/'.basename($classname).'.php';
+        }else if(file_exists(CORE.'/IEngine/Classes/iExtensions/'.basename($classname).'.php')){
+            require_once CORE.'/IEngine/Classes/iExtensions/'.basename($classname).'.php';
+        }else if(file_exists(CORE.'/ITemplate/Classes/'.basename($classname).'.php')){
+            require_once CORE.'/ITemplate/Classes/'.basename($classname).'.php';
+        }else if(file_exists(CORE.'/ITemplate/Classes/iExtensions/'.basename($classname).'.php')){
+            require_once CORE.'/ITemplate/Classes/iExtensions/'.basename($classname).'.php';
+        }
+        else if(file_exists(CORE.'/IRadian/Classes/'.basename($classname).'.php')){
+            require_once CORE.'/IRadian/Classes/'.basename($classname).'.php';
+        }else if(file_exists(CORE.'/IRadian/Classes/iExtensions/'.basename($classname).'.php')){
+            require_once CORE.'/IRadian/Classes/iExtensions/'.basename($classname).'.php';
+        }
 
-}
+
+    }
 
 
 loadFunctions();

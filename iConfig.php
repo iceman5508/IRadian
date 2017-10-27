@@ -9,8 +9,8 @@
 use IEngine\ibase\iWeb;
 
 define('PROJECT', iWeb::projectUrl());
-define('LIBS', iWeb::projectUrl().'\libs');
-define('VENDORS', iWeb::projectUrl().'\vendors');
+define('LIBS', BASEPATH.'\libs');
+define('VENDORS', iWeb::projectUrl().'/vendors');
 
 class iConfig
 {
