@@ -45,6 +45,16 @@ class iRouter
 
     }
 
+    /**
+     * Register a specific route to a component, meant for routes with the same tag name
+     * @param $route - The route that is being set
+     * @param $componentLocation - The location of the php file containing the component
+     */
+    public static function callOnce($route, $componentLocation){
+        self::$route_list[$route] = array(null,$componentLocation);
+
+    }
+
     /**The answer method that goes on the answering component page
      * @param $route
      * @param iComponent $component
@@ -60,6 +70,7 @@ class iRouter
      * Scan page for any routes
      */
     public static function scanner(){
+
         if(count(self::$route_list)>0 && isset($_GET[self::$route_param])){
             $path_parts = pathinfo($_GET[self::$route_param]);
             $data =  $path_parts['filename'];
@@ -69,6 +80,23 @@ class iRouter
                     self::$route = $component[1];
                 }
             }
+        }else{
+            self::$component = null;
+        }
+    }
+
+    /**
+     * Scan page for any routes
+     */
+    public static function scannerOnce(){
+
+        if(count(self::$route_list)>0 && isset($_GET[self::$route_param])){
+            $path_parts = pathinfo($_GET[self::$route_param]);
+            $data =  $path_parts['filename'];
+            $component = self::$route_list[$data];
+            self::$component = $component[0];
+            self::$route = $component[1];
+            require_once 'app/'.$component[1];
         }else{
             self::$component = null;
         }
