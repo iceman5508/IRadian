@@ -51,3 +51,5 @@ function __autoload($classname){
 
 
 loadFunctions();
+
+/**********************************Custom bootstraps******************************************/
