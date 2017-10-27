@@ -7,6 +7,7 @@
  * The config class for project, this is a required setup
  */
 use IEngine\ibase\iWeb;
+
 define('PROJECT', iWeb::projectUrl());
 define('LIBS', iWeb::projectUrl().'\libs');
 define('VENDORS', iWeb::projectUrl().'\vendors');
@@ -20,10 +21,10 @@ class iConfig
     ];
 
     public static $database = [
-       'host'  => 'localhost'
+         'host'  => 'localhost'
         ,'username' => 'root'
         ,'password' => ''
-        ,'database' => ' '
+        ,'database' => 'testdb'
     ];
 
     public static $jquery = [
@@ -38,6 +39,7 @@ class iConfig
 
     ];
 }
+
 
 
 

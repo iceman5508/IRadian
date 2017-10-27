@@ -67,10 +67,10 @@ class iMigration
     public function databaseExists($databasename){
 
         if($this->connect){
-           if(mysqli_select_db($this->myqli,$databasename)){
-               return true;
-           }
-           return false;
+            if(mysqli_select_db($this->myqli,$databasename)){
+                return true;
+            }
+            return false;
         }
         return false;
     }
@@ -82,8 +82,8 @@ class iMigration
      */
     public function connectToDB($databasename){
         if($this->databaseExists($databasename)){
-           $this->database = $databasename;
-           iDatabase::iDBaseConfig($this->host,$this->database,$this->username,$this->password);
+            $this->database = $databasename;
+            iDatabase::iDBaseConfig($this->host,$this->database,$this->username,$this->password);
             return true;
         }
         return false;
@@ -114,7 +114,6 @@ class iMigration
             return true;
         }else
             return false;
-
     }
 
     /*
@@ -153,8 +152,13 @@ class iMigration
      * @param $length - The length it should be
      * @return bool
      */
-    public function addColumn($tableName, $columnName, $datatype, $length){
-        $sql = "ALTER TABLE `{$tableName}` ADD `{$columnName}` {$datatype}({$length}) NULL";
+    public function addColumn($tableName, $columnName, $datatype, $length=NULL){
+        if(isset($length)){
+            $sql = "ALTER TABLE `{$tableName}` ADD `{$columnName}` {$datatype}({$length}) NULL";
+        }else{
+            $sql = "ALTER TABLE `{$tableName}` ADD `{$columnName}` {$datatype} NULL";
+        }
+
         $this->query($sql);
         if(count($this->error)==0) {
             return true;
@@ -171,7 +175,12 @@ class iMigration
      */
     public function addColumns($tableName, $columnsArray = array(array())){
         foreach($columnsArray as $column){
-            $this->addColumn($tableName,$column[0],$column[1],$column[2] );
+            if(isset($column[2])){
+                $this->addColumn($tableName,$column[0],$column[1],$column[2] );
+            }else{
+                $this->addColumn($tableName,$column[0],$column[1] );
+            }
+
         }
         if(count($this->error)==0) {
             return true;
@@ -272,8 +281,8 @@ class iMigration
     public function get($table, $where=array()){
         $get = iEazyDBase::get($table,$where);
         if($get->count()>0) {
-           $this->results = $get->results();
-           return true;
+            $this->results = $get->results();
+            return true;
         } else {
             $this->error = iDatabase::getInstance()->error();
             return false;
@@ -300,9 +309,9 @@ class iMigration
      * @return bool
      */
     public function deleteTables($tables = array()){
-       foreach ($tables as $table) {
-           $this->deleteTable($table);
-       }
+        foreach ($tables as $table) {
+            $this->deleteTable($table);
+        }
         if(count($this->error)==0) {
             return true;
         }else
@@ -378,21 +387,19 @@ class iMigration
      * @return bool
      */
     public function query($sql){
-            if($this->connect){
-                $this->results = $this->myqli->query($sql);
-                if ($this->results === TRUE || mysqli_num_rows($this->results) > 0 || count($this->myqli->error) > 0) {
-                    if(!is_bool($this->results)){
-                        $this->results = $this->results->fetch_assoc();
-                    }
-                    return true;
-                } else {
-                    $this->error[]= $this->myqli->error;
-                    return false;
+        if($this->connect){
+            $this->results = $this->myqli->query($sql);
+            if ($this->results === TRUE || count($this->myqli->error) < 1 ) {
+                if(!is_bool($this->results)){
+                    $this->results = $this->results->fetch_assoc();
                 }
+                return true;
+            } else {
+                $this->error[]= $this->myqli->error;
+                return false;
             }
-            return false;
+        }
+        return false;
     }
-
-
 
 }

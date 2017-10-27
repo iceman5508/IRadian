@@ -16,6 +16,9 @@ require_once 'core/IEngine/IEngine.php';
 //include ITemplate library
 require_once 'core/ITemplate/ITemplate.php';
 
+//include IRadian library
+require_once 'core/IRadian/IRadian.php';
+
 //include config file
 require_once 'iConfig.php';
 
