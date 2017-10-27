@@ -4,8 +4,7 @@
     <list default="true" id="b7fce952-9c7b-4982-8c2b-317c756ae89b" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap.php" afterPath="$PROJECT_DIR$/bootstrap.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/IEngine/Classes/iExtensions/iMigration.php" afterPath="$PROJECT_DIR$/core/IEngine/Classes/iExtensions/iMigration.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/iConfig.php" afterPath="$PROJECT_DIR$/iConfig.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/IRadian/Classes/iModel.php" afterPath="$PROJECT_DIR$/core/IRadian/Classes/iModel.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -17,29 +16,12 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="iTables.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/core/IRadian/Classes/iTables.php">
+      <file leaf-file-name="bootstrap.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/bootstrap.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="291">
-              <caret line="340" column="32" lean-forward="false" selection-start-line="340" selection-start-column="32" selection-end-line="340" selection-end-column="32" />
+            <state relative-caret-position="194">
+              <caret line="50" column="5" lean-forward="false" selection-start-line="50" selection-start-column="5" selection-end-line="50" selection-end-column="5" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="iMigration.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/IEngine/Classes/iExtensions/iMigration.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="295">
-              <caret line="319" column="0" lean-forward="true" selection-start-line="319" selection-start-column="0" selection-end-line="319" selection-end-column="0" />
-              <folding>
-                <marker date="1509074986079" expanded="true" signature="2868:2958" ph="CREATE TABLE... $" />
-                <marker date="1509074986079" expanded="true" signature="3609:3620" ph="DROP TABLE $... " />
-                <marker date="1509074986079" expanded="true" signature="4187:4261" ph="ALTER TABLE `${{$tableName}}`... " />
-                <marker date="1509074986079" expanded="true" signature="4299:4362" ph="ALTER TABLE `${{$tableName}}`... " />
-                <marker date="1509074986079" expanded="true" signature="5401:5438" ph="ALTER TABLE $... " />
-                <marker date="1509074986079" expanded="true" signature="8549:8561" ph="DELETE FROM " />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -51,6 +33,10 @@
       <find>addCol</find>
       <find>addColumn</find>
       <find>get</find>
+      <find>get()</find>
+      <find>delete</find>
+      <find>fields</find>
+      <find>update</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -68,13 +54,14 @@
         <option value="$PROJECT_DIR$/public/.htaccess" />
         <option value="$PROJECT_DIR$/public/app/header/header.php" />
         <option value="$PROJECT_DIR$/core/IRadian/IRadian.php" />
-        <option value="$PROJECT_DIR$/bootstrap.php" />
-        <option value="$PROJECT_DIR$/core/IRadian/Classes/iModel.php" />
         <option value="$PROJECT_DIR$/iConfig.php" />
         <option value="$PROJECT_DIR$/../IEngineLibrary/test/iEngine/test.php" />
         <option value="$PROJECT_DIR$/../IEngineLibrary/IEngine/Classes/iExtensions/iMigration.php" />
         <option value="$PROJECT_DIR$/core/IEngine/Classes/iExtensions/iMigration.php" />
         <option value="$PROJECT_DIR$/core/IRadian/Classes/iTables.php" />
+        <option value="$PROJECT_DIR$/core/IRadian/Classes/iModel.php" />
+        <option value="$PROJECT_DIR$/core/IRadian/Classes/iExtensions/Users.php" />
+        <option value="$PROJECT_DIR$/bootstrap.php" />
       </list>
     </option>
   </component>
@@ -129,73 +116,7 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="core" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="IRadian" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="IRadian" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="core" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="IEngine" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="IRadian" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="IRadian" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="core" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="IEngine" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Classes" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="IRadian" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="IRadian" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="core" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="IEngine" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Classes" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="iExtensions" />
+              <option name="myItemId" value="libs" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -210,6 +131,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\IRadian\libs" />
       <recent name="C:\wamp64\www\IRadian\vendors\bootstrap" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
@@ -314,12 +236,12 @@
       <workItem from="1508536348621" duration="601000" />
       <workItem from="1508784259579" duration="40000" />
       <workItem from="1508860847642" duration="15768000" />
-      <workItem from="1509044501952" duration="12111000" />
+      <workItem from="1509044501952" duration="14727000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28520000" />
+    <option name="totallyTimeSpent" value="31136000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -474,26 +396,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bootstrap.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="19" column="38" lean-forward="false" selection-start-line="19" selection-start-column="38" selection-end-line="19" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/core/IEngine/Classes/iApi.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="15" column="7" lean-forward="true" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/IRadian/Classes/iModel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="11" column="9" lean-forward="false" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
           <folding />
         </state>
       </provider>
@@ -531,10 +437,44 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/core/IRadian/Classes/iTables.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="305">
+          <caret line="341" column="72" lean-forward="false" selection-start-line="341" selection-start-column="72" selection-end-line="341" selection-end-column="72" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/IRadian/Classes/iModel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="14" column="42" lean-forward="false" selection-start-line="14" selection-start-column="42" selection-end-line="14" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../IEngine2/classes/DBaseConnect/Users.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2269">
+          <caret line="160" column="8" lean-forward="true" selection-start-line="160" selection-start-column="8" selection-end-line="160" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libs/Users.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="18" lean-forward="false" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
+          <folding>
+            <element signature="e#149#174#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/core/IEngine/Classes/iExtensions/iMigration.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="295">
-          <caret line="319" column="0" lean-forward="true" selection-start-line="319" selection-start-column="0" selection-end-line="319" selection-end-column="0" />
+        <state relative-caret-position="228">
+          <caret line="248" column="81" lean-forward="false" selection-start-line="248" selection-start-column="20" selection-end-line="248" selection-end-column="81" />
           <folding>
             <marker date="1509074986079" expanded="true" signature="2868:2958" ph="CREATE TABLE... $" />
             <marker date="1509074986079" expanded="true" signature="3609:3620" ph="DROP TABLE $... " />
@@ -546,10 +486,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/IRadian/Classes/iTables.php">
+    <entry file="file://$PROJECT_DIR$/bootstrap.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="291">
-          <caret line="340" column="32" lean-forward="false" selection-start-line="340" selection-start-column="32" selection-end-line="340" selection-end-column="32" />
+        <state relative-caret-position="194">
+          <caret line="50" column="5" lean-forward="false" selection-start-line="50" selection-start-column="5" selection-end-line="50" selection-end-column="5" />
           <folding />
         </state>
       </provider>

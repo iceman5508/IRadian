@@ -12,4 +12,5 @@ namespace IRadian\ibase;
 abstract class iModel
 {
 
+    public abstract function __destruct();
 }

@@ -46,6 +46,7 @@ function __autoload($classname){
     }else if(file_exists(CORE.'/ITemplate/Classes/iExtensions/'.basename($classname).'.php')){
         require_once CORE.'/ITemplate/Classes/iExtensions/'.basename($classname).'.php';
     }
+
 }
 
 
