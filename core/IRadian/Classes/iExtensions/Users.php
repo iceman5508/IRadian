@@ -27,7 +27,6 @@ class Users extends iModel
     }
 
     public  function __destruct(){
-        $this->table->__destruct();
         unset($this->table);
         unset($this->data);
      }

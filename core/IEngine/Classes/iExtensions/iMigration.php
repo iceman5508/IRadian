@@ -235,7 +235,7 @@ class iMigration
         if(count($this->error)==0) {
             return true;
         }else
-            return fasle;
+            return false;
     }
 
     /**
