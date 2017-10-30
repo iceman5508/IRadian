@@ -280,13 +280,16 @@ class iMigration
      */
     public function get($table, $where=array()){
         $get = iEazyDBase::get($table,$where);
-        if($get->count()>0) {
-            $this->results = $get->results();
-            return true;
-        } else {
-            $this->error = iDatabase::getInstance()->error();
-            return false;
+        if($get !== false) {
+            if (count($get)> 0) {
+                $this->results = $get;
+                return true;
+            } else {
+                $this->error = iDatabase::getInstance()->error();
+                return false;
+            }
         }
+        return false;
     }
 
     /**
