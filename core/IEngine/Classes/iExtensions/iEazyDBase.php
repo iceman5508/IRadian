@@ -87,7 +87,7 @@ class iEazyDBase
     public static function get($table, $where=array()){
         $get = iDatabase::getInstance()->getQuery($table,$where);
         if(count($get)>0) {
-            return $get;
+            return iDatabase::getInstance()->results();
         } else {
             return null;
         }

@@ -380,8 +380,7 @@ class iMigration
      * @return array
      */
     public function getResults(){
-
-        $this->results;
+        return $this->results;
     }
 
     /**
