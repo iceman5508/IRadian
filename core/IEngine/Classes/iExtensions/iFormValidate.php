@@ -9,14 +9,13 @@
 namespace IEngine\iExtends;
 use IEngine\ibase\iDatabase;
 use IEngine\ibase\iForm;
-use IEngine\ibase\iRequest;
 use IEngine\ibase\iSession;
 use IEngine\ibase\iToken;
 
 class iFormValidate
 {
     private $db, $errors=array(), $isValid = false;
-    private static $token;
+    private static $token, $salt;
 
     /**
      * iFormValidate constructor.
@@ -151,7 +150,9 @@ class iFormValidate
      */
     final public static function makeToken($tokenName){
         $token = new iToken();
-        self::$token = $token->makeHash($token->generate(irand_num(4,16)))[0];
+        self::$token = $token->makeHash($token->generate(irand_num(4,16)));
+        self::$salt = self::$token[1];
+        self::$token = self::$token[0];
         iSession::set($tokenName,  self::$token);
         return iSession::get($tokenName);
     }
@@ -169,5 +170,15 @@ class iFormValidate
         return false;
 
     }
+
+
+    final public static function getSalt(){
+        return self::$salt;
+    }
+
+    final public static function getToken(){
+        return self::$token;
+    }
+
 
 }
