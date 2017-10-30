@@ -341,7 +341,11 @@ class iMigration
      * Destructor method
      */
     function __destruct(){
-        $this->myqli->close();
+        if(isset($this->myqli))
+        {
+            $this->myqli->close();
+        }
+
         unset($this->connect);
         unset($this->error);
         unset($this->myqli);
