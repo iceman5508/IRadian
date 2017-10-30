@@ -172,13 +172,7 @@ class iFormValidate
     }
 
 
-    final public static function getSalt(){
-        return self::$salt;
-    }
-
-    final public static function getToken(){
-        return self::$token;
-    }
+   
 
 
 }
