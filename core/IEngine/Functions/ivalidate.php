@@ -179,4 +179,30 @@ if(!function_exists('is_url')) {
     }
 }
 
+/**
+ * Validate a datatype
+ * @param $type
+ * @param $value
+ * @return bool
+ */
+function ivalid_dataType($type, $value){
+    $valid = false;
+    switch ($type){
+        case 'bool':
+            is_bool($value)? $valid = true : $valid=false;
+            break;
+        case 'string':
+            is_string($value)? $valid = true : $valid=false;
+            break;
+        case 'number':
+            is_numeric($value)? $valid = true : $valid=false;
+            break;
+        case 'array':
+            is_array($value)? $valid = true : $valid=false;
+            break;
+        default:
+            break;
+    }
+    return $valid;
+}
 
