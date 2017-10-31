@@ -78,8 +78,7 @@ class iRouter
     public static function scanner(){
 
         if(count(self::$route_list)>0 && isset($_GET[self::$route_param])){
-            $path_parts = pathinfo($_GET[self::$route_param]);
-            $data =  $path_parts['filename'];
+            $data =  basename("http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']);
             if(isset(self::$route_list[$data])) {
                 foreach (self::$route_list as $route => $component) {
                     if ($data == $route) {
@@ -103,8 +102,7 @@ class iRouter
     public static function scannerOnce(){
 
         if(count(self::$route_list)>0 && isset($_GET[self::$route_param])){
-            $path_parts = pathinfo($_GET[self::$route_param]);
-            $data =  $path_parts['filename'];
+            $data =  basename("http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']);
             if(isset(self::$route_list[$data])){
                 $component = self::$route_list[$data];
                 self::$component = $component[0];
