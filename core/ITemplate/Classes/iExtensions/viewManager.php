@@ -48,7 +48,11 @@ abstract class viewManager
      * @param $location - The location of the component php files.
      */
     public static function registerComponent($location){
-        require_once 'app/'.$location;
+        if(file_exists('app/'.$location))
+        {
+            require_once 'app/'.$location;
+        }
+
     }
 
     /**
