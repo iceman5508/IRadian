@@ -142,6 +142,20 @@ class iRouter
         return '?'.self::$route_param.'='.$linkName;
     }
 
+    /**
+     * Set the limit on number of / the router should expect to go through;
+     * @param $limit
+     * @return bool - false if at or under limit, true if limit is exceeded
+     */
+    public static function routeLimit($limit){
+        $brokenUrl = explode("/", $_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']);
+        if(count($brokenUrl) > $limit+1){
+            return true;
+        }else{
+            return false;
+        }
+    }
+
 
 
 }
