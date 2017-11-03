@@ -36,9 +36,9 @@ abstract class iTables
      * close off the table
      */
     function __destruct(){
-      unset($this->table);
-      $this->imigrate->closeConnection();
-      unset($this->imigrate);
+        unset($this->table);
+        $this->imigrate->closeConnection();
+        unset($this->imigrate);
     }
 
     /**
@@ -59,15 +59,8 @@ abstract class iTables
      * @param $name - The name of the column being added
      * @param int $length - The length
      */
-    public final function char($name, $length = NULL){
-        if(isset($length))
-        {
-            $this->imigrate->addColumn($this->table, $name,'char', $length);
-
-        }else{
-            $this->imigrate->addColumn($this->table, $name,'char');
-        }
-
+    public final function char($name, $length = 254){
+        $this->imigrate->addColumn($this->table, $name,'char', $length);
     }
 
     /**
@@ -75,13 +68,8 @@ abstract class iTables
      * @param $name - The name of the column being added
      * @param int $length - The length
      */
-    public final function varchar($name, $length = NULL){
-        if(isset($length)){
-            $this->imigrate->addColumn($this->table, $name,'varchar', $length);
-        }else{
-            $this->imigrate->addColumn($this->table, $name,'varchar');
-        }
-
+    public final function varchar($name, $length = 254){
+        $this->imigrate->addColumn($this->table, $name,'varchar', $length);
     }
 
     /**
@@ -89,28 +77,17 @@ abstract class iTables
      * @param $name - The name of the column being added
      * @param int $length - The length
      */
-    public final function tinytext($name, $length = NULL){
-        if(isset($length)){
-            $this->imigrate->addColumn($this->table, $name,'tinytext', $length);
-        }else{
-            $this->imigrate->addColumn($this->table, $name,'tinytext');
-        }
+    public final function tinytext($name, $length = 254){
+        $this->imigrate->addColumn($this->table, $name,'tinytext', $length);
     }
-
-
 
     /**
      * Add text - To the table
      * @param $name - The name of the column being added
      * @param int $length - The length
      */
-    public final function text($name, $length = NULL){
-        if(isset($length)){
-            $this->imigrate->addColumn($this->table, $name,'text', $length);
-        }else{
-            $this->imigrate->addColumn($this->table, $name,'text');
-        }
-
+    public final function text($name, $length = 65534){
+        $this->imigrate->addColumn($this->table, $name,'text', $length);
     }
 
     /**
@@ -118,13 +95,8 @@ abstract class iTables
      * @param $name - The name of the column being added
      * @param int $length - The length
      */
-    public final function blob($name, $length = NULL){
-        if(isset($length)){
-            $this->imigrate->addColumn($this->table, $name,'blob', $length);
-        }else{
-            $this->imigrate->addColumn($this->table, $name,'blob');
-        }
-
+    public final function blob($name, $length = 65534){
+        $this->imigrate->addColumn($this->table, $name,'blob', $length);
     }
 
     /**
@@ -132,12 +104,8 @@ abstract class iTables
      * @param $name - The name of the column being added
      * @param int $length - The length
      */
-    public final function mediumtext($name, $length = NULL){
-        if(isset($length)){
-            $this->imigrate->addColumn($this->table, $name,'mediumtext', $length);
-        }else{
-            $this->imigrate->addColumn($this->table, $name,'mediumtext');
-        }
+    public final function mediumtext($name, $length = 16777214){
+        $this->imigrate->addColumn($this->table, $name,'mediumtext', $length);
     }
 
     /**
@@ -145,13 +113,8 @@ abstract class iTables
      * @param $name - The name of the column being added
      * @param int $length - The length
      */
-    public final function mediumblob($name, $length = NULL){
-        if(isset($length)){
-            $this->imigrate->addColumn($this->table, $name,'mediumblob', $length);
-        }else{
-            $this->imigrate->addColumn($this->table, $name,'mediumblob');
-        }
-
+    public final function mediumblob($name, $length = 16777214){
+        $this->imigrate->addColumn($this->table, $name,'mediumblob', $length);
     }
 
     /**
@@ -159,13 +122,8 @@ abstract class iTables
      * @param $name - The name of the column being added
      * @param int $length - The length
      */
-    public final function longtext($name, $length = NULL){
-        if(isset($length)){
-            $this->imigrate->addColumn($this->table, $name,'longtext', $length);
-        }else{
-            $this->imigrate->addColumn($this->table, $name,'longtext');
-        }
-
+    public final function longtext($name, $length = 4294967294){
+        $this->imigrate->addColumn($this->table, $name,'longtext', $length);
     }
 
     /**
@@ -173,13 +131,8 @@ abstract class iTables
      * @param $name - The name of the column being added
      * @param int $length - The length
      */
-    public final function longblob($name, $length = NULL){
-        if(isset($length)){
-            $this->imigrate->addColumn($this->table, $name,'longblob', $length);
-        }else{
-            $this->imigrate->addColumn($this->table, $name,'longblob');
-        }
-
+    public final function longblob($name, $length = 4294967294){
+        $this->imigrate->addColumn($this->table, $name,'longblob', $length);
     }
 
     /**
@@ -187,27 +140,17 @@ abstract class iTables
      * @param $name - The name of the column being added
      * @param int $length - The length
      */
-    public final function enum($name, $length = NULL){
-        if(isset($length)){
-            $this->imigrate->addColumn($this->table, $name,'enum', $length);
-        }else{
-            $this->imigrate->addColumn($this->table, $name,'enum');
-        }
-
+    public final function enum($name, $length = 65534){
+        $this->imigrate->addColumn($this->table, $name,'enum', $length);
     }
 
     /**
-    * Add tinyint- To the table
-    * @param $name - The name of the column being added
-    * @param int $length - The length
-    */
+     * Add tinyint- To the table
+     * @param $name - The name of the column being added
+     * @param int $length - The length
+     */
     public final function tinyint($name, $length = NULL){
-        if(isset($length)){
-            $this->imigrate->addColumn($this->table, $name,'tinyint', $length);
-        }else{
-            $this->imigrate->addColumn($this->table, $name,'tinyint');
-        }
-
+        $this->imigrate->addColumn($this->table, $name,'tinyint', $length);
     }
 
     /**
@@ -216,25 +159,16 @@ abstract class iTables
      * @param int $length - The length
      */
     public final function smallint($name, $length = NULL){
-        if(isset($length)){
-            $this->imigrate->addColumn($this->table, $name,'smallint', $length);
-        }else{
-            $this->imigrate->addColumn($this->table, $name,'smallint');
-        }
-
+        $this->imigrate->addColumn($this->table, $name,'smallint', $length);
     }
+
     /**
      * Add mediumint- To the table
      * @param $name - The name of the column being added
      * @param int $length - The length
      */
     public final function mediumint($name, $length = NULL){
-        if(isset($length)){
-            $this->imigrate->addColumn($this->table, $name,'mediumint', $length);
-        }else{
-            $this->imigrate->addColumn($this->table, $name,'mediumint');
-        }
-
+        $this->imigrate->addColumn($this->table, $name,'mediumint', $length);
     }
 
     /**
@@ -242,15 +176,8 @@ abstract class iTables
      * @param $name - The name of the column being added
      * @param int $length - The length
      */
-    public final function int($name, $length = NULL ){
-        if(isset($length))
-        {
-            $this->imigrate->addColumn($this->table, $name,'int', $length);
-
-        }else{
-            $this->imigrate->addColumn($this->table, $name,'int', $length);
-        }
-
+    public final function int($name, $length = NULL){
+        $this->imigrate->addColumn($this->table, $name,'int', $length);
     }
 
     /**
@@ -258,13 +185,8 @@ abstract class iTables
      * @param $name - The name of the column being added
      * @param int $length - The length
      */
-    public final function bigint($name, $length = NULL){
-        if(isset($length)){
-            $this->imigrate->addColumn($this->table, $name,'bigint', $length);
-        }else{
-            $this->imigrate->addColumn($this->table, $name,'bigint');
-        }
-
+    public final function bigint($name,$length = NULL){
+        $this->imigrate->addColumn($this->table, $name,'bigint', $length);
     }
 
     /**
@@ -273,12 +195,7 @@ abstract class iTables
      * @param int $length - The length
      */
     public final function float($name, $length = NULL){
-        if(isset($length)){
-            $this->imigrate->addColumn($this->table, $name,'float', $length);
-        }else{
-            $this->imigrate->addColumn($this->table, $name,'float');
-        }
-
+        $this->imigrate->addColumn($this->table, $name,'float', $length);
     }
 
     /**
@@ -287,25 +204,16 @@ abstract class iTables
      * @param int $length - The length
      */
     public final function double($name, $length = NULL){
-        if(isset($length)){
-            $this->imigrate->addColumn($this->table, $name,'double', $length);
-        }else{
-            $this->imigrate->addColumn($this->table, $name,'double');
-        }
-
+        $this->imigrate->addColumn($this->table, $name,'double', $length);
     }
+
     /**
      * Add DECIMAL - To the table
      * @param $name - The name of the column being added
      * @param int $length - The length
      */
     public final function decimal($name, $length = NULL){
-        if(isset($length)){
-            $this->imigrate->addColumn($this->table, $name,'decimal', $length);
-        }else{
-            $this->imigrate->addColumn($this->table, $name,'decimal');
-        }
-
+        $this->imigrate->addColumn($this->table, $name,'decimal', $length);
     }
 
     /**
@@ -323,13 +231,8 @@ abstract class iTables
      * @param $name - The name of the column being added
      * @param int $length - The length
      */
-    public final function datetime($name, $length = NULL){
-        if(isset($length)){
-            $this->imigrate->addColumn($this->table, $name,'datetime', $length);
-        }else{
-            $this->imigrate->addColumn($this->table, $name,'datetime');
-        }
-
+    public final function datetime($name, $length = NULL ){
+        $this->imigrate->addColumn($this->table, $name,'datetime', $length);
     }
 
 
@@ -338,13 +241,8 @@ abstract class iTables
      * @param $name - The name of the column being added
      * @param int $length - The length
      */
-    public final function timestamp($name, $length = NULL){
-        if(isset($length)){
-            $this->imigrate->addColumn($this->table, $name,'timestamp', $length);
-        }else{
-            $this->imigrate->addColumn($this->table, $name,'timestamp');
-        }
-
+    public final function timestamp($name, $length = NULL ){
+        $this->imigrate->addColumn($this->table, $name,'timestamp', $length);
     }
 
 
@@ -353,13 +251,8 @@ abstract class iTables
      * @param $name - The name of the column being added
      * @param int $length - The length
      */
-    public final function time($name, $length = NULL){
-        if(isset($length)){
-            $this->imigrate->addColumn($this->table, $name,'time', $length);
-        }else{
-            $this->imigrate->addColumn($this->table, $name,'time');
-        }
-
+    public final function time($name, $length = NULL ){
+        $this->imigrate->addColumn($this->table, $name,'time', $length);
     }
 
 
@@ -368,13 +261,8 @@ abstract class iTables
      * @param $name - The name of the column being added
      * @param int $length - The length
      */
-    public final function year($name, $length = NULL){
-        if(isset($length)){
-            $this->imigrate->addColumn($this->table, $name,'year', $length);
-        }else{
-            $this->imigrate->addColumn($this->table, $name,'year');
-        }
-
+    public final function year($name, $length = NULL ){
+        $this->imigrate->addColumn($this->table, $name,'year', $length);
     }
 
     /**
