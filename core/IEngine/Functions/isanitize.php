@@ -49,7 +49,7 @@ if(!function_exists('iremoveCode'))
  */
 if(!function_exists('iescapeCode'))
 {
-    function escapeCode($string)
+    function iescapeCode($string)
     {
         $str = escape($string);
         return removeCode($str);
