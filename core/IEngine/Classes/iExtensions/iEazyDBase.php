@@ -42,7 +42,8 @@ class iEazyDBase
      */
     public static function updateCustom($table, $whereField,$whereEqual, $fieldData = array()){
         $get = iDatabase::getInstance()->updateQueryC($table,$whereField,$whereEqual,$fieldData);
-        if($get->error()==false) {
+        $error = iDatabase::getInstance()->error();
+        if($error===false) {
             return true;
         } else {
             return false;

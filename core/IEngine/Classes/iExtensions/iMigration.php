@@ -247,13 +247,8 @@ class iMigration
      * @return bool
      */
     public function update($table, $whereField,$whereEqual, $fieldData = array()){
-        iEazyDBase::updateCustom($table,$whereField,$whereEqual,$fieldData);
-        $this->results = iDatabase::getInstance()->results();
-        $this->error = iDatabase::getInstance()->error();
-        if(count($this->error)==0) {
-            return true;
-        }else
-            return false;
+        return(iEazyDBase::updateCustom($table,$whereField,$whereEqual,$fieldData));
+
     }
 
     /**
