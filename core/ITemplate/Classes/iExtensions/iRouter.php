@@ -20,6 +20,7 @@ class iRouter
     private static $component=null;
     public static $route = null;
     public static $params = null;
+    private static $url;
 
 
     /**
@@ -36,6 +37,7 @@ class iRouter
     public static function runInstance($route_param){
         if(!isset(self::$route_param )) {
             self::$route_param = $route_param;
+            self::$url = self::cleanParams();
         }
     }
 
@@ -81,7 +83,7 @@ class iRouter
      */
     public static function scanner(){
         if(count(self::$route_list)>0 && isset($_GET[self::$route_param])){
-            $data =  basename(self::cleanParams());
+            $data =  basename(self::$url);
             if(isset(self::$route_list[$data])) {
                 foreach (self::$route_list as $route => $component) {
                     if ($data == $route) {
@@ -106,7 +108,7 @@ class iRouter
 
         if(count(self::$route_list)>0 && isset($_GET[self::$route_param])){
 
-            $data =  basename(self::cleanParams());
+            $data =  basename(self::$url);
             if(isset(self::$route_list[$data])){
                 $component = self::$route_list[$data];
                 self::$component = $component[0];
