@@ -32,7 +32,7 @@ if(!function_exists('iescape'))
  */
 if(!function_exists('iremoveCode'))
 {
-    function removeCode($string)
+    function iremoveCode($string)
     {
         return strip_tags($string);
     }
@@ -51,8 +51,8 @@ if(!function_exists('iescapeCode'))
 {
     function iescapeCode($string)
     {
-        $str = escape($string);
-        return removeCode($str);
+        $str = iescape($string);
+        return iremoveCode($str);
     }
 }
 
