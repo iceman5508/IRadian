@@ -19,7 +19,6 @@
     border: 1px solid #888;
     width: 40%; /* Could be more or less, depending on screen size */
     min-width: 40%;
-    border-radius: 13px;
     border-top:none;
 }
 
