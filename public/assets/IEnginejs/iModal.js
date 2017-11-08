@@ -3,15 +3,15 @@
  */
 var iModal = new function () {
 
-    this.closeView =  function(viewName) {
-        const modal = document.getElementById(viewName);
+    this.close =  function(modalId) {
+        const modal = document.getElementById(modalId);
         modal.style.display = 'none';
 
     }
 
-    this.openView = function (viewName) {
-        const modal = document.getElementById(viewName);
+    this.show = function (modalId) {
+        const modal = document.getElementById(modalId);
         modal.style.display = 'block';
     }
-    
+
 };

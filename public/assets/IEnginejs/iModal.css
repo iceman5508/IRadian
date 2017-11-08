@@ -22,3 +22,28 @@
     border-radius: 13px;
     border-top:none;
 }
+
+.imodal-header{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* The Close Button */
+.icloseButton:before{
+    content:"\00d7";
+}
+.icloseButton {
+    color: red;
+    float: right;
+    font-weight: 800;
+    margin-right: 10px;
+
+}
+
+.icloseButton:hover,
+.icloseButton:focus {
+    color: red;
+    text-decoration: none;
+    cursor: pointer;
+}
+
