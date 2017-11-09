@@ -16,15 +16,15 @@ class iConfig
 {
 
     public static $project = [
-        'title' => 'My Project'
-        ,'author' => 'Isaac Parker'
+        'title' => 'Project Title'
+        ,'author' => 'Author Name'
     ];
 
     public static $database = [
-         'host'  => 'localhost'
-        ,'username' => 'root'
-        ,'password' => ''
-        ,'database' => 'testdb'
+         'host'  => 'host'
+        ,'username' => 'username'
+        ,'password' => 'password'
+        ,'database' => 'database'
     ];
 
     public static $jquery = [
