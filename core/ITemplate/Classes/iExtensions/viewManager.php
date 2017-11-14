@@ -26,7 +26,7 @@ abstract class viewManager
      */
     function __construct($mainFile)
     {
-        $this->content = file_get_contents('app/'.$mainFile);
+        $this->content = file_get_contents('public/app/'.$mainFile);
         foreach (iComponent::getExports() as $tags => $value){
             if (strpos($this->content, $tags) !== false) {
                 $this->content = str_replace("{#" . $tags . "}", $value, $this->content);
@@ -48,9 +48,9 @@ abstract class viewManager
      * @param $location - The location of the component php files.
      */
     public static function registerComponent($location){
-        if(file_exists('app/'.$location))
+        if(file_exists('public/app/'.$location))
         {
-            require_once 'app/'.$location;
+            require_once 'public/app/'.$location;
         }
 
     }
