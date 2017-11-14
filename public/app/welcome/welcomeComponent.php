@@ -19,7 +19,8 @@ class welcomeComponent extends \ITemplate\iExtends\iComponent
     {
        $this->title = 'Welcome Page';
        $this->name = 'IRadian';
-       $this->tag = 'Perfection to a degree';
+       $this->tag = "Perfection to a degree <br><br>
+<a href='https://github.com/iceman5508/IRadian'> Github </a>| <a href='docs/index.html'>Docs </a>";
        $this->icon = 'http://imedia.epizy.com/application/views/images/logo/logo2.png';
     }
 
