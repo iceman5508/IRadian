@@ -18,7 +18,7 @@ class iTemplates
      * @param $file - the name of the file to grab
      */
     final public function getFile($file) {
-        $this->template = file_get_contents('public/app/'.$file);
+        $this->template = file_get_contents('app/'.$file);
     }
 
     /**

@@ -49,9 +49,9 @@ class iRouter
      */
     public static function call($route, $componentLocation){
         self::$route_list[$route] = array(null,$componentLocation);
-        if(file_exists('public/app/'.$componentLocation))
+        if(file_exists('app/'.$componentLocation))
         {
-            require_once 'public/app/'.$componentLocation;
+            require_once 'app/'.$componentLocation;
         }
         return false;
 
@@ -113,9 +113,9 @@ class iRouter
                 $component = self::$route_list[$data];
                 self::$component = $component[0];
                 self::$route = $component[1];
-                if(file_exists('public/app/'.$component[1]))
+                if(file_exists('app/'.$component[1]))
                 {
-                    require_once 'public/app/'.$component[1];
+                    require_once 'app/'.$component[1];
                 }
 
             }

@@ -1,6 +1,6 @@
 <?php
 
-require_once 'bootstrap.php';
+require_once '../bootstrap.php';
 
 //include welcome component
 loadComponent('welcome/welcomeComponent', false);

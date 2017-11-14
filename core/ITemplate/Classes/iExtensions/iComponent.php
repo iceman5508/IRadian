@@ -32,7 +32,7 @@ abstract class iComponent
      */
     public function __construct($page){
         $this->component = new iComponents();
-        $this->page = 'public/app/'.$page;
+        $this->page = 'app/'.$page;
         $this->attributes();
     }
 
