@@ -2,22 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b7fce952-9c7b-4982-8c2b-317c756ae89b" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/public/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.htaccess" afterPath="$PROJECT_DIR$/.htaccess" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/IRadian/Functions/Component.php" afterPath="$PROJECT_DIR$/core/IRadian/Functions/Component.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/ITemplate/Classes/iExtensions/iComponent.php" afterPath="$PROJECT_DIR$/core/ITemplate/Classes/iExtensions/iComponent.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/ITemplate/Classes/iExtensions/iRouter.php" afterPath="$PROJECT_DIR$/core/ITemplate/Classes/iExtensions/iRouter.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/ITemplate/Classes/iExtensions/viewManager.php" afterPath="$PROJECT_DIR$/core/ITemplate/Classes/iExtensions/viewManager.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/ITemplate/Classes/iTemplates.php" afterPath="$PROJECT_DIR$/core/ITemplate/Classes/iTemplates.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/assets/plugins/jquery-scrollTo/demo/index.html" afterPath="$PROJECT_DIR$/docs/assets/plugins/jquery-scrollTo/demo/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/assets/plugins/lightbox/examples/index.html" afterPath="$PROJECT_DIR$/docs/assets/plugins/lightbox/examples/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/charts.html" afterPath="$PROJECT_DIR$/docs/charts.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/components.html" afterPath="$PROJECT_DIR$/docs/components.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/faqs.html" afterPath="$PROJECT_DIR$/docs/faqs.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/license.html" afterPath="$PROJECT_DIR$/docs/license.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/showcase.html" afterPath="$PROJECT_DIR$/docs/showcase.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/start.html" afterPath="$PROJECT_DIR$/docs/start.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -28,30 +13,7 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/index.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="17" lean-forward="false" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-              <folding>
-                <element signature="e#149#180#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Router.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/core/IRadian/Functions/Router.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="322">
-              <caret line="27" column="1" lean-forward="true" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -155,7 +117,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../homeRadian" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -274,12 +236,12 @@
       <workItem from="1509083128260" duration="288000" />
       <workItem from="1509387139554" duration="29000" />
       <workItem from="1510248719615" duration="48000" />
-      <workItem from="1510248768783" duration="21849000" />
+      <workItem from="1510248768783" duration="24857000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="54151000" />
+    <option name="totallyTimeSpent" value="57159000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -291,7 +253,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27609682" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -644,6 +606,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/core/IRadian/Functions/Router.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="27" column="1" lean-forward="false" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/public/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -651,14 +621,6 @@
           <folding>
             <element signature="e#149#180#0#PHP" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/IRadian/Functions/Router.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="27" column="1" lean-forward="true" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
