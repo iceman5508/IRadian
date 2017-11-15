@@ -1,0 +1,956 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+    <meta charset="utf-8"/>
+    <title>API Documentation</title>
+    <meta name="author" content=""/>
+    <meta name="description" content=""/>
+
+    <link href="../css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
+    <link href="../css/font-awesome.min.css" rel="stylesheet">
+    <link href="../css/prism.css" rel="stylesheet" media="all"/>
+    <link href="../css/template.css" rel="stylesheet" media="all"/>
+    
+    <!--[if lt IE 9]>
+    <script src="../js/html5.js"></script>
+    <![endif]-->
+    <script src="../js/jquery-1.11.0.min.js"></script>
+    <script src="../js/ui/1.10.4/jquery-ui.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/jquery.smooth-scroll.js"></script>
+    <script src="../js/prism.min.js"></script>
+    <!-- TODO: Add http://jscrollpane.kelvinluck.com/ to style the scrollbars for browsers not using webkit-->
+    <script type="text/javascript">
+    function loadExternalCodeSnippets() {
+        Array.prototype.slice.call(document.querySelectorAll('pre[data-src]')).forEach(function (pre) {
+            var src = pre.getAttribute('data-src');
+            var extension = (src.match(/\.(\w+)$/) || [, ''])[1];
+            var language = 'php';
+
+            var code = document.createElement('code');
+            code.className = 'language-' + language;
+
+            pre.textContent = '';
+
+            code.textContent = 'Loading…';
+
+            pre.appendChild(code);
+
+            var xhr = new XMLHttpRequest();
+
+            xhr.open('GET', src, true);
+
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState == 4) {
+
+                    if (xhr.status < 400 && xhr.responseText) {
+                        code.textContent = xhr.responseText;
+
+                        Prism.highlightElement(code);
+                    }
+                    else if (xhr.status >= 400) {
+                        code.textContent = '✖ Error ' + xhr.status + ' while fetching file: ' + xhr.statusText;
+                    }
+                    else {
+                        code.textContent = '✖ Error: File does not exist or is empty';
+                    }
+                }
+            };
+
+            xhr.send(null);
+        });
+    }
+
+    $(document).ready(function(){
+        loadExternalCodeSnippets();
+    });
+    $('#source-view').on('shown', function () {
+        loadExternalCodeSnippets();
+    })
+</script>
+
+    <link rel="shortcut icon" href="../images/favicon.ico"/>
+    <link rel="apple-touch-icon" href="../images/apple-touch-icon.png"/>
+    <link rel="apple-touch-icon" sizes="72x72" href="../images/apple-touch-icon-72x72.png"/>
+    <link rel="apple-touch-icon" sizes="114x114" href="../images/apple-touch-icon-114x114.png"/>
+</head>
+<body>
+
+<div class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+        <div class="container">
+            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                <i class="icon-ellipsis-vertical"></i>
+            </a>
+            <a class="brand" href="../index.html">API Documentation</a>
+
+            <div class="nav-collapse">
+                <ul class="nav pull-right">
+                                        <li class="dropdown">
+                        <a href="../index.html" class="dropdown-toggle" data-toggle="dropdown">
+                            API Documentation <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                                                        <li><a href="../namespaces/IEngine.html">\IEngine</a></li>
+                                                        <li><a href="../namespaces/IRadian.html">\IRadian</a></li>
+                                                        <li><a href="../namespaces/ITemplate.html">\ITemplate</a></li>
+                                                    </ul>
+                    </li>
+                                        <li class="dropdown" id="charts-menu">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            Charts <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="../graphs/class.html">
+                                    <i class="icon-list-alt"></i>&#160;Class hierarchy diagram
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown" id="reports-menu">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            Reports <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="../reports/errors.html">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <i class="icon-list-alt"></i>&#160;Errors <span class="label label-info pull-right">288</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../reports/markers.html">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <i class="icon-list-alt"></i>&#160;Markers <span class="label label-info pull-right">1</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../reports/deprecated.html">
+                                                                                                            <i class="icon-list-alt"></i>&#160;Deprecated <span class="label label-info pull-right">0</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--<div class="go_to_top">-->
+    <!--<a href="#___" style="color: inherit">Back to top&#160;&#160;<i class="icon-upload icon-white"></i></a>-->
+    <!--</div>-->
+</div>
+
+<div id="___" class="container-fluid">
+        <section class="row-fluid">
+        <div class="span2 sidebar">
+                                <div class="accordion" style="margin-bottom: 0">
+        <div class="accordion-group">
+            <div class="accordion-heading">
+                                    <a class="accordion-toggle " data-toggle="collapse" data-target="#namespace-957317704"></a>
+                                <a href="../namespaces/default.html" style="margin-left: 30px; padding-left: 0">\</a>
+            </div>
+            <div id="namespace-957317704" class="accordion-body collapse in">
+                <div class="accordion-inner">
+
+                                                    <div class="accordion" style="margin-bottom: 0">
+        <div class="accordion-group">
+            <div class="accordion-heading">
+                                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-target="#namespace-761616344"></a>
+                                <a href="../namespaces/IEngine.html" style="margin-left: 30px; padding-left: 0">IEngine</a>
+            </div>
+            <div id="namespace-761616344" class="accordion-body collapse ">
+                <div class="accordion-inner">
+
+                                                    <div class="accordion" style="margin-bottom: 0">
+        <div class="accordion-group">
+            <div class="accordion-heading">
+                                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-target="#namespace-618010698"></a>
+                                <a href="../namespaces/IEngine.ibase.html" style="margin-left: 30px; padding-left: 0">ibase</a>
+            </div>
+            <div id="namespace-618010698" class="accordion-body collapse ">
+                <div class="accordion-inner">
+
+                    
+                    <ul>
+                                                                                                    <li class="class"><a href="../classes/IEngine.ibase.iAPi.html">iAPi</a></li>
+                                                    <li class="class"><a href="../classes/IEngine.ibase.iCookie.html">iCookie</a></li>
+                                                    <li class="class"><a href="../classes/IEngine.ibase.iDatabase.html">iDatabase</a></li>
+                                                    <li class="class"><a href="../classes/IEngine.ibase.iDate.html">iDate</a></li>
+                                                    <li class="class"><a href="../classes/IEngine.ibase.iDirectory.html">iDirectory</a></li>
+                                                    <li class="class"><a href="../classes/IEngine.ibase.iFile.html">iFile</a></li>
+                                                    <li class="class"><a href="../classes/IEngine.ibase.iForm.html">iForm</a></li>
+                                                    <li class="class"><a href="../classes/IEngine.ibase.iGlobal.html">iGlobal</a></li>
+                                                    <li class="class"><a href="../classes/IEngine.ibase.iNumber.html">iNumber</a></li>
+                                                    <li class="class"><a href="../classes/IEngine.ibase.iRequest.html">iRequest</a></li>
+                                                    <li class="class"><a href="../classes/IEngine.ibase.iSession.html">iSession</a></li>
+                                                    <li class="class"><a href="../classes/IEngine.ibase.iString.html">iString</a></li>
+                                                    <li class="class"><a href="../classes/IEngine.ibase.iTime.html">iTime</a></li>
+                                                    <li class="class"><a href="../classes/IEngine.ibase.iToken.html">iToken</a></li>
+                                                    <li class="class"><a href="../classes/IEngine.ibase.iWeb.html">iWeb</a></li>
+                                            </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+                                                    <div class="accordion" style="margin-bottom: 0">
+        <div class="accordion-group">
+            <div class="accordion-heading">
+                                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-target="#namespace-1503756457"></a>
+                                <a href="../namespaces/IEngine.iExtends.html" style="margin-left: 30px; padding-left: 0">iExtends</a>
+            </div>
+            <div id="namespace-1503756457" class="accordion-body collapse ">
+                <div class="accordion-inner">
+
+                    
+                    <ul>
+                                                                                                    <li class="class"><a href="../classes/IEngine.iExtends.iEazyDBase.html">iEazyDBase</a></li>
+                                                    <li class="class"><a href="../classes/IEngine.iExtends.iFileSystems.html">iFileSystems</a></li>
+                                                    <li class="class"><a href="../classes/IEngine.iExtends.iFormValidate.html">iFormValidate</a></li>
+                                                    <li class="class"><a href="../classes/IEngine.iExtends.iMigration.html">iMigration</a></li>
+                                            </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+                    
+                    <ul>
+                                                                                            </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+                                                    <div class="accordion" style="margin-bottom: 0">
+        <div class="accordion-group">
+            <div class="accordion-heading">
+                                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-target="#namespace-575178600"></a>
+                                <a href="../namespaces/IRadian.html" style="margin-left: 30px; padding-left: 0">IRadian</a>
+            </div>
+            <div id="namespace-575178600" class="accordion-body collapse ">
+                <div class="accordion-inner">
+
+                                                    <div class="accordion" style="margin-bottom: 0">
+        <div class="accordion-group">
+            <div class="accordion-heading">
+                                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-target="#namespace-1515173817"></a>
+                                <a href="../namespaces/IRadian.ibase.html" style="margin-left: 30px; padding-left: 0">ibase</a>
+            </div>
+            <div id="namespace-1515173817" class="accordion-body collapse ">
+                <div class="accordion-inner">
+
+                    
+                    <ul>
+                                                                                                    <li class="class"><a href="../classes/IRadian.ibase.iModel.html">iModel</a></li>
+                                                    <li class="class"><a href="../classes/IRadian.ibase.iTables.html">iTables</a></li>
+                                            </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+                                                    <div class="accordion" style="margin-bottom: 0">
+        <div class="accordion-group">
+            <div class="accordion-heading">
+                                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-target="#namespace-1442239629"></a>
+                                <a href="../namespaces/IRadian.iExtensions.html" style="margin-left: 30px; padding-left: 0">iExtensions</a>
+            </div>
+            <div id="namespace-1442239629" class="accordion-body collapse ">
+                <div class="accordion-inner">
+
+                    
+                    <ul>
+                                                                                                    <li class="class"><a href="../classes/IRadian.iExtensions.Users.html">Users</a></li>
+                                            </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+                    
+                    <ul>
+                                                                                            </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+                                                    <div class="accordion" style="margin-bottom: 0">
+        <div class="accordion-group">
+            <div class="accordion-heading">
+                                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-target="#namespace-1347440372"></a>
+                                <a href="../namespaces/ITemplate.html" style="margin-left: 30px; padding-left: 0">ITemplate</a>
+            </div>
+            <div id="namespace-1347440372" class="accordion-body collapse ">
+                <div class="accordion-inner">
+
+                                                    <div class="accordion" style="margin-bottom: 0">
+        <div class="accordion-group">
+            <div class="accordion-heading">
+                                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-target="#namespace-1540643698"></a>
+                                <a href="../namespaces/ITemplate.ibase.html" style="margin-left: 30px; padding-left: 0">ibase</a>
+            </div>
+            <div id="namespace-1540643698" class="accordion-body collapse ">
+                <div class="accordion-inner">
+
+                    
+                    <ul>
+                                                                                                    <li class="class"><a href="../classes/ITemplate.ibase.iTemplates.html">iTemplates</a></li>
+                                            </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+                                                    <div class="accordion" style="margin-bottom: 0">
+        <div class="accordion-group">
+            <div class="accordion-heading">
+                                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-target="#namespace-2657159"></a>
+                                <a href="../namespaces/ITemplate.iExtends.html" style="margin-left: 30px; padding-left: 0">iExtends</a>
+            </div>
+            <div id="namespace-2657159" class="accordion-body collapse ">
+                <div class="accordion-inner">
+
+                    
+                    <ul>
+                                                                                                    <li class="class"><a href="../classes/ITemplate.iExtends.iComponent.html">iComponent</a></li>
+                                                    <li class="class"><a href="../classes/ITemplate.iExtends.iComponents.html">iComponents</a></li>
+                                                    <li class="class"><a href="../classes/ITemplate.iExtends.iRouter.html">iRouter</a></li>
+                                                    <li class="class"><a href="../classes/ITemplate.iExtends.iTags.html">iTags</a></li>
+                                                    <li class="class"><a href="../classes/ITemplate.iExtends.iView.html">iView</a></li>
+                                                    <li class="class"><a href="../classes/ITemplate.iExtends.viewManager.html">viewManager</a></li>
+                                            </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+                    
+                    <ul>
+                                                                                            </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+                    
+                    <ul>
+                                                                                                    <li class="class"><a href="../classes/iConfig.html">iConfig</a></li>
+                                                    <li class="class"><a href="../classes/IEngine.html">IEngine</a></li>
+                                                    <li class="class"><a href="../classes/IRadian.html">IRadian</a></li>
+                                                    <li class="class"><a href="../classes/ITemplate.html">ITemplate</a></li>
+                                                    <li class="class"><a href="../classes/welcomeComponent.html">welcomeComponent</a></li>
+                                            </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        </div>
+    </section>
+    <section class="row-fluid">
+        <div class="span10 offset2">
+            <div class="row-fluid">
+                <div class="span8 content class">
+                    <nav>
+                                                <a href="../namespaces/IEngine.ibase.html">\IEngine\ibase</a> <i class="icon-level-up"></i>
+                                            </nav>
+                    <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal"><i class="icon-code"></i></a>
+
+                    <h1><small>\IEngine\ibase</small>iDate</h1>
+                    <p><em>Author Isaac Parker
+Date 5-31-2017
+Class iDate</em></p>
+                    
+                    
+                                        
+                    <section id="summary">
+                        <h2>Summary</h2>
+                        <section class="row-fluid heading">
+                            <section class="span4">
+                                <a href="#methods">Methods</a>
+                            </section>
+                            <section class="span4">
+                                <a href="#properties">Properties</a>
+                            </section>
+                            <section class="span4">
+                                <a href="#constants">Constants</a>
+                            </section>
+                        </section>
+                        <section class="row-fluid public">
+                            <section class="span4">
+                                                                    <a href="../classes/IEngine.ibase.iDate.html#method_getDate" class="">getDate()</a><br />
+                                                                    <a href="../classes/IEngine.ibase.iDate.html#method_getYear" class="">getYear()</a><br />
+                                                                    <a href="../classes/IEngine.ibase.iDate.html#method_getMonth" class="">getMonth()</a><br />
+                                                                    <a href="../classes/IEngine.ibase.iDate.html#method_getDay" class="">getDay()</a><br />
+                                                                    <a href="../classes/IEngine.ibase.iDate.html#method_dateGreater" class="">dateGreater()</a><br />
+                                                                    <a href="../classes/IEngine.ibase.iDate.html#method_datesEqual" class="">datesEqual()</a><br />
+                                                                    <a href="../classes/IEngine.ibase.iDate.html#method_inDateRange" class="">inDateRange()</a><br />
+                                                                    <a href="../classes/IEngine.ibase.iDate.html#method_todayInDateRange" class="">todayInDateRange()</a><br />
+                                                                    <a href="../classes/IEngine.ibase.iDate.html#method_daysPassed" class="">daysPassed()</a><br />
+                                                                    <a href="../classes/IEngine.ibase.iDate.html#method_yearsMonthsPassed" class="">yearsMonthsPassed()</a><br />
+                                                                    <a href="../classes/IEngine.ibase.iDate.html#method_getDateTime" class="">getDateTime()</a><br />
+                                                            </section>
+                            <section class="span4">
+                                                                    <em>No public properties found</em>
+                                                            </section>
+                            <section class="span4">
+                                                                    <em>No constants found</em>
+                                                            </section>
+                        </section>
+                        <section class="row-fluid protected">
+                            <section class="span4">
+                                                                    <em>No protected methods found</em>
+                                                            </section>
+                            <section class="span4">
+                                                                    <em>No protected properties found</em>
+                                                            </section>
+                            <section class="span4">
+                                <em>N/A</em>
+                            </section>
+                        </section>
+                        <section class="row-fluid private">
+                            <section class="span4">
+                                                                    <em>No private methods found</em>
+                                                            </section>
+                            <section class="span4">
+                                                                    <em>No private properties found</em>
+                                                            </section>
+                            <section class="span4">
+                                <em>N/A</em>
+                            </section>
+                        </section>
+                    </section>
+                </div>
+                <aside class="span4 detailsbar">
+                                        
+                    
+                    <dl>
+                        <dt>File</dt>
+                            <dd><a href="../files/core.IEngine.Classes.iDate.html"><div class="path-wrapper">core\IEngine\Classes\iDate.php</div></a></dd>
+                                                <dt>Package</dt>
+                            <dd><div class="namespace-wrapper">IEngine\ibase</div></dd>
+                                                <dt>Class hierarchy</dt>
+                            <dd class="hierarchy">
+                                                                                                                                                                    <div class="namespace-wrapper">\IEngine\ibase\iDate</div>
+                            </dd>
+
+                        
+                        
+                        
+                        
+                                                                        </dl>
+                    <h2>Tags</h2>
+                    <table class="table table-condensed">
+                                            <tr><td colspan="2"><em>None found</em></td></tr>
+                                        </table>
+                </aside>
+            </div>
+
+                        
+                        
+                                    <a id="methods" name="methods"></a>
+            <div class="row-fluid">
+                <div class="span8 content class"><h2>Methods</h2></div>
+                <aside class="span4 detailsbar"></aside>
+            </div>
+
+                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_getDate" name="method_getDate" class="anchor"></a>
+            <article class="method">
+                <h3 class="public ">getDate()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">getDate(  <span class="argument">$options = array(&#039;date&#039; =&gt; &#039;current&#039;, &#039;numeric&#039; =&gt; true, &#039;format&#039; =&gt; &#039;m-d-y&#039;)</span>) : false|string</pre>
+                <p><em>Return the date.</em></p>
+                
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td></td>
+                                <td>$options </td>
+                                <td></td>
+                            </tr>
+                                            </table>
+                
+                
+                                    <h4>Returns</h4>
+                    false|string
+                                    				
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                            <span class="label label-info">static</span>
+                                                            <dl>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr><td colspan="2"><em>None found</em></td></tr>
+                            </table>
+        </aside>
+    </div>
+
+                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_getYear" name="method_getYear" class="anchor"></a>
+            <article class="method">
+                <h3 class="public ">getYear()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">getYear(  <span class="argument">$date = null</span>) : false|string</pre>
+                <p><em>Get current year or year from a given timestamp/date</em></p>
+                
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td></td>
+                                <td>$date </td>
+                                <td></td>
+                            </tr>
+                                            </table>
+                
+                
+                                    <h4>Returns</h4>
+                    false|string
+                                    				
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                            <span class="label label-info">static</span>
+                                                            <dl>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr><td colspan="2"><em>None found</em></td></tr>
+                            </table>
+        </aside>
+    </div>
+
+                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_getMonth" name="method_getMonth" class="anchor"></a>
+            <article class="method">
+                <h3 class="public ">getMonth()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">getMonth(  <span class="argument">$options = array(&#039;date&#039; =&gt; &#039;current&#039;, &#039;numeric&#039; =&gt; true)</span>) : false|string</pre>
+                <p><em>Get current month or month of date/timestamp provided</em></p>
+                
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td></td>
+                                <td>$options </td>
+                                <td></td>
+                            </tr>
+                                            </table>
+                
+                
+                                    <h4>Returns</h4>
+                    false|string
+                                    				
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                            <span class="label label-info">static</span>
+                                                            <dl>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr><td colspan="2"><em>None found</em></td></tr>
+                            </table>
+        </aside>
+    </div>
+
+                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_getDay" name="method_getDay" class="anchor"></a>
+            <article class="method">
+                <h3 class="public ">getDay()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">getDay(array  <span class="argument">$options = array(&#039;date&#039; =&gt; &#039;current&#039;, &#039;numeric&#039; =&gt; true)</span>) : false|string</pre>
+                <p><em>Get current day or day of time stamp provided</em></p>
+                
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td>array</td>
+                                <td>$options </td>
+                                <td></td>
+                            </tr>
+                                            </table>
+                
+                
+                                    <h4>Returns</h4>
+                    false|string
+                                    				
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                            <span class="label label-info">static</span>
+                                                            <dl>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr><td colspan="2"><em>None found</em></td></tr>
+                            </table>
+        </aside>
+    </div>
+
+                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_dateGreater" name="method_dateGreater" class="anchor"></a>
+            <article class="method">
+                <h3 class="public ">dateGreater()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">dateGreater(\IEngine\ibase\unknown_type  <span class="argument">$date1</span>, \IEngine\ibase\unknown_type  <span class="argument">$date2</span>) : boolean</pre>
+                <p><em>Check if a specific date is greater than another</em></p>
+                
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td>\IEngine\ibase\unknown_type</td>
+                                <td>$date1 </td>
+                                <td></td>
+                            </tr>
+                                                    <tr>
+                                <td>\IEngine\ibase\unknown_type</td>
+                                <td>$date2 </td>
+                                <td></td>
+                            </tr>
+                                            </table>
+                
+                
+                                    <h4>Returns</h4>
+                    boolean
+                                    				
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                            <span class="label label-info">static</span>
+                                                            <dl>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr><td colspan="2"><em>None found</em></td></tr>
+                            </table>
+        </aside>
+    </div>
+
+                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_datesEqual" name="method_datesEqual" class="anchor"></a>
+            <article class="method">
+                <h3 class="public ">datesEqual()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">datesEqual(\IEngine\ibase\unknown_type  <span class="argument">$date1</span>, \IEngine\ibase\unknown_type  <span class="argument">$date2</span>) : boolean</pre>
+                <p><em>Check if two dates are equal</em></p>
+                
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td>\IEngine\ibase\unknown_type</td>
+                                <td>$date1 </td>
+                                <td></td>
+                            </tr>
+                                                    <tr>
+                                <td>\IEngine\ibase\unknown_type</td>
+                                <td>$date2 </td>
+                                <td></td>
+                            </tr>
+                                            </table>
+                
+                
+                                    <h4>Returns</h4>
+                    boolean
+                                    				
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                            <span class="label label-info">static</span>
+                                                            <dl>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr><td colspan="2"><em>None found</em></td></tr>
+                            </table>
+        </aside>
+    </div>
+
+                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_inDateRange" name="method_inDateRange" class="anchor"></a>
+            <article class="method">
+                <h3 class="public ">inDateRange()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">inDateRange(\IEngine\ibase\unknown_type  <span class="argument">$startDate</span>, \IEngine\ibase\unknown_type  <span class="argument">$endDate</span>) : boolean</pre>
+                <p><em>Check if current date is within a range of dates</em></p>
+                
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td>\IEngine\ibase\unknown_type</td>
+                                <td>$startDate </td>
+                                <td></td>
+                            </tr>
+                                                    <tr>
+                                <td>\IEngine\ibase\unknown_type</td>
+                                <td>$endDate </td>
+                                <td></td>
+                            </tr>
+                                            </table>
+                
+                
+                                    <h4>Returns</h4>
+                    boolean
+                                    				
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                            <span class="label label-info">static</span>
+                                                            <dl>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr><td colspan="2"><em>None found</em></td></tr>
+                            </table>
+        </aside>
+    </div>
+
+                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_todayInDateRange" name="method_todayInDateRange" class="anchor"></a>
+            <article class="method">
+                <h3 class="public ">todayInDateRange()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">todayInDateRange(\IEngine\ibase\unknown_type  <span class="argument">$startDate</span>, \IEngine\ibase\unknown_type  <span class="argument">$endDate</span>) : boolean</pre>
+                <p><em>Check if current date in date range</em></p>
+                
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td>\IEngine\ibase\unknown_type</td>
+                                <td>$startDate </td>
+                                <td></td>
+                            </tr>
+                                                    <tr>
+                                <td>\IEngine\ibase\unknown_type</td>
+                                <td>$endDate </td>
+                                <td></td>
+                            </tr>
+                                            </table>
+                
+                
+                                    <h4>Returns</h4>
+                    boolean
+                                    				
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                            <span class="label label-info">static</span>
+                                                            <dl>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr><td colspan="2"><em>None found</em></td></tr>
+                            </table>
+        </aside>
+    </div>
+
+                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_daysPassed" name="method_daysPassed" class="anchor"></a>
+            <article class="method">
+                <h3 class="public ">daysPassed()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">daysPassed(\IEngine\ibase\unknown_type  <span class="argument">$date1</span>, \IEngine\ibase\unknown_type  <span class="argument">$date2</span>) : \IEngine\ibase\number</pre>
+                <p><em>Check days passed between two dates</em></p>
+                
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td>\IEngine\ibase\unknown_type</td>
+                                <td>$date1 </td>
+                                <td></td>
+                            </tr>
+                                                    <tr>
+                                <td>\IEngine\ibase\unknown_type</td>
+                                <td>$date2 </td>
+                                <td></td>
+                            </tr>
+                                            </table>
+                
+                
+                                    <h4>Returns</h4>
+                    \IEngine\ibase\number
+                                    				
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                            <span class="label label-info">static</span>
+                                                            <dl>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr><td colspan="2"><em>None found</em></td></tr>
+                            </table>
+        </aside>
+    </div>
+
+                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_yearsMonthsPassed" name="method_yearsMonthsPassed" class="anchor"></a>
+            <article class="method">
+                <h3 class="public ">yearsMonthsPassed()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">yearsMonthsPassed(\IEngine\ibase\unknown_type  <span class="argument">$date1</span>, \IEngine\ibase\unknown_type  <span class="argument">$date2</span>) : array</pre>
+                <p><em>Return years and months passed between two dates</em></p>
+                
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td>\IEngine\ibase\unknown_type</td>
+                                <td>$date1 </td>
+                                <td></td>
+                            </tr>
+                                                    <tr>
+                                <td>\IEngine\ibase\unknown_type</td>
+                                <td>$date2 </td>
+                                <td></td>
+                            </tr>
+                                            </table>
+                
+                
+                                    <h4>Returns</h4>
+                    array
+                                    				
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                            <span class="label label-info">static</span>
+                                                            <dl>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr><td colspan="2"><em>None found</em></td></tr>
+                            </table>
+        </aside>
+    </div>
+
+                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_getDateTime" name="method_getDateTime" class="anchor"></a>
+            <article class="method">
+                <h3 class="public ">getDateTime()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">getDateTime(null  <span class="argument">$timestamp = null</span>) : false|string</pre>
+                <p><em>Return full date time of current time or given timestamp</em></p>
+                
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td>null</td>
+                                <td>$timestamp </td>
+                                <td></td>
+                            </tr>
+                                            </table>
+                
+                
+                                    <h4>Returns</h4>
+                    false|string
+                                    				
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                            <span class="label label-info">static</span>
+                                                            <dl>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr><td colspan="2"><em>None found</em></td></tr>
+                            </table>
+        </aside>
+    </div>
+
+                                                                    </div>
+    </section>
+
+    <div id="source-view" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="source-view-label" aria-hidden="true">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+            <h3 id="source-view-label">iDate.php</h3>
+        </div>
+        <div class="modal-body">
+            <pre data-src="../files/core\IEngine\Classes\iDate.php.txt" class="language-php line-numbers"></pre>
+        </div>
+    </div>
+
+    <footer class="row-fluid">
+        <section class="span10 offset2">
+            <section class="row-fluid">
+                <section class="span10 offset1">
+                    <section class="row-fluid footer-sections">
+                        <section class="span4">
+                                                        <h1><i class="icon-code"></i></h1>
+                            <div>
+                                <ul>
+                                                                            <li><a href="../namespaces/IEngine.html">\IEngine</a></li>
+                                                                            <li><a href="../namespaces/IRadian.html">\IRadian</a></li>
+                                                                            <li><a href="../namespaces/ITemplate.html">\ITemplate</a></li>
+                                                                    </ul>
+                            </div>
+                        </section>
+                        <section class="span4">
+                                                        <h1><i class="icon-bar-chart"></i></h1>
+                            <div>
+                                <ul>
+                                    <li><a href="../graphs/class.html">Class Hierarchy Diagram</a></li>
+                                </ul>
+                            </div>
+                        </section>
+                        <section class="span4">
+                                                        <h1><i class="icon-pushpin"></i></h1>
+                            <div>
+                                <ul>
+                                    <li><a href="../reports/errors.html">Errors</a></li>
+                                    <li><a href="../reports/markers.html">Markers</a></li>
+                                </ul>
+                            </div>
+                        </section>
+                    </section>
+                </section>
+            </section>
+            <section class="row-fluid">
+                <section class="span10 offset1">
+                    <hr />
+                    Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor </a> and authored
+                    on November 15th, 2017 at 02:12.
+                </section>
+            </section>
+        </section>
+    </footer>
+</div>
+
+</body>
+</html>
