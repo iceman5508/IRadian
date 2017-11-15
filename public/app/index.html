@@ -9,20 +9,33 @@
     <meta name="author" content="">
 
     <title><?=iConfig::$project['title']?></title>
+    <link href="<?=iConfig::$jquery['css']?>"  rel="stylesheet">
+    <link href="<?=iConfig::$bootstrap['css']?>" rel="stylesheet">
 
-
-	  <link href="<?=iConfig::$jquery['css']?>"  rel="stylesheet">
-      <link href="<?=iConfig::$bootstrap['css']?>" rel="stylesheet">
+      <style>
+          body {
+              padding-top: 54px;
+          }
+          @media (min-width: 992px) {
+              body {
+                  padding-top: 56px;
+              }
+          }
+      </style>
 
   </head>
 
   <body>
 
+  {#header}
+
+
+  {#content}
 
 
 
-	<script src="<?=iConfig::$jquery['main']?>"></script>
-	<script src="<?=iConfig::$jquery['ui']?>"></script>
-    <script src="<?=iConfig::$bootstrap['main']?>"></script>
+  <script src="<?=iConfig::$jquery['main']?>"></script>
+  <script src="<?=iConfig::$jquery['ui']?>"></script>
+  <script src="<?=iConfig::$bootstrap['main']?>"></script>
   </body>
 </html>
