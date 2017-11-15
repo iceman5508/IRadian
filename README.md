@@ -4,6 +4,8 @@ pure php framework
 Note that in the docs file
 welcomeComponent can be ignored as it is an example file
 
+When moving to production make sure to <b>DELETE DOCS FOLDER</b>
+
 
 <h2><b>Install Instructions</b></h2>
 1) Clone the repo or download the zip file<br/>
