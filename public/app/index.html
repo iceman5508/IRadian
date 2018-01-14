@@ -8,9 +8,8 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title><?=iConfig::$project['title']?></title>
-    <link href="<?=iConfig::$jquery['css']?>"  rel="stylesheet">
-    <link href="<?=iConfig::$bootstrap['css']?>" rel="stylesheet">
+    <title>#config[title]</title>
+    #ui[jquery_css, bootstrap_css]
 
       <style>
           body {
@@ -34,8 +33,6 @@
 
 
 
-  <script src="<?=iConfig::$jquery['main']?>"></script>
-  <script src="<?=iConfig::$jquery['ui']?>"></script>
-  <script src="<?=iConfig::$bootstrap['main']?>"></script>
+ #ui[jquery_js, jquery_ui, bootstrap_js]
   </body>
 </html>

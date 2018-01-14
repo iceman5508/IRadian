@@ -7,12 +7,13 @@
  */
 
 namespace ITemplate\iExtends;
+use IRadian\ibase\iRParser;
 use ITemplate\iExtends\iView;
 use ITemplate\iExtends\iComponent;
 use ITemplate\iExtends\iRouter;
 
 
-abstract class viewManager
+ class viewManager
 {
 
     private $content;
@@ -24,9 +25,14 @@ abstract class viewManager
      * viewManager constructor.
      * @param $mainFile
      */
-    function __construct($mainFile)
+    function __construct($mainFile, $setContent = false)
     {
-        $this->content = file_get_contents('app/'.$mainFile);
+        if(!$setContent){
+            $this->content = file_get_contents('app/'.$mainFile);
+        }else{
+            $this->content = $mainFile;
+        }
+
         foreach (iComponent::getExports() as $tags => $value){
             if (strpos($this->content, $tags) !== false) {
                 $this->content = str_replace("{#" . $tags . "}", $value, $this->content);

@@ -1,6 +1,12 @@
 <?php
-
 require_once '../bootstrap.php';
+/**
+ * Created by PhpStorm.
+ * User: iceman5508
+ * Date: 1/13/2018
+ * Time: 1:41 PM
+ * The entry point for the application. Where components and the html page can be set.
+ */
 
 //load in classes being used
 use ITemplate\iExtends\iRouter;
@@ -32,15 +38,25 @@ if(!$strapView) {
 
 //render the component
     $view->render();
-}else{
-
-    class myViewManager extends \ITemplate\iExtends\viewManager
-    {}
+}else {
 
 
-    loadComponent('layout/header/header', false);
-    loadComponent('layout/content/content', false);
+    class iApp extends \IRadian\ibase\iApplication
+    {
+        public function main()
+        {
+            $this->html = 'index';
 
-    $vm = new myViewManager('index.html');
-    $vm->render();
+            $this->components = [
+                'layout/header/header'
+                , 'layout/content/content'
+            ];
+
+        }
+
+
+    }
+
+    $Application = new iApp();
+
 }

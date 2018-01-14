@@ -27,17 +27,7 @@ class iConfig
         ,'database' => 'database'
     ];
 
-    public static $jquery = [
-        'main' => PROJECT.'/vendors/jquery/jquery.js'
-        ,'ui' =>   PROJECT.'/vendors/jquery/jquery-ui.min.js'
-        ,'css' =>   PROJECT.'/vendors/jquery/jquery-ui.min.css'
-    ];
 
-    public static $bootstrap = [
-        'main' =>  PROJECT.'/vendors/bootstrap/bootstrap.bundle.min.js'
-        ,'css' =>  PROJECT.'/vendors/bootstrap/bootstrap.css'
-
-    ];
 }
 
 

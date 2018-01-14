@@ -9,15 +9,14 @@
 	  <link rel="shortcut icon" href="{icon}">
 
     <title>{title}</title>
+	  #ui[jquery_css, bootstrap_css]
 
-    <!-- Bootstrap core CSS -->
-    <link href="<?=iConfig::$bootstrap['css']?>" rel="stylesheet">
 
     <!-- Custom styles for this template -->
     <link href="public/assets/css/main.css" rel="stylesheet">
 
 	  <!--jquery js-->
-    <script src="<?=iConfig::$jquery['main']?>"></script>
+
 
 
 
@@ -58,6 +57,6 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="<?=iConfig::$bootstrap['main']?>"></script>
+	#ui[jquery_js, jquery_ui, bootstrap_js]
   </body>
 </html>
