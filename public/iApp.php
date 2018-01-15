@@ -21,10 +21,7 @@ if(iRouter::routeLimit(2)){
     {
         public function main()
         {
-
-
-
-            $strapView = false;
+            $strapView = true;
             if($strapView){
                 $this->html = 'index';
             }else{
@@ -32,13 +29,19 @@ if(iRouter::routeLimit(2)){
             }
 
             $this->components = [
-                'layout/header/header'
+                'header' => [
+                    'component' => 'header'
+                    ,'location' =>  'layout/header/header'
+                    ,'template' => 'layout/header/header.html'
+                    ,'onCondition' => [$strapView , true ]
+                ]
+
                 ,
                 'content' =>[
                    'component' =>'content'
                     ,'location' => 'layout/content/content'
                     ,'template' =>'layout/content/content.html'
-                    ,'onCondition' => [$strapView , true]
+                    ,'onCondition' => [$strapView , true ]
                 ]
                 ,  'welcome' =>[
                     'component' =>'welcomeComponent'
