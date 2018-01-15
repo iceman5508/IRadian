@@ -164,6 +164,10 @@ abstract class iApplication
     }
 
 
+    /**
+     * Handles Complex component loading
+     * @param $component
+     */
     private function handleComponent($component){
         $key = key($this->components);
         if(array_key_exists ('onCondition' , $component )){
