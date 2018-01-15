@@ -11,6 +11,8 @@
 namespace IRadian\ibase;
 
 
+use ITemplate\iExtends\iComponent;
+use ITemplate\iExtends\iTags;
 use ITemplate\iExtends\viewManager;
 
 abstract class iApplication
@@ -58,7 +60,13 @@ abstract class iApplication
     {
         $this->main();
         foreach ($this->components as $component){
-            loadComponent($component, false);
+            if(is_array($component)){
+                $this->handleComponent($component);
+            }else{
+                loadComponent($component, false);
+            }
+            next($this->components);
+
         }
 
         $this->content = file_get_contents('app/'.$this->html.'.html');
@@ -153,6 +161,41 @@ abstract class iApplication
             $content = str_replace("$neddle", $replacement, $heystack);
             return $content;
         }
+    }
+
+
+    private function handleComponent($component){
+        $key = key($this->components);
+        if(array_key_exists ('onCondition' , $component )){
+            $condition = $component['onCondition'];
+            if($condition[0]===$condition[1]){
+
+                if(array_key_exists ('component' , $component )
+                    && array_key_exists ('location' , $component )
+                    && array_key_exists ('template' , $component )){
+
+                    loadComponent($component['location'],false);
+                    $class = new $component['component']($component['template']);
+                    iTags::setTag($key, $class);
+                    iComponent::export($key);
+
+                }
+            }
+        }else{
+            if(array_key_exists ('component' , $component )
+                && array_key_exists ('location' , $component )
+                && array_key_exists ('template' , $component )){
+
+                loadComponent($component['location'],false);
+                $class = new $component['component']($component['template']);
+                iTags::setTag($key, $class);
+                iComponent::export($key);
+
+
+            }
+
+        }
+
     }
 
 

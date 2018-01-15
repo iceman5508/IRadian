@@ -17,40 +17,39 @@ if(iRouter::routeLimit(2)){
     iredirect_to(iWeb::projectUrl());
 }
 
-//param for which view to show, turn it to true then reload page in browser
-$strapView = false;
-
-if(!$strapView) {
-//include welcome component
-    loadComponent('welcome/welcomeComponent', false);
-
-//load in the template
-    $welcome = new welcomeComponent('welcome/index.html');
-
-//load in the template and set its tag
-    \ITemplate\iExtends\iTags::setTag('welcome', $welcome);
-
-//load in the template viewer
-    $view = new \ITemplate\iExtends\iView();
-
-//load the tag into the viewer
-    $view->setTag('welcome');
-
-//render the component
-    $view->render();
-}else {
-
-
     class iApp extends \IRadian\ibase\iApplication
     {
         public function main()
         {
-            $this->html = 'index';
+
+
+
+            $strapView = false;
+            if($strapView){
+                $this->html = 'index';
+            }else{
+                $this->html = 'index2';
+            }
 
             $this->components = [
                 'layout/header/header'
-                , 'layout/content/content'
+                ,
+                'content' =>[
+                   'component' =>'content'
+                    ,'location' => 'layout/content/content'
+                    ,'template' =>'layout/content/content.html'
+                    ,'onCondition' => [$strapView , true]
+                ]
+                ,  'welcome' =>[
+                    'component' =>'welcomeComponent'
+                    ,'location' => 'welcome/welcomeComponent'
+                    ,'template' =>'welcome/welcome.html'
+                    ,'onCondition' => [$strapView , false ]
+
+                ]
             ];
+
+
 
         }
 
@@ -59,4 +58,3 @@ if(!$strapView) {
 
     $Application = new iApp();
 
-}

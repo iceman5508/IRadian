@@ -20,7 +20,3 @@ class content extends \ITemplate\iExtends\iComponent
     }
 }
 
-
-$content = new content('layout/content/content.html');
-\ITemplate\iExtends\iTags::setTag('content',$content);
-\ITemplate\iExtends\iComponent::export('content');
