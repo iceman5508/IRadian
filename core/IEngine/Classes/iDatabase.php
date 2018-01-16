@@ -17,6 +17,10 @@ class iDatabase
     private static $instance = NULL;
     private $pdo, $error, $query, $results, $count;
 
+    private function __clone(){}
+
+    private function __wakeup(){}
+
     private function __construct(){
         try {
             $this->pdo = new PDO('mysql:host='.self::$config['host'].';

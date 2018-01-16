@@ -42,6 +42,7 @@ abstract class iApplication
             ,'css' => PROJECT.'/core/iModuels/iModal.css'
             ]
         ,'iVariable' => PROJECT.'/core/iModuels/iVariable.js'
+
     ];
 
     function __destruct()
