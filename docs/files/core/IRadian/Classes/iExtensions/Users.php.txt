@@ -22,8 +22,9 @@ class Users extends iModel
      * Users constructor.
      * @param iTables $table - The table this user model will use
      */
-    public function __construct(iTables $table){
+    public function __construct(iTables $table, $request){
         $this->table = $table;
+         parent::__construct($request);
     }
 
     public  function __destruct(){

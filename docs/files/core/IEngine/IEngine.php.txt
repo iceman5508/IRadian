@@ -10,6 +10,10 @@
 class IEngine{
     private static $instance = NULL;
 
+    private function __clone(){}
+
+    private function __wakeup(){}
+
     public static function dirHome()
     {
         //return 	getcwd().'/';

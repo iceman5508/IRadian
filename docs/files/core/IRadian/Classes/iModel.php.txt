@@ -9,8 +9,23 @@
 namespace IRadian\ibase;
 
 
-abstract class iModel
+use IEngine\ibase\iAPi;
+
+/**
+ * Class iModel
+ * Class for handling the model aspect of the application.
+ *
+ * Note ALL MODELS MUST RUN THE PARENT CONSTRUCTOR
+ * @package IRadian\ibase
+ */
+
+abstract class iModel extends iAPi
 {
+
+    public function __construct($request)
+    {
+        parent::__construct($request);
+    }
 
     public abstract function __destruct();
 }

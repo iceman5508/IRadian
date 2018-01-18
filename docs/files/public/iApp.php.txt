@@ -1,0 +1,36 @@
+<?php
+require_once '../bootstrap.php';
+/**
+ * Created by PhpStorm.
+ * User: iceman5508
+ * Date: 1/13/2018
+ * Time: 1:41 PM
+ * The entry point for the application. Where components and the html page can be set.
+ */
+
+//load in classes being used
+use IRadian\ibase\iAppSecurity;
+use IEngine\ibase\iWeb;
+
+/*protect against illegal navigation*/
+if(iAppSecurity::routeLimit(2)){
+   iredirect_to(iWeb::projectUrl());
+}
+
+    class iApp extends \IRadian\ibase\iApplication
+    {
+        public function main()
+        {
+
+            $this->components = [ ];
+
+
+        }
+
+        public function router(){}
+
+
+    }
+
+$Application = new iApp();
+

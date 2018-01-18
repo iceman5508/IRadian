@@ -26,7 +26,9 @@ final class iTags
                 $content = str_replace("{" . $var . "}", $value, $content);
             }
         }
-        self::$tags[$tag] = $content;
+        $parser = new iParser($content, $component);
+
+        self::$tags[$tag] = $parser->getContent();
     }
 
     /**

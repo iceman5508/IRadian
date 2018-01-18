@@ -113,8 +113,7 @@ class iRouter
                 $component = self::$route_list[$data];
                 self::$component = $component[0];
                 self::$route = $component[1];
-                if(file_exists('app/'.$component[1]))
-                {
+                if(file_exists('app/'.$component[1])) {
                     require_once 'app/'.$component[1];
                 }
 
