@@ -18,6 +18,7 @@ class iConfig
     public static $project = [
         'title' => 'Project Title'
         ,'author' => 'Author Name'
+        ,'route_var' => 'route'
     ];
 
     public static $database = [

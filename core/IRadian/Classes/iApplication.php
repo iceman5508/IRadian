@@ -17,7 +17,7 @@ use ITemplate\iExtends\viewManager;
 
 abstract class iApplication
 {
-    protected $components=array(), $html;
+    protected $components=array(), $html, $router;
 
     private $viewManager, $parser, $content;
 
@@ -55,30 +55,15 @@ abstract class iApplication
         unset($this->viewManager);
         unset($this->parser);
         unset($this->content);
+        unset($this->router);
     }
 
-    final function __construct()
-    {
-        $this->main();
-        foreach ($this->components as $component){
-            if(is_array($component)){
-                $this->handleComponent($component);
-            }else{
-                loadComponent($component, false);
-            }
-            next($this->components);
+    final function __construct(){
+        $this->router = new iAppRoute(\iConfig::$project['route_var']);
+        $this->initialSteps();
 
-        }
 
-        $this->content = file_get_contents('app/'.$this->html.'.html');
-        $this->parser = new iRParser($this->content);
-        $parsed = $this->parser->getParsed();
-        $this->handleUI($parsed['ui']);
-        $this->handleModuel($parsed['moduel']);
-        $this->handleConfig($parsed['config']);
-        $this->viewManager =  new viewManager($this->content,true);
-        $this->viewManager->render();
-        $this->__destruct();
+        $this->finalSteps();
     }
 
     /**
@@ -179,10 +164,20 @@ abstract class iApplication
                     && array_key_exists ('location' , $component )
                     && array_key_exists ('template' , $component )){
 
-                    loadComponent($component['location'],false);
-                    $class = new $component['component']($component['template']);
-                    iTags::setTag($key, $class);
-                    iComponent::export($key);
+                    if(array_key_exists ('route' , $component )) {
+                       if(in_array($this->router->getRoute(),$component['route'])){
+                            loadComponent($component['location'],false);
+                           $class = new $component['component']($component['template']);
+                           iTags::setTag($key, $class);
+                           iComponent::export($key);
+                        }
+
+                    }else{
+                        loadComponent($component['location'],false);
+                        $class = new $component['component']($component['template']);
+                        iTags::setTag($key, $class);
+                        iComponent::export($key);
+                    }
 
                 }
             }
@@ -190,11 +185,21 @@ abstract class iApplication
             if(array_key_exists ('component' , $component )
                 && array_key_exists ('location' , $component )
                 && array_key_exists ('template' , $component )){
+                if(array_key_exists ('route' , $component )) {
+                    if(in_array($this->router->getRoute(),$component['route'])){
+                        loadComponent($component['location'],false);
+                        $class = new $component['component']($component['template']);
+                        iTags::setTag($key, $class);
+                        iComponent::export($key);
+                    }
 
-                loadComponent($component['location'],false);
-                $class = new $component['component']($component['template']);
-                iTags::setTag($key, $class);
-                iComponent::export($key);
+                }else{
+                    loadComponent($component['location'],false);
+                    $class = new $component['component']($component['template']);
+                    iTags::setTag($key, $class);
+                    iComponent::export($key);
+                }
+
 
 
             }
@@ -204,7 +209,37 @@ abstract class iApplication
     }
 
 
+    private function initialSteps(){
+        $this->router();
+        $this->main();
+        foreach ($this->components as $component){
+            if(is_array($component)){
+                $this->handleComponent($component);
+
+            }else{
+                loadComponent($component, false);
+            }
+            next($this->components);
+
+        }
+    }
+
+    private function finalSteps(){
+        $this->content = file_get_contents('app/'.$this->html.'.html');
+        $this->parser = new iRParser($this->content);
+        $parsed = $this->parser->getParsed();
+        $this->handleUI($parsed['ui']);
+        $this->handleModuel($parsed['moduel']);
+        $this->handleConfig($parsed['config']);
+        $this->viewManager =  new viewManager($this->content,true);
+        $this->viewManager->render();
+        $this->__destruct();
+    }
+
+
     protected abstract function main();
+
+    protected abstract function router();
 
 
 

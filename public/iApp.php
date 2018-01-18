@@ -9,19 +9,19 @@ require_once '../bootstrap.php';
  */
 
 //load in classes being used
-use ITemplate\iExtends\iRouter;
+use IRadian\ibase\iAppSecurity;
 use IEngine\ibase\iWeb;
 
-//protect against illegal navigation
-if(iRouter::routeLimit(2)){
-    iredirect_to(iWeb::projectUrl());
+/*protect against illegal navigation*/
+if(iAppSecurity::routeLimit(2)){
+   iredirect_to(iWeb::projectUrl());
 }
 
     class iApp extends \IRadian\ibase\iApplication
     {
         public function main()
         {
-            $strapView = true;
+            $strapView = false;
             if($strapView){
                 $this->html = 'index';
             }else{
@@ -42,6 +42,7 @@ if(iRouter::routeLimit(2)){
                     ,'location' => 'layout/content/content'
                     ,'template' =>'layout/content/content.html'
                     ,'onCondition' => [$strapView , true ]
+                    ,'route' => ['/','/home','/404']
                 ]
                 ,  'welcome' =>[
                     'component' =>'welcomeComponent'
@@ -53,11 +54,25 @@ if(iRouter::routeLimit(2)){
             ];
 
 
+        }
+
+        public function router(){
+            $this->router->register('/');
+            $this->router->register('/home');
+            $this->router->scanner();
 
         }
 
 
     }
 
-    $Application = new iApp();
+
+
+
+
+
+
+
+$Application = new iApp();
+
 
