@@ -211,6 +211,7 @@ abstract class iApplication
 
     private function initialSteps(){
         $this->router();
+        $this->router->scanner();
         $this->main();
         foreach ($this->components as $component){
             if(is_array($component)){
