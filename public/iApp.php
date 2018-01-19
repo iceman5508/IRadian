@@ -7,16 +7,6 @@ require_once '../bootstrap.php';
  * Time: 1:41 PM
  * The entry point for the application. Where components and the html page can be set.
  */
-
-//load in classes being used
-use IRadian\ibase\iAppSecurity;
-use IEngine\ibase\iWeb;
-
-/*protect against illegal navigation*/
-if(iAppSecurity::routeLimit(2)){
-   iredirect_to(iWeb::projectUrl());
-}
-
     class iApp extends \IRadian\ibase\iApplication
     {
         public function main()
@@ -59,7 +49,6 @@ if(iAppSecurity::routeLimit(2)){
         public function router(){
             $this->router->register('/');
             $this->router->register('/home');
-            $this->router->scanner();
 
         }
 
