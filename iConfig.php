@@ -28,6 +28,10 @@ class iConfig
         ,'database' => 'database'
     ];
 
+    public static $security = [
+       'route_limit' => 2
+    ];
+
 
 }
 

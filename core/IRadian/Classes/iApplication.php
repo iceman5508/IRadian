@@ -11,6 +11,7 @@
 namespace IRadian\ibase;
 
 
+use IEngine\ibase\iWeb;
 use ITemplate\iExtends\iComponent;
 use ITemplate\iExtends\iTags;
 use ITemplate\iExtends\viewManager;
@@ -59,6 +60,13 @@ abstract class iApplication
     }
 
     final function __construct(){
+        if(\iConfig::$security['route_limit'] !== NULL && is_numeric(\iConfig::$security['route_limit'] )){
+            if(iAppSecurity::routeLimit(\iConfig::$security['route_limit'] )){
+                iredirect_to(iWeb::projectUrl());
+                exit();
+            }
+        }
+
         $this->router = new iAppRoute(\iConfig::$project['route_var']);
         $this->initialSteps();
 
@@ -168,6 +176,9 @@ abstract class iApplication
                        if(in_array($this->router->getRoute(),$component['route'])){
                             loadComponent($component['location'],false);
                            $class = new $component['component']($component['template']);
+                           if(array_key_exists ('tag' , $component )){
+                                $key = $component['tag'];
+                           }
                            iTags::setTag($key, $class);
                            iComponent::export($key);
                         }
@@ -175,6 +186,9 @@ abstract class iApplication
                     }else{
                         loadComponent($component['location'],false);
                         $class = new $component['component']($component['template']);
+                        if(array_key_exists ('tag' , $component )){
+                            $key = $component['tag'];
+                        }
                         iTags::setTag($key, $class);
                         iComponent::export($key);
                     }
@@ -189,6 +203,9 @@ abstract class iApplication
                     if(in_array($this->router->getRoute(),$component['route'])){
                         loadComponent($component['location'],false);
                         $class = new $component['component']($component['template']);
+                        if(array_key_exists ('tag' , $component )){
+                            $key = $component['tag'];
+                        }
                         iTags::setTag($key, $class);
                         iComponent::export($key);
                     }
@@ -196,6 +213,9 @@ abstract class iApplication
                 }else{
                     loadComponent($component['location'],false);
                     $class = new $component['component']($component['template']);
+                    if(array_key_exists ('tag' , $component )){
+                        $key = $component['tag'];
+                    }
                     iTags::setTag($key, $class);
                     iComponent::export($key);
                 }
