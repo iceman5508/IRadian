@@ -59,7 +59,7 @@ class iloops
         $loopInner = get_data_between_brace($loop);
         $loopstr = '';
         foreach( $var as ${$as}){
-            $loopstr .=  $this->varEval(${$as}, $loopInner);
+           $loopstr .=  $this->varEval(${$as}, $loopInner);
         };
         return $loopstr;
 
@@ -99,13 +99,21 @@ class iloops
         for($i=0; $i<count($vars); $i++){
 
             if(is_array($replacement)){
-                $breakSearch = explode('->',$vars[$i]);
-                if(isset($breakSearch[1])){
-                    $replacement2 = $replacement[$breakSearch[1]];
-                }else{
-                    $replacement2 = $replacement[$breakSearch[0]];
-                }
 
+                $search = $this->parseSBrace($vars[$i]);
+                $breakSearch = explode('->',$vars[$i]);
+
+                if(strlen($search[0])<1 || count($breakSearch)>1){
+
+                    if(isset($breakSearch[1])){
+                        $replacement2 = $replacement[$breakSearch[1]];
+                    }else{
+                        $replacement2 = $replacement[$breakSearch[0]];
+                    }
+
+                }else{
+                    $replacement2 = $replacement[$search[0]];
+                }
                 $string = str_replace(trim("#$vars[$i]#"), $replacement2, $string);
             }else{
 
@@ -122,6 +130,17 @@ class iloops
     private function parseHash($content){
         $pattern = "/#(.*?)#/s";
         preg_match_all($pattern, $content, $matches);
+        return $matches[1];
+    }
+
+    /**
+     * Parse the data between a square brace
+     * @param $data
+     * @return mixed
+     */
+    private function parseSBrace($data){
+        $pattern = "/\[(.*?)\]/";
+        preg_match_all($pattern, $data, $matches);
         return $matches[1];
     }
 
