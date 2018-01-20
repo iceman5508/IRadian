@@ -103,7 +103,7 @@ class iloops
                 $search = $this->parseSBrace($vars[$i]);
                 $breakSearch = explode('->',$vars[$i]);
 
-                if(strlen($search[0])<1 || count($breakSearch)>1){
+                if(isset($search[0]) && strlen($search[0])<1 || count($breakSearch)>1){
 
                     if(isset($breakSearch[1])){
                         $replacement2 = $replacement[$breakSearch[1]];
