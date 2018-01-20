@@ -23,7 +23,9 @@ final class iTags
         $content = file_get_contents($component->getPage());
         foreach ($component->getAllVars() as $var => $value){
             if (strpos($content, $var) !== false) {
-                $content = str_replace("{" . $var . "}", $value, $content);
+                if(!is_array($value)){
+                     $content = str_replace("{" . $var . "}", $value, $content);
+                }
             }
         }
         $parser = new iParser($content, $component);

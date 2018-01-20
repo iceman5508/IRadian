@@ -63,5 +63,3 @@ require_once '../bootstrap.php';
 
 
 $Application = new iApp();
-
-
