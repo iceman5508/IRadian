@@ -74,11 +74,12 @@ abstract class iAPi
 
         $this->args = explode('/', rtrim($request, '/'));
         $this->properties = $this->args;
+
         unset($this->properties[0]);
         $this->properties = array_values($this->properties);
 
-
         $this->endpoint = array_shift($this->args);
+
 
         if (array_key_exists(0, $this->args) && !is_numeric($this->args[0])) {
             $this->verb = array_shift($this->args);

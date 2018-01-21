@@ -26,6 +26,8 @@ class iAppRoute
         if(strlen(trim(rtrim($_REQUEST[$this->routeParam])))>0){
             $this->resource = explode("/", rtrim($_REQUEST[$this->routeParam]));
             $route = '/'.$this->resource[0];
+            unset($this->resource[0]);
+           $this->resource = implode('/',array_values($this->resource));
             if(in_array($route, $this->routeList)){
                 $this->route = $route;
             }else{
@@ -41,7 +43,14 @@ class iAppRoute
      * @param $route
      */
     public function register($route){
-        $this->routeList[] = $route;
+        if(is_array($route)){
+            foreach ($route as $r){
+                $this->routeList[] = $r;
+            }
+        }else{
+            $this->routeList[] = $route;
+        }
+
     }
 
 

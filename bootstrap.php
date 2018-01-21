@@ -19,6 +19,9 @@ require_once 'core/ITemplate/ITemplate.php';
 //include IRadian library
 require_once 'core/IRadian/IRadian.php';
 
+//load in API classes
+require_once 'core/API/api.php';
+
 //include config file
 require_once 'iConfig.php';
 
@@ -52,6 +55,8 @@ function loadFunctions(){
             require_once CORE.'/IRadian/Classes/'.basename($classname).'.php';
         }else if(file_exists(CORE.'/IRadian/Classes/iExtensions/'.basename($classname).'.php')){
             require_once CORE.'/IRadian/Classes/iExtensions/'.basename($classname).'.php';
+        }else if(file_exists( BASEPATH.'\core/API/Classes/'.$classname.'.php')){
+            require_once BASEPATH.'\core/API/Classes/'.$classname.'.php';
         }
 
 
