@@ -14,7 +14,7 @@ if(isset($_REQUEST[$apiVar]))
 {
 
     $api->pullRequests();
-    var_dump($api->getFullResource());
+
 
     switch($api->getApi()) {
         case '/test':
