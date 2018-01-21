@@ -40,6 +40,7 @@ class Users extends iModel
      */
      public function create($fields=array()){
         $this->data =  $this->table->insert($fields);
+         return $this->getData();
      }
 
     /**
@@ -48,6 +49,7 @@ class Users extends iModel
      */
      public function getUser($where=array()){
         $this->data = $this->table->get($where);
+         return $this->getData();
      }
 
     /**
@@ -56,6 +58,7 @@ class Users extends iModel
      */
      public function delete($where=array()){
          $this->data = $this->table->delete($where);
+         return $this->getData();
      }
 
 
@@ -67,6 +70,7 @@ class Users extends iModel
      */
      public function update($whereField,$whereEqual, $fieldData = array()){
          $this->data = $this->table->update($whereField, $whereEqual, $fieldData);
+         return $this->getData();
      }
 
 
