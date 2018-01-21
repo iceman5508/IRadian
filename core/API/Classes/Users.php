@@ -7,11 +7,11 @@
  * Demo user model
  */
 
-namespace IRadian\iExtensions;
 
 
 use IRadian\ibase\iModel;
 use IRadian\ibase\iTables;
+
 
 class Users extends iModel
 {
