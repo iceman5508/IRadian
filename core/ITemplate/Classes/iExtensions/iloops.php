@@ -103,16 +103,24 @@ class iloops
                 $search = $this->parseSBrace($vars[$i]);
                 $breakSearch = explode('->',$vars[$i]);
 
-                if(isset($search[0]) && strlen($search[0])<1 || count($breakSearch)>1){
+                if((isset($search[0]) && strlen($search[0])<1) || count($breakSearch)>0){
 
                     if(isset($breakSearch[1])){
-                        $replacement2 = $replacement[$breakSearch[1]];
+                        if(isset($replacement[$breakSearch[1]])) {
+                            $replacement2 = $replacement[$breakSearch[1]];
+                        }
                     }else{
+
+                        if(isset($replacement[$breakSearch[0]])){
                         $replacement2 = $replacement[$breakSearch[0]];
+                        }
                     }
 
                 }else{
-                    $replacement2 = $replacement[$search[0]];
+
+                    if(isset($replacement[$search[0]])) {
+                        $replacement2 = $replacement[$search[0]];
+                    }
                 }
                 $string = str_replace(trim("#$vars[$i]#"), $replacement2, $string);
             }else{
