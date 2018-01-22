@@ -31,8 +31,20 @@ class iRequest
      * @param $url: The HTTP url to check
      * @return string The data that will be returned.
      */
-    public function get($url)
+    public function get($url, $data='')
     {
+        $url=$url.'?';
+        $i=0;
+        foreach($data as $key => $value)
+        {
+            if($i==count($data)-1){
+                $url .= "{$key}={$value}";
+            }else{
+                $url .= "{$key}={$value}&";
+            }
+           $i++;
+        }
+
         $handle = fopen($url, "rb");
         $this->response = '';
         while (!feof($handle)) {

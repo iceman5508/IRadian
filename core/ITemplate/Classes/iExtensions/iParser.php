@@ -8,19 +8,20 @@
 
 namespace ITemplate\iExtends;
 
-
 class iParser
 {
     private $content;
     private $functions;
     private $loops;
     private $component;
+    private $ifs;
 
     function __construct($content,$component){
         $this->content = $content;
         $this->component = $component;
         $this->parseFunctions();
         $this->parseLoops();
+        $this->parseIfs();
 
 
 
@@ -31,6 +32,7 @@ class iParser
         unset($this->content);
         unset($this->functions);
         unset($this->loops);
+        unset($this->ifs);
     }
 
     /**
@@ -47,7 +49,7 @@ class iParser
 
 
     /**
-     * Parse a the function associated with the iRFun tag
+     * Parse  the function associated with the iRFun tag
      */
     private function parseFunctions(){
         $this->functions = new iFunctions($this->parseTag("irFun"), $this->component);
@@ -59,7 +61,7 @@ class iParser
     }
 
     /**
-     * Parse a the loops associated with the iRFun tag
+     * Parse the loops associated with the irLoop tag
      */
     private function parseLoops(){
         $this->loops = new iloops($this->parseTag("irLoop"), $this->component);
@@ -68,9 +70,24 @@ class iParser
                 $this->content = str_replace(trim("<irLoop>" . $loop . "</irLoop>"), $value, trim($this->content));
             }
         }
-
-
     }
+
+    /**
+     * Parse the if associated with the irIf tag
+     */
+    private function parseIfs(){
+        $pattern = "/#irIf(.*?)#/s";
+        preg_match_all($pattern, $this->content, $matches);
+        $matches = array_merge($matches[1], $this->parseTag('irIf'));
+        $this->ifs = new iiF($matches, $this->component);
+        foreach ($this->ifs->getIfs() as $if => $value){
+            if (strpos($this->content, $if) !== false) {
+                $this->content = str_replace(trim("#irIf" . $if . "#"), $value, trim($this->content));
+                $this->content = str_replace(trim("<irIf>" . $if . "</irIf>"), $value, trim($this->content));
+            }
+        }
+    }
+
 
 
 

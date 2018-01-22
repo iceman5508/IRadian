@@ -33,5 +33,4 @@ final class iComponents
     public function getVars(){
         return $this->__vars;
     }
-
 }

@@ -9,10 +9,12 @@
 namespace ITemplate\iExtends;
 
 
+
 abstract class iComponent
 {
     private $component;
     private $page;
+    public $currentRoute;
     private static $exports = array();
 
 
@@ -30,9 +32,10 @@ abstract class iComponent
      * iComponent constructor.
      * @param $page - The template page the component is for
      */
-    public function __construct($page){
+    public function __construct($page, $route='/'){
         $this->component = new iComponents();
         $this->page = 'app/'.$page;
+        $this->currentRoute=$route;
         $this->attributes();
     }
 
@@ -80,6 +83,7 @@ abstract class iComponent
         $this->component->__destruct();
         unset($this->component);
         unset($this->page);
+        unset($this->currentRoute);
     }
 
     public final function __set($name, $value){
@@ -93,6 +97,7 @@ abstract class iComponent
     public final function getView(){
         return $this->view;
     }
+
 
 
 

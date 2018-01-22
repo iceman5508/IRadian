@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b7fce952-9c7b-4982-8c2b-317c756ae89b" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="b7fce952-9c7b-4982-8c2b-317c756ae89b" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -37,6 +35,7 @@
       <find>app</find>
       <find>__con</find>
       <find>route</find>
+      <find>if(iss</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -231,11 +230,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\IRadian\core\ITemplate\Classes\iExtensions" />
       <recent name="C:\wamp64\www\IRadian\core\IRadian\Classes" />
       <recent name="C:\wamp64\www\IRadian\core\API\Classes" />
       <recent name="C:\wamp64\www\IRadian\core\IEngine" />
       <recent name="C:\wamp64\www\IRadian" />
-      <recent name="C:\wamp64\www\IRadian\api" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\wamp64\www\IRadian\core\IRadian\Classes" />
@@ -364,12 +363,12 @@
       <workItem from="1516511138879" duration="85000" />
       <workItem from="1516511245582" duration="33000" />
       <workItem from="1516514645016" duration="1339000" />
-      <workItem from="1516547984444" duration="48000" />
+      <workItem from="1516547984444" duration="107000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="126461000" />
+    <option name="totallyTimeSpent" value="126520000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -664,13 +663,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/core/IRadian/Classes/iExtensions/Users.php" />
-    <entry file="file://$PROJECT_DIR$/core/ITemplate/Classes/iExtensions/iloops.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1700">
-          <caret line="105" column="60" lean-forward="false" selection-start-line="105" selection-start-column="60" selection-end-line="105" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/core/IRadian/Classes/iModel.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="93">
@@ -751,6 +743,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="313">
           <caret line="41" column="33" lean-forward="false" selection-start-line="41" selection-start-column="33" selection-end-line="41" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/ITemplate/Classes/iExtensions/iloops.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="106">
+          <caret line="107" column="26" lean-forward="false" selection-start-line="107" selection-start-column="20" selection-end-line="107" selection-end-column="26" />
           <folding />
         </state>
       </provider>

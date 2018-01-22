@@ -8,6 +8,7 @@
  */
 class test extends \IRadian\ibase\iModel
 {
+    private $users = array(array('name' => 'Call it what you want', 'video' => 'uEj8LqPi-nc'), array('name' => 'Ready for it', 'video' => 'GZeza5xTeuM'));
   function __destruct()
   {
       // TODO: Implement __destruct() method.
@@ -18,8 +19,8 @@ class test extends \IRadian\ibase\iModel
       parent::__construct($request);
   }
 
-  public function getTest(){
-      return 'hi this is a test';
+  public function getUser(){
+      return $this->users;
   }
 
 }

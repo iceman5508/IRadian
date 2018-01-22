@@ -67,11 +67,13 @@ abstract class iApplication
             }
         }
 
+
+
         $this->router = new iAppRoute(\iConfig::$project['route_var']);
         $this->initialSteps();
-
-
         $this->finalSteps();
+
+
     }
 
     /**
@@ -175,7 +177,7 @@ abstract class iApplication
                     if(array_key_exists ('route' , $component )) {
                        if(in_array($this->router->getRoute(),$component['route'])){
                             loadComponent($component['location'],false);
-                           $class = new $component['component']($component['template']);
+                           $class = new $component['component']($component['template'], $this->router->getRoute());
                            if(array_key_exists ('tag' , $component )){
                                 $key = $component['tag'];
                            }
@@ -185,7 +187,7 @@ abstract class iApplication
 
                     }else{
                         loadComponent($component['location'],false);
-                        $class = new $component['component']($component['template']);
+                        $class = new $component['component']($component['template'],$this->router->getRoute());
                         if(array_key_exists ('tag' , $component )){
                             $key = $component['tag'];
                         }
@@ -202,7 +204,7 @@ abstract class iApplication
                 if(array_key_exists ('route' , $component )) {
                     if(in_array($this->router->getRoute(),$component['route'])){
                         loadComponent($component['location'],false);
-                        $class = new $component['component']($component['template']);
+                        $class = new $component['component']($component['template'],$this->router->getRoute());
                         if(array_key_exists ('tag' , $component )){
                             $key = $component['tag'];
                         }
@@ -212,7 +214,7 @@ abstract class iApplication
 
                 }else{
                     loadComponent($component['location'],false);
-                    $class = new $component['component']($component['template']);
+                    $class = new $component['component']($component['template'],$this->router->getRoute());
                     if(array_key_exists ('tag' , $component )){
                         $key = $component['tag'];
                     }
