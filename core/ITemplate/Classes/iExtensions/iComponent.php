@@ -5,11 +5,7 @@
  * Date: 10/18/2017
  * Time: 2:40 PM
  */
-
 namespace ITemplate\iExtends;
-
-
-
 abstract class iComponent
 {
     private $component;
@@ -18,15 +14,11 @@ abstract class iComponent
     private static $exports = array();
 
 
-
-    public abstract function render();
-
     /**
      * @return mixed
      * Can set all class var through this method, but not required
      */
     public abstract function attributes();
-
     /**
      * Component class entry point
      * iComponent constructor.
@@ -38,7 +30,6 @@ abstract class iComponent
         $this->currentRoute=$route;
         $this->attributes();
     }
-
     /**
      * Return all variables
      * @return array
@@ -46,7 +37,6 @@ abstract class iComponent
     public final function getAllVars(){
         return $this->component->getVars();
     }
-
     /**
      * Export a component to make it loadable in the viewManager
      * @param $componentName
@@ -54,7 +44,6 @@ abstract class iComponent
     public static function export($componentName){
         self::$exports[$componentName] = iTags::get($componentName);
     }
-
     /**
      * Return the name of the page
      * @return mixed
@@ -62,7 +51,6 @@ abstract class iComponent
     public final function getPage(){
         return $this->page;
     }
-
     /**
      * Return all exported components
      * @return array
@@ -70,7 +58,6 @@ abstract class iComponent
     public static function getExports(){
         return self::$exports;
     }
-
     /**Get a specific exported component
      * @param $componentName
      * @return mixed
@@ -78,28 +65,19 @@ abstract class iComponent
     public static function getExport($componentName){
         return self::$exports[$componentName];
     }
-
     public function __destruct(){
         $this->component->__destruct();
         unset($this->component);
         unset($this->page);
         unset($this->currentRoute);
     }
-
     public final function __set($name, $value){
         $this->component->__set($name,$value);
     }
-
     public final function __get($name){
         return $this->component->__get($name);
     }
-
     public final function getView(){
         return $this->view;
     }
-
-
-
-
-
 }
