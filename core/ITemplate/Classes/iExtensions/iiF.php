@@ -12,7 +12,7 @@ namespace ITemplate\iExtends;
 class iiF
 {
     private $ifs = array();
-    private $conditions = array('==','>','<','>=','<=');
+    private $conditions = array('==','>','<','>=','<=', '!=');
 
     function __construct($ifs, $component)
     {
@@ -29,7 +29,13 @@ class iiF
                        }else{
                            $this->ifs[$if]  = $this->handleIfElse(false,$if);
                        }
-                    }else  if(trim($condition)==='>'){
+                    }else if(trim($condition)==='!='){
+                        if($this->neq($component, $conditionBreak)){
+                            $this->ifs[$if]  = $this->handleIfElse(true,$if);
+                        }else{
+                            $this->ifs[$if]  = $this->handleIfElse(false,$if);
+                        }
+                    }else if(trim($condition)==='>'){
                         if($this->gt($component, $conditionBreak)){
                             $this->ifs[$if]  = $this->handleIfElse(true,$if);
                         }else{
@@ -89,12 +95,51 @@ class iiF
                 $element2 = $component->{$conditionBreak[2]};
                 if(trim($element1)===trim($element2)){
                     return true;
-                }
+                }else
+                    if(trim($element1)==trim($element2)){
+                        return true;
+                    }
             }else if(trim($element1)===trim($conditionBreak[2])){
+                return true;
+            }else if(trim($element1)==trim($conditionBreak[2])){
                 return true;
             }
         }else if(isset($component->{$conditionBreak[2]})){
             if(trim($component->{$conditionBreak[2]})===trim($conditionBreak[0])){
+                return true;
+            }else if(trim($component->{$conditionBreak[2]})==trim($conditionBreak[0])){
+                return true;
+            }
+        }
+        return false;
+    }
+
+    /**
+     * Handles not equal statements
+     * @param $component
+     * @param $conditionBreak
+     * @return bool
+     */
+    private function neq($component, $conditionBreak){
+        if(isset($component->{$conditionBreak[0]})){
+            $element1 = $component->{$conditionBreak[0]};
+            if(isset($component->{$conditionBreak[2]})){
+                $element2 = $component->{$conditionBreak[2]};
+                if(trim($element1)!==trim($element2)){
+                    return true;
+                }else
+                    if(trim($element1)!=trim($element2)){
+                        return true;
+                    }
+            }else if(trim($element1)!==trim($conditionBreak[2])){
+                return true;
+            }else if(trim($element1)!=trim($conditionBreak[2])){
+                return true;
+            }
+        }else if(isset($component->{$conditionBreak[2]})){
+            if(trim($component->{$conditionBreak[2]})!==trim($conditionBreak[0])){
+                return true;
+            }else if(trim($component->{$conditionBreak[2]})!=trim($conditionBreak[0])){
                 return true;
             }
         }
