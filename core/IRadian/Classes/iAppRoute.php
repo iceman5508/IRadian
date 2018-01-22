@@ -82,7 +82,10 @@ class iAppRoute
      */
     public function getParams($name)
     {
-        return $this->params[$name];
+        if(isset($this->params[$name])){
+            return $this->params[$name] ;
+        }else{ return null; }
+
     }
 
     /**
