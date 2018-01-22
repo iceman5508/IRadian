@@ -14,6 +14,7 @@ abstract class iComponent
     private static $exports = array();
 
 
+
     /**
      * @return mixed
      * Can set all class var through this method, but not required
@@ -28,6 +29,7 @@ abstract class iComponent
         $this->component = new iComponents();
         $this->page = 'app/'.$page;
         $this->currentRoute=$route;
+
         $this->attributes();
     }
     /**
@@ -51,6 +53,8 @@ abstract class iComponent
     public final function getPage(){
         return $this->page;
     }
+
+
     /**
      * Return all exported components
      * @return array

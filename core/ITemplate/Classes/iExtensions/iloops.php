@@ -56,12 +56,12 @@ class iloops
     private function foreachLoop($component, $conditionBreak, $loop){
         $var = $component->{$conditionBreak[2]};
         $as = $conditionBreak[0];
-        $loopInner = get_data_between_brace($loop);
+        $loopInner = get_data_between_braceLoop($loop);
         $loopstr = '';
         foreach( $var as ${$as}){
            $loopstr .=  $this->varEval(${$as}, $loopInner);
         };
-        return $loopstr;
+       return  $this->parseIfs($loopstr, $component);
 
     }
 
@@ -76,13 +76,14 @@ class iloops
         $var = $component->{$conditionBreak[2]};
         $as = $conditionBreak[0];
         $increment =  $conditionBreak[3];
-        $loopInner = get_data_between_brace($loop);
+        $loop = $this->parseIfs($loop, $component);
+        $loopInner = get_data_between_braceLoop($loop);
         $loopstr = '';
         for( ${$as} =0; ${$as} <count($var); ${$as} = ${$as}+$increment){
             $loopstr .= $this->varEval($var[${$as}], $loopInner);
         };
 
-        return $loopstr;
+        return  $this->parseIfs($loopstr, $component);
 
     }
 
@@ -151,5 +152,31 @@ class iloops
         preg_match_all($pattern, $data, $matches);
         return $matches[1];
     }
+
+    /**
+     * Parse the if associated with the irIf tag
+     */
+    private function parseIfs($content, $component){
+        $pattern = "/#irIf(.*?)#/s";
+        preg_match_all($pattern, $content, $matches);
+
+        $pattern = "/<irIf>(.*?)<\/irIf>/s";
+        preg_match_all($pattern, $content, $matches2);
+
+
+        $matches = array_merge($matches[1], $matches2[1]);
+        $ifs = new iiF($matches, $component);
+
+
+        foreach ($ifs->getIfs() as $if => $value){
+            if (strpos($content, $if) !== false) {
+                $content = str_replace(trim("#irIf" . $if . "#"), $value, trim($content));
+                $content = str_replace(trim("<irIf>" . $if . "</irIf>"), $value, trim($content));
+            }
+        }
+        return $content;
+    }
+
+
 
 }
