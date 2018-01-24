@@ -37,7 +37,7 @@ abstract class iApplication
 
     private $imoduels=[
         'iHttpService' => PROJECT.'/core/iModuels/iHttpService.js'
-        ,'iEnvironment' => PROJECT.'/core/iModuels/iEnvironments.js'
+        ,'iEnvironment' => PROJECT.'/core/iModuels/iEnvironment.js'
         ,'iModal' => [
             'js' => PROJECT.'/core/iModuels/iModal.js'
             ,'css' => PROJECT.'/core/iModuels/iModal.css'

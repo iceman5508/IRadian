@@ -8,7 +8,12 @@
  */
 class test extends \IRadian\ibase\iModel
 {
-    private $users = array(array('name' => 'Call it what you want', 'video' => 'uEj8LqPi-nc'), array('name' => 'Ready for it', 'video' => 'GZeza5xTeuM'));
+    private $users = array(
+        array('name' => 'Call it what you want', 'video' => 'uEj8LqPi-nc')
+       ,array('name' => 'Ready for it', 'video' => 'GZeza5xTeuM')
+       ,array('name' => 'Immigrant Song', 'video' => 'y8OtzJtp-EM')
+       ,array('name' => 'Beautiful Trauma', 'video' => '41taYOq1kVY')
+    );
   function __destruct()
   {
       // TODO: Implement __destruct() method.
