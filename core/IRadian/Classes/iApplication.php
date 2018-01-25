@@ -60,18 +60,22 @@ abstract class iApplication
     }
 
     final function __construct(){
-        if(\iConfig::$security['route_limit'] !== NULL && is_numeric(\iConfig::$security['route_limit'] )){
-            if(iAppSecurity::routeLimit(\iConfig::$security['route_limit'] )){
-                iredirect_to(iWeb::projectUrl());
-                exit();
+        try {
+            if (\iConfig::$security['route_limit'] !== NULL && is_numeric(\iConfig::$security['route_limit'])) {
+                if (iAppSecurity::routeLimit(\iConfig::$security['route_limit'])) {
+                    iredirect_to(iWeb::projectUrl());
+                    exit();
+                }
             }
+
+
+            $this->router = new iAppRoute(\iConfig::$project['route_var']);
+            $this->initialSteps();
+            $this->finalSteps();
+        }catch (\Exception $e){
+            print "error";
+            die();
         }
-
-
-
-        $this->router = new iAppRoute(\iConfig::$project['route_var']);
-        $this->initialSteps();
-        $this->finalSteps();
 
 
     }

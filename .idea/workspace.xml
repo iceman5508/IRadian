@@ -2,64 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b7fce952-9c7b-4982-8c2b-317c756ae89b" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core/.htaccess" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core/API/Classes/Users.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core/API/Classes/test.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core/API/api.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core/IEngine/Classes/iApi.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core/IEngine/Classes/iCookie.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core/IEngine/Classes/iDatabase.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core/IEngine/Classes/iDate.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core/IEngine/Classes/iDirectory.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core/IEngine/Classes/iExtensions/iEazyDBase.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core/IEngine/Classes/iExtensions/iFileSystems.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core/IEngine/Classes/iExtensions/iFormValidate.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core/IEngine/Classes/iExtensions/iMigration.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core/IEngine/Classes/iFile.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core/IEngine/Classes/iForm.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core/IEngine/Classes/iGlobal.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core/IEngine/Classes/iNumber.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core/IEngine/Classes/iRequest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core/IEngine/Classes/iSession.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core/IEngine/Classes/iString.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core/IEngine/Classes/iTime.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core/IEngine/Classes/iToken.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core/IEngine/Classes/iWeb.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core/IEngine/Functions/ifunctions.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core/IEngine/Functions/inumbers.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core/IEngine/Functions/isanitize.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core/IEngine/Functions/istrings.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core/IEngine/Functions/ivalidate.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core/IEngine/IEngine.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core/IRadian/Classes/iAppRoute.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core/IRadian/Classes/iAppSecurity.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core/IRadian/Classes/iApplication.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core/IRadian/Classes/iModel.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core/IRadian/Classes/iRParser.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core/IRadian/Classes/iTables.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core/IRadian/Functions/Component.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core/IRadian/IRadian.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core/ITemplate/Classes/iExtensions/iComponent.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core/ITemplate/Classes/iExtensions/iComponents.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core/ITemplate/Classes/iExtensions/iFunctions.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core/ITemplate/Classes/iExtensions/iParser.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core/ITemplate/Classes/iExtensions/iRouter.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core/ITemplate/Classes/iExtensions/iTags.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core/ITemplate/Classes/iExtensions/iView.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core/ITemplate/Classes/iExtensions/iiF.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core/ITemplate/Classes/iExtensions/iloops.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core/ITemplate/Classes/iExtensions/viewManager.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core/ITemplate/Classes/iTemplates.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core/ITemplate/Functions/tempFunctions.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core/ITemplate/ITemplate.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core/iModuels/iEnvironment.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core/iModuels/iHttpService.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core/iModuels/iModal.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core/iModuels/iModal.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core/iModuels/iVariable.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core/iModuels/index.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core/index.php" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/API/Classes/test.php" afterPath="$PROJECT_DIR$/core/API/Classes/test.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/IRadian/Classes/iApplication.php" afterPath="$PROJECT_DIR$/core/IRadian/Classes/iApplication.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/iModuels/iEnvironment.js" afterPath="$PROJECT_DIR$/core/iModuels/iEnvironment.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -70,7 +16,18 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="api.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/core/API/api.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -165,8 +122,7 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="99" />
-    <option name="y" value="147" />
+    <option name="x" value="-68" />
     <option name="width" value="1382" />
     <option name="height" value="744" />
   </component>
@@ -209,19 +165,19 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\wamp64\www\IRadian\core\IRadian\Classes" />
-      <recent name="C:\wamp64\www\IRadian\public\app" />
-      <recent name="C:\wamp64\www\IRadian\public" />
-      <recent name="C:\wamp64\www\IRadian" />
-      <recent name="C:\wamp64\www\IRadian\public\app\welcome" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\wamp64\www\IRadian" />
       <recent name="C:\wamp64\www\IRadian\core\IRadian\Classes" />
       <recent name="C:\wamp64\www\IRadian\core\ITemplate\Classes\iExtensions" />
       <recent name="C:\wamp64\www\IRadian\core\API\Classes" />
       <recent name="C:\wamp64\www\IRadian\core\IEngine" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\IRadian\core\IRadian\Classes" />
+      <recent name="C:\wamp64\www\IRadian\public\app" />
+      <recent name="C:\wamp64\www\IRadian\public" />
+      <recent name="C:\wamp64\www\IRadian" />
+      <recent name="C:\wamp64\www\IRadian\public\app\welcome" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -349,12 +305,12 @@
       <workItem from="1516647496574" duration="107000" />
       <workItem from="1516648149635" duration="67000" />
       <workItem from="1516658601939" duration="77000" />
-      <workItem from="1516822030188" duration="44000" />
+      <workItem from="1516822030188" duration="91000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="127393000" />
+    <option name="totallyTimeSpent" value="127440000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -366,16 +322,16 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="99" y="147" width="1382" height="744" extended-state="0" />
+    <frame x="-68" y="0" width="1382" height="744" extended-state="0" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39939487" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39939487" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33387887" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33387887" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -728,6 +684,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
