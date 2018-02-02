@@ -137,7 +137,7 @@ class iloops
      * @return mixed
      */
     private function parseHash($content){
-        $pattern = "/#(.*?)#/s";
+        $pattern = "/#(.*?)#/";
         preg_match_all($pattern, $content, $matches);
         return $matches[1];
     }

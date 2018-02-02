@@ -39,10 +39,12 @@ abstract class iApplication
         'iHttpService' => PROJECT.'/core/iModuels/iHttpService.js'
         ,'iEnvironment' => PROJECT.'/core/iModuels/iEnvironment.js'
         ,'iModal' => [
-            'js' => PROJECT.'/core/iModuels/iModal.js'
-            ,'css' => PROJECT.'/core/iModuels/iModal.css'
+            'js' => PROJECT.'/core/iModuels/imodal/iModal.js'
+            ,'css' => PROJECT.'/core/iModuels/imodal/iModal.css'
             ]
         ,'iVariable' => PROJECT.'/core/iModuels/iVariable.js'
+        ,'iRedirect' => PROJECT.'/core/iModuels/iRedirect.js'
+
 
     ];
 
@@ -104,9 +106,10 @@ abstract class iApplication
             }else if(trim($break) === trim(' bootstrap_js')){
                 $value .= '<script type="text/javascript" src="'.$this->bootstrap['js'].'"></script>';
             }
-            else if(trim($break) === trim(' imodal_js')){
+            else if(trim($break) === trim('imodal_js')){
                 $value .= '<script type="text/javascript" src="'.$this->imoduels['iModal']['js'].'"></script>';
             }
+
         }
             $this->content = $this->replaceAllInstance($this->content,$uiName,$value);
         }
