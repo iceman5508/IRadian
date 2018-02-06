@@ -1,15 +1,13 @@
 <?php
 
-/**
- * Author Isaac Parker
- * Date 9-3-2017
- * Class iDirectory
- * @package IEngine\ibase
- */
 
 namespace IEngine\ibase;
 
-
+/**
+ * @version 1.0<br>
+ * Class iDirectory - This class handles CRUD actions of directories.
+ * @package IEngine\ibase
+ */
 class iDirectory{
 
     /**

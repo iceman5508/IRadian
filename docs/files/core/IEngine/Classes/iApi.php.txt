@@ -1,10 +1,6 @@
 <?php
 namespace IEngine\ibase;
 /**
- * Created by PhpStorm.
- * User: parker10 aka Isaac Parker
- * Date: 5/25/2017
- * Time: 3:22 PM
  * This class provides an abstract api class from which other api classes
  * or resources can be created.
  *
@@ -74,11 +70,12 @@ abstract class iAPi
 
         $this->args = explode('/', rtrim($request, '/'));
         $this->properties = $this->args;
+
         unset($this->properties[0]);
         $this->properties = array_values($this->properties);
 
-
         $this->endpoint = array_shift($this->args);
+
 
         if (array_key_exists(0, $this->args) && !is_numeric($this->args[0])) {
             $this->verb = array_shift($this->args);

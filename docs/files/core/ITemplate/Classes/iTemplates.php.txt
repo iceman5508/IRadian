@@ -1,16 +1,21 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: iceman5508
- * Date: 10/17/2017
- * Time: 11:44 PM
- */
 
 namespace ITemplate\ibase;
 
+/**
+ * This class manages the loading of template files for the view.
+ * This is ultimately the root class for all components as they use this
+ * class for loading, and rendering templates.
+ *
+ * version 1.0 Beta
+ */
 
 class iTemplates
 {
+    /**
+     * The template to parse.
+     * @var
+     */
     protected $template;
 
     /**

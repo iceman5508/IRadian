@@ -1,29 +1,38 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: iceman5508
- * Date: 10/18/2017
- * Time: 9:05 PM
- */
 
 namespace ITemplate\iExtends;
-use IRadian\ibase\iRParser;
-use ITemplate\iExtends\iView;
-use ITemplate\iExtends\iComponent;
-use ITemplate\iExtends\iRouter;
 
 
+/**
+ *This class handles the loading of multiple views into the main template.
+ *
+ * This class is loaded automatically and user will not have to interact with it
+ * unless they want to manage their views manually.
+ *
+ * version 1.0 Beta
+ *
+ **/
  class viewManager
 {
-
+     /**
+      * The content of the template
+      * @var mixed
+      */
     private $content;
+
+     /**
+      * The view to display
+      * @var \ITemplate\iExtends\iView
+      */
     private $view;
 
     /**
      * Create the view manager for all exported components.
      * Should only be ran after all components are registered
      * viewManager constructor.
-     * @param $mainFile
+     * @param $mainFile - The template file
+     * @param $setContent - set if the content of the main file is overridden or not.
+     *
      */
     function __construct($mainFile, $setContent = false)
     {
@@ -63,6 +72,7 @@ use ITemplate\iExtends\iRouter;
 
     /**
      * Connect view Manager to router
+     * However, since version 1.0 Beta this method is no longer heavily used and is slowly being deprecated.
      */
     public static function router(){
         if(iRouter::callMade()) {

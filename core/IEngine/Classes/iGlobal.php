@@ -1,14 +1,13 @@
 <?php
-/**
- * Author Isaac Parker
- * Date 8-29-2017
- * Class iGlobal
- * @package IEngine\ibase
- */
 
 namespace IEngine\ibase;
 
-
+/**
+ * @version 1.0
+ * Class iGlobal - This class handles the passing of persistent data between different php pages without
+ * creating a session or cookie.
+ * @package IEngine\ibase
+ */
 class iGlobal
 {
 

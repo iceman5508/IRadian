@@ -1,18 +1,20 @@
 <?php
-/**
- * Author Isaac Parker
- * Date 9-3-2017
- * Class iFile
- * @package IEngine\ibase
- */
 
 namespace IEngine\ibase;
 
-
+/**
+ * @version 1.0<br>
+ * Class iFile. This class handles interaction with files.
+ * @package IEngine\ibase
+ */
 class iFile
 {
     private $filename, $exists, $lines = 0, $size = 0, $wordCount = 0;
 
+    /**
+     * iFile constructor. The entry point of the class.
+     * @param $file - The file to work on.
+     */
     function __construct($file) {
         if (file_exists ( $file ) && is_file ( $file )) {
             $this->filename = $file;
@@ -67,7 +69,7 @@ class iFile
 
     /**
      * Return the index of a specific word in the file
-     * @param $value
+     * @param $value - The value to look for the file.
      * @return int
      */
     public function indexOfWord($value) {
@@ -150,7 +152,7 @@ class iFile
 
     /**
      * Return the line index a specific word is in
-     * @param $value
+     * @param $value - The value to search for
      * @return array
      */
     public function indexOfLine($value){
@@ -175,8 +177,8 @@ class iFile
 
     /**
      * Get a specific word at the given line and index of the line
-     * @param $line
-     * @param $index
+     * @param $line - The line to search on
+     * @param $index - The index to search on the line.
      * @return mixed
      */
     public function getWordByLineIndex($line, $index) {
@@ -203,7 +205,7 @@ class iFile
      * Append data to the end of the file. Note
      * that this does not append a new line at the end
      * of the file
-     * @param $data
+     * @param $data - The data to append in the file.
      * @return $this
      */
     public function append($data) {
@@ -220,7 +222,7 @@ class iFile
     /**
      * Append data at the end of the file and place a line break
      * at the end of the content
-     * @param $data
+     * @param $data - The data to add to the file.
      * @return $this
      */
     public function appendNewLine($data) {
@@ -236,9 +238,9 @@ class iFile
 
     /**
      * Write data to the file
-     * @param $data
-     * @param null $line
-     * @param null $index
+     * @param $data - The data to write to the file.
+     * @param null $line - The line to write on (optional)
+     * @param null $index - The index to write at (optional)
      * @return $this|iFile
      */
     function writeToFile($data, $line = NULL, $index = NULL) {
@@ -294,9 +296,9 @@ class iFile
 
     /**
      * Delete a word from file
-     * @param $data
-     * @param null $line
-     * @param null $index
+     * @param $data - The word to delete from the file
+     * @param null $line - The line to delete the word from (optional)
+     * @param null $index - The index to delete the word from (optional)
      * @return $this
      */
     public function deleteFromFile($data, $line = NULL, $index = NULL) {
@@ -358,6 +360,14 @@ class iFile
         }
     }
 
+    /**
+     * Replace a specific word with a given data
+     * @param $data - The word that will be replaced
+     * @param $replacement - The replacement word.
+     * @param null $line - The line to replace from (optional)
+     * @param null $index - The index to replace at (optional)
+     * @return $this
+     */
     public function replaceWordWith($data, $replacement, $line = NULL, $index = NULL) {
         if ($this->exists && $data !== null) {
             if ($line === null && $index === null) {
@@ -412,8 +422,8 @@ class iFile
 
     /**
      * Replace a specific line in the file with another
-     * @param $data
-     * @param $line
+     * @param $data - The replacement data
+     * @param $line - The line to replace at
      * @return $this
      */
     public function replaceLineWith($data, $line) {
@@ -432,8 +442,8 @@ class iFile
 
     /**
      * Swap two lines in a file
-     * @param $line1
-     * @param $line2
+     * @param $line1 - The first line to swap
+     * @param $line2 - The second line to swap
      * @return $this
      */
     public function swapLines($line1, $line2) {
@@ -459,7 +469,7 @@ class iFile
 
     /**
      * Delete a specific line from the file
-     * @param $line
+     * @param $line - The line to delete
      * @return $this
      */
     public function deleteLine($line) {
@@ -498,7 +508,7 @@ class iFile
 
     /**
      * Split the content of the file by a specific deliminator
-     * @param $spacer
+     * @param $spacer - The deliminator
      * @return array|bool
      */
     public function splitContentByDel($spacer) {
@@ -512,7 +522,7 @@ class iFile
 
     /**
      * Copy data from one file to another
-     * @param $fileTo
+     * @param $fileTo - The file to copy the data to.
      * @return $this|bool
      */
     public function copyDataTo($fileTo) {
@@ -539,8 +549,8 @@ class iFile
 
     /**
      * Get the content of the file between two line ranges
-     * @param $start
-     * @param $end
+     * @param $start - The starting line number
+     * @param $end - The end line number
      * @return array|bool
      */
     public function getContentByLineRange($start, $end) {
@@ -568,7 +578,7 @@ class iFile
 
     /**
      * Copy the file to a different location
-     * @param $copyLocation
+     * @param $copyLocation - The location to copy the file to.
      * @return $this
      */
     public function copyFileTo($copyLocation) {
@@ -587,7 +597,7 @@ class iFile
 
     /**
      * Move the file to a different location
-     * @param $copyLocation
+     * @param $copyLocation - The location to move the file to.
      * @return $this
      */
     public function moveFileTo($copyLocation) {
@@ -613,7 +623,7 @@ class iFile
 
     /**
      * Returns the line and index of the word being used
-     * @param $value
+     * @param $value - The value to search for.
      * @return array
      */
     public function getLineAndIndex($value){

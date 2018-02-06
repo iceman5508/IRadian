@@ -1,26 +1,34 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: iceman5508
- * Date: 1/17/2018
- * Time: 11:08 PM
- */
+
 
 namespace IRadian\ibase;
 
 use IEngine\ibase\iWeb;
+
+/**
+ @version 1.0 <br>
+ * Class iAppRoute - As of version 1.0 this is the primary router class.
+ * While in traditional routing acts as a separate module, The router is actually integrated within the framework.
+ * As a result, if users use the framework as built, they will never directly interact with this class.
+ * @package IRadian\ibase
+ */
 class iAppRoute
 {
     private $route,$params=array(), $routeList, $resource, $routeParam;
 
-
+    /**
+     * iAppRoute constructor. - The entry point into the router
+     * @param $routeParam - The url param to check for that will dictate which route to use.<br>
+     * If user did not manually set route params, the framework does it for you ny default.
+     */
     function __construct($routeParam){
         $this->routeParam = $routeParam;
         $this->cleanParams();
     }
 
     /**
-     * scanner function is ran to get current route
+     * scanner function is ran to get current route. However if the route that is passed
+     * was not registered, the current route will be set to /404.
      */
     function scanner(){
         if(strlen(trim(rtrim($_REQUEST[$this->routeParam])))>0){
@@ -40,7 +48,9 @@ class iAppRoute
 
     /**
      * Register a route
-     * @param $route
+     * @param $route - the name of the route to register.
+     * <br>
+     * register('/home')
      */
     public function register($route){
         if(is_array($route)){
@@ -64,6 +74,10 @@ class iAppRoute
     }
 
 
+    /**
+     * Cleans the param and makes sure it does not contain any data that
+     * might be harmful to the application. However, the user should still sanitize their data.
+     */
     private function cleanParams(){
         $brokenUrl = explode("&", iWeb::currentUrl());
         unset($brokenUrl[0]);
@@ -77,8 +91,8 @@ class iAppRoute
 
     /**
      * Get params from url
-     * @param $name
-     * @return mixed
+     * @param $name - The name of the param to search for
+     * @return mixed - Return the param value if found or return null if param was not found.
      */
     public function getParams($name)
     {
@@ -89,14 +103,18 @@ class iAppRoute
     }
 
     /**
-     * @return string
+     * Returns the current route
+     * @return string - The value of the route
      */
     public function getRoute(){
         return $this->route;
     }
 
     /**
-     * @return array
+     * Return all resources associated with the url after the route
+     * @return array - Array of each resource.<br>
+     * Example: url = 'http://site.com/users/getUsers
+     <br> route in this example is users while the resource is getUsers
      */
     public function getResource(){
         return $this->resource;

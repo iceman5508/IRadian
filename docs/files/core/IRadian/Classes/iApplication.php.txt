@@ -1,23 +1,42 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: iceman5508
- * Date: 1/13/2018
- * Time: 12:36 PM
- * Application class, acts as a manager for the entire application
- * One of the many brains powering the iRadian framework
- */
+
 
 namespace IRadian\ibase;
 
 
+use IEngine\ibase\iWeb;
 use ITemplate\iExtends\iComponent;
 use ITemplate\iExtends\iTags;
 use ITemplate\iExtends\viewManager;
 
+/**
+
+ * Class iApplication - This class is the engine of the entire framework. Naturally users will NEVER
+ * interact with this class directly. Only interaction users will have with this class is through the iapp file.
+ * However, even then the possible actions are very limited and on rails.
+ *
+ * @version 1.0
+ * @package IRadian\ibase
+ */
 abstract class iApplication
 {
-    protected $components=array(), $html, $router;
+    /**
+     * List of all components the framework is using
+     * @var array
+     */
+    protected $components=array();
+
+    /**
+     * The location of the main view file
+     * @var
+     */
+    protected $html;
+
+    /**
+     * The router that will be used.
+     * @var iAppRoute
+     */
+    protected $router;
 
     private $viewManager, $parser, $content;
 
@@ -36,12 +55,14 @@ abstract class iApplication
 
     private $imoduels=[
         'iHttpService' => PROJECT.'/core/iModuels/iHttpService.js'
-        ,'iEnvironment' => PROJECT.'/core/iModuels/iEnvironments.js'
+        ,'iEnvironment' => PROJECT.'/core/iModuels/iEnvironment.js'
         ,'iModal' => [
-            'js' => PROJECT.'/core/iModuels/iModal.js'
-            ,'css' => PROJECT.'/core/iModuels/iModal.css'
+            'js' => PROJECT.'/core/iModuels/imodal/iModal.js'
+            ,'css' => PROJECT.'/core/iModuels/imodal/iModal.css'
             ]
         ,'iVariable' => PROJECT.'/core/iModuels/iVariable.js'
+        ,'iRedirect' => PROJECT.'/core/iModuels/iRedirect.js'
+
 
     ];
 
@@ -58,16 +79,33 @@ abstract class iApplication
         unset($this->router);
     }
 
+    /**
+     * iApplication constructor. The entry point of the application.
+     * <br>The constructor is given all parsed tokenized,
+     * components, views and routing information. Then the class decides what to do with them.
+     */
     final function __construct(){
-        $this->router = new iAppRoute(\iConfig::$project['route_var']);
-        $this->initialSteps();
+        try {
+            if (\iConfig::$security['route_limit'] !== NULL && is_numeric(\iConfig::$security['route_limit'])) {
+                if (iAppSecurity::routeLimit(\iConfig::$security['route_limit'])) {
+                    iredirect_to(iWeb::projectUrl());
+                    exit();
+                }
+            }
+
+            $this->router = new iAppRoute(\iConfig::$project['route_var']);
+            $this->initialSteps();
+            $this->finalSteps();
+        }catch (\Exception $e){
+            print "error";
+            die();
+        }
 
 
-        $this->finalSteps();
     }
 
     /**
-     * Handles load from ui
+     * Handles load from ui.
      * @param $ui
      */
     private function handleUI($ui){
@@ -90,9 +128,10 @@ abstract class iApplication
             }else if(trim($break) === trim(' bootstrap_js')){
                 $value .= '<script type="text/javascript" src="'.$this->bootstrap['js'].'"></script>';
             }
-            else if(trim($break) === trim(' imodal_js')){
+            else if(trim($break) === trim('imodal_js')){
                 $value .= '<script type="text/javascript" src="'.$this->imoduels['iModal']['js'].'"></script>';
             }
+
         }
             $this->content = $this->replaceAllInstance($this->content,$uiName,$value);
         }
@@ -167,14 +206,20 @@ abstract class iApplication
                     if(array_key_exists ('route' , $component )) {
                        if(in_array($this->router->getRoute(),$component['route'])){
                             loadComponent($component['location'],false);
-                           $class = new $component['component']($component['template']);
+                           $class = new $component['component']($component['template'], $this->router->getRoute());
+                           if(array_key_exists ('tag' , $component )){
+                                $key = $component['tag'];
+                           }
                            iTags::setTag($key, $class);
                            iComponent::export($key);
                         }
 
                     }else{
                         loadComponent($component['location'],false);
-                        $class = new $component['component']($component['template']);
+                        $class = new $component['component']($component['template'],$this->router->getRoute());
+                        if(array_key_exists ('tag' , $component )){
+                            $key = $component['tag'];
+                        }
                         iTags::setTag($key, $class);
                         iComponent::export($key);
                     }
@@ -188,14 +233,20 @@ abstract class iApplication
                 if(array_key_exists ('route' , $component )) {
                     if(in_array($this->router->getRoute(),$component['route'])){
                         loadComponent($component['location'],false);
-                        $class = new $component['component']($component['template']);
+                        $class = new $component['component']($component['template'],$this->router->getRoute());
+                        if(array_key_exists ('tag' , $component )){
+                            $key = $component['tag'];
+                        }
                         iTags::setTag($key, $class);
                         iComponent::export($key);
                     }
 
                 }else{
                     loadComponent($component['location'],false);
-                    $class = new $component['component']($component['template']);
+                    $class = new $component['component']($component['template'],$this->router->getRoute());
+                    if(array_key_exists ('tag' , $component )){
+                        $key = $component['tag'];
+                    }
                     iTags::setTag($key, $class);
                     iComponent::export($key);
                 }
@@ -211,6 +262,7 @@ abstract class iApplication
 
     private function initialSteps(){
         $this->router();
+        $this->router->scanner();
         $this->main();
         foreach ($this->components as $component){
             if(is_array($component)){
@@ -237,8 +289,14 @@ abstract class iApplication
     }
 
 
+    /**
+     * The main function in which all application data is set.
+     */
     protected abstract function main();
 
+    /**
+     * The function in which route data is set
+     */
     protected abstract function router();
 
 

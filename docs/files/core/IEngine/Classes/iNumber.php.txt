@@ -1,17 +1,24 @@
 <?php
-/**
- * Author Isaac Parker
- * Date 9-1-2017
- * Class iNumber
- * @package IEngine\ibase
- */
+
 namespace IEngine\ibase;
 
-
+/**
+ * Class iNumber - This class Handles numbers. Acts as a
+ * general numeric class.
+ * @package IEngine\ibase
+ */
 class iNumber
 {
+    /**
+     * The number that this class will work on
+     * @var int|string
+     */
     protected $number;
 
+    /**
+     * iNumber constructor. The entry point into the inumbers class
+     * @param $number - The number the class will work on
+     */
     public function __construct($number){
         if(is_numeric($number)){
             $this->number = $number;
@@ -69,7 +76,7 @@ class iNumber
 
     /**
      * Add two numbers together
-     * @param $number
+     * @param $number - The second number that is being added to the object number
      * @return int|string
      */
     public function add($number){
@@ -93,7 +100,7 @@ class iNumber
 
     /**
      * Subtract two numbers
-     * @param $number
+     * @param $number - The second number that is being multiplied by the object number
      * @return int|string
      */
     public function subtract($number){
@@ -104,7 +111,7 @@ class iNumber
     }
 
     /**Divide two numbers
-     * @param $number
+     * @param $number - The second number that will divide into the object number
      * @return float|int
      */
     public function divide($number){
@@ -116,7 +123,7 @@ class iNumber
 
     /**
      * Get a specific percent of the number
-     * @param $number
+     * @param $number - The percent of the number to get. Use whole numbers for percentage. No decimals.
      * @return float|int
      */
     public function percent($number){
@@ -128,7 +135,7 @@ class iNumber
 
     /**
      * Get the value of a specific percentage oof the number
-     * @param $number
+     * @param $number - The percent off the number to get. Use whole numbers for percentage. No decimals.
      * @return int|string
      */
     public function percentOff($number){
@@ -146,8 +153,14 @@ class iNumber
         return $this->number;
     }
 
+    /**
+     * Return a string version of the number
+     * @return string
+     */
     function __toString(){
         return "".$this->number;
     }
+
+
 
 }

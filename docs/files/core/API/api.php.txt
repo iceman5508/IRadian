@@ -1,10 +1,9 @@
 <?php
 
 /**
- * Created by PhpStorm.
- * User: iceman5508
- * Date: 1/20/2018
- * Time: 10:17 PM
+ *
+ * Used to create rest apis for applications to connect to.
+ * @version 1.0
  */
 class api
 {
@@ -63,4 +62,5 @@ class api
 
 
 }
+
 

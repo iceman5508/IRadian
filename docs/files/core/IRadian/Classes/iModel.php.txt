@@ -15,7 +15,9 @@ use IEngine\ibase\iAPi;
  * Class iModel
  * Class for handling the model aspect of the application.
  *
- * Note ALL MODELS MUST RUN THE PARENT CONSTRUCTOR
+ * Note ALL EXTENDED MODELS MUST RUN THE PARENT CONSTRUCTOR IF DEFAULT CONSTRUCTOR NOT USED
+ *
+ * @version 1.0
  * @package IRadian\ibase
  */
 

@@ -1,36 +1,48 @@
 <?php
 require_once '../bootstrap.php';
+
 /**
- * Created by PhpStorm.
- * User: iceman5508
- * Date: 1/13/2018
- * Time: 1:41 PM
- * The entry point for the application. Where components and the html page can be set.
+ * The entry point for the application where components and the html page can be set.
  */
-
-//load in classes being used
-use IRadian\ibase\iAppSecurity;
-use IEngine\ibase\iWeb;
-
-/*protect against illegal navigation*/
-if(iAppSecurity::routeLimit(2)){
-   iredirect_to(iWeb::projectUrl());
-}
-
     class iApp extends \IRadian\ibase\iApplication
     {
+        /**
+         * In this function you can set the components to load
+         * as well as any other application params.
+         * <br>
+         * html: The main template page for the application.
+         * <br>
+         * components:  An array of all components for the application to use
+         */
         public function main()
         {
 
-            $this->components = [ ];
+
+            $this->components = [
+
+            ];
 
 
         }
 
-        public function router(){}
+        /**
+         * Holds all the registered routes
+         * that the application is allowed to use.
+         * <br>
+         * Example:  $this->router->register('/routename');
+         */
+        public function router(){
+
+        }
 
 
     }
 
-$Application = new iApp();
 
+
+
+
+
+
+
+$Application = new iApp();

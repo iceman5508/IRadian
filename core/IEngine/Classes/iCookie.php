@@ -1,12 +1,12 @@
 <?php
-/**
- * Author Isaac Parker
- * Date 9-3-2017
- * Class iCookie
- * @package IEngine\ibase
- */
+
 namespace IEngine\ibase;
 
+/**
+ * @version 1.0<br>
+ * Class iCookie -  This class handles the crud actions of cookies.
+ * @package IEngine\ibase
+ */
 
 class iCookie
 {

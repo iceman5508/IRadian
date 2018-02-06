@@ -4,29 +4,28 @@
 namespace ITemplate\iExtends;
 
 /**
-@version 1.0 Beta
- * <br>
  * This class handles if statements in the template.
  * If statements can be ran through the template with the irIf tag or #irIf script.
  *These statements can be ran anywhere within the template, including template based loops.
  *
- * <br>
+ *
  * Template based if statements are handled in the
  * same manner as traditional if statements in any programming/scripting language.
  * However, since this is strictly template based if statements.
  * Whatever is in the validating position of the if statement will be returned to the template.
- *<br>
+ *
  *The user will not interact with the class directly. Rather it will be called from
  * the template.
- * <br>
+ *
  * Example: <irIf>(currentRoute == '/home'){'home'}<irIf>
- * <br>
+ *
  * Example: <irIf>(currentRoute == '/home'){'home'}else{'not home'}<irIf>
- * <br>
+ *
  * Example: #irIf(currentRoute == '/home'){'home'}#
- * <br>
+ *
  * Example: #irIf(currentRoute == '/home'){'home'}else{'not home'} #
  *
+ * version 1.0 Beta
  **/
 class iiF
 {

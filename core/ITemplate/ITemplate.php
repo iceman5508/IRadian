@@ -1,16 +1,21 @@
 <?php
 /**
- * Created by PhpStorm.
- * User: parker10
- * Date: 10/17-/2017
- * Time: 9:34 PM
+@version 1.0 Beta
+ * <br>
+ * This class is the entry point
+ * for the template engine.
+ * Documentation in this file is limited since there is very little to no
+ * interaction with this file at all.
  */
-
-
 class ITemplate{
+
 
     private static $instance = NULL;
 
+    /**
+     * Current location of this class
+     * @return string
+     */
     public static function dirHome(){
         //return 	getcwd().'/';
         return CORE.'/ITemplate/';
@@ -26,6 +31,9 @@ class ITemplate{
         return self::$instance;
     }
 
+    /**
+     * load all package functions
+     */
     public function loadFunctions(){
         $dir =  self::dirHome().'Functions';
         foreach(glob($dir.'/*.php') as $function) {

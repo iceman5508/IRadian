@@ -1,9 +1,7 @@
 <?php
 /**
- * Created by PhpStorm.
- * User: iceman5508
- * Date: 1/2/2018
- * Time: 10:37 AM
+ * Functions related extracting data from the template.
+ * IMPORTANT DO NOT ALTER ANYTHING IN THIS FILE!!!!!
  */
 
 /**credit Thorlax402

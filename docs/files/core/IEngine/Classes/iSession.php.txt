@@ -1,14 +1,14 @@
 <?php
-/**
- * Author Isaac Parker
- * Date 8-29-2017
- * Class iSession
- * @package IEngine\ibase
- */
+
 
 namespace IEngine\ibase;
 
-
+/**
+ * Class iSession - This class handle session related functions.
+ *
+ * @version 1.0
+ * @package IEngine\ibase
+ */
 class iSession
 {
 

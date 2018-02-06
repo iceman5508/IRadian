@@ -1,13 +1,10 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: parker10
- * Date: 8/31/2017
- * Time: 6:16 PM
- */
 
 /**
  * Generate a random string
+ * @param int $length - The length of the string (12 by default)
+ * @param string $pattern - The string pattern to generate from
+ * @return string
  */
 function irand_str($length=12, $pattern='0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'){
     if (!is_numeric($length) || $length < 0) {

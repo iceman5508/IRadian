@@ -1,16 +1,12 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Isaac Parker
- * Date: 9/3/2017
- * Time: 6:37 AM
- * This class handles specific web related requests,
- * http related.
- */
 
 namespace IEngine\ibase;
 
-
+/**
+ * @version 1.0<br>
+ * Class iWeb - This class handles web specific information.
+ * @package IEngine\ibase
+ */
 class iWeb
 {
     /**
@@ -22,7 +18,7 @@ class iWeb
     }
 
     /**
-     * Retrun all http headers
+     * Return all http headers
      * @return array|false
      */
     public static function allHttpHeaders(){
@@ -219,7 +215,7 @@ class iWeb
 
     /**
      * Check if the link is the currently viewed page
-     * @param $linkName
+     * @param $linkName - The name to check against
      * @return bool
      */
     public static function currentPage($linkName){
@@ -246,7 +242,7 @@ class iWeb
 
     /**
      * Returns an array of the url
-     * @param $url
+     * @param $url - The url to break
      * @return array
      */
     public static function breakUrl($url){

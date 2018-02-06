@@ -1,12 +1,5 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: iceman5508
- * Date: 1/13/2018
- * Time: 12:36 PM
- * Application class, acts as a manager for the entire application
- * One of the many brains powering the iRadian framework
- */
+
 
 namespace IRadian\ibase;
 
@@ -16,9 +9,32 @@ use ITemplate\iExtends\iComponent;
 use ITemplate\iExtends\iTags;
 use ITemplate\iExtends\viewManager;
 
+/**
+ * @version 1.0<br>
+ * Class iApplication - This class is the engine of the entire framework. <br> naturally users will NEVER
+ * interact with this class directly. Only interaction users will have with this class is through the iapp file.
+ * However, even then the possible actions are very limited and on rails.
+ * @package IRadian\ibase
+ */
 abstract class iApplication
 {
-    protected $components=array(), $html, $router;
+    /**
+     * List of all components the framework is using
+     * @var array
+     */
+    protected $components=array();
+
+    /**
+     * The location of the main view file
+     * @var
+     */
+    protected $html;
+
+    /**
+     * The router that will be used.
+     * @var iAppRoute
+     */
+    protected $router;
 
     private $viewManager, $parser, $content;
 
@@ -61,6 +77,11 @@ abstract class iApplication
         unset($this->router);
     }
 
+    /**
+     * iApplication constructor. The entry point of the application.
+     * <br>The constructor is given all parsed tokenized,
+     * components, views and routing information. Then the class decides what to do with them.
+     */
     final function __construct(){
         try {
             if (\iConfig::$security['route_limit'] !== NULL && is_numeric(\iConfig::$security['route_limit'])) {
@@ -69,7 +90,6 @@ abstract class iApplication
                     exit();
                 }
             }
-
 
             $this->router = new iAppRoute(\iConfig::$project['route_var']);
             $this->initialSteps();
@@ -83,7 +103,7 @@ abstract class iApplication
     }
 
     /**
-     * Handles load from ui
+     * Handles load from ui.
      * @param $ui
      */
     private function handleUI($ui){
@@ -267,8 +287,14 @@ abstract class iApplication
     }
 
 
+    /**
+     * The main function in which all application data is set.
+     */
     protected abstract function main();
 
+    /**
+     * The function in which route data is set
+     */
     protected abstract function router();
 
 

@@ -1,12 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Isaac Parker
- * Date: 9/4/2017
- * Time: 8:29 PM
- * This class leverages the iFile and iDirectory classes
- * to handle full file systems
- */
 
 namespace IEngine\iExtends;
 
@@ -14,6 +6,12 @@ namespace IEngine\iExtends;
 use IEngine\ibase\iDirectory;
 use IEngine\ibase\iFile;
 
+/**
+ * This class leverages the iFile and iDirectory classes
+ * to handle full file systems
+ * @version 1.0<br>
+* @package IEngine\iExtends
+ */
 class iFileSystems
 {
 

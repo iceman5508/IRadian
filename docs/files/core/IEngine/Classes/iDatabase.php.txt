@@ -1,16 +1,13 @@
 <?php
-/**
- * Author Isaac Parker
- * Date 9-3-2017
- * Class iDatabase
- * @package IEngine\ibase
- */
 
 namespace IEngine\ibase;
 use \PDO;
 use \PDOException;
 
-
+/**
+ * Class iDatabase - This class is an OOP method for database connection through pdo.
+ * @package IEngine\ibase
+ */
 class iDatabase
 {
     private static $config = array('host' => '', 'databasename' =>'', 'username' => '', 'password' => '');

@@ -2,6 +2,11 @@
 
 namespace IEngine\ibase;
 
+/**
+ * @version 1.0<br>
+ * Class iTime - This class handles time related functions
+ * @package IEngine\ibase
+ */
 class iTime{
 	private static $timeZone;
 	public static $timePassed;

@@ -1,29 +1,57 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: iceman5508
- * Date: 10/18/2017
- * Time: 2:40 PM
- */
 namespace ITemplate\iExtends;
+
+/**
+@version 1.0 Beta
+ * <br>
+ *This class is to be extended. It is from this class that components are made.
+ * <br>
+ * From the extensions you can then define component specific variables and functions.
+ * <br>
+ * Components can be equated to controllers in a traditional MVC.
+ */
 abstract class iComponent
 {
+    /**
+     * This variable holds the component data
+     * @var iComponents
+     */
     private $component;
+
+    /**
+     * This variable holds the template location
+     * @var string
+     */
     private $page;
+
+    /**
+     * This variable holds the current route associated with the component.
+     * <br> How ever, it this variable is set by the framework based on
+     * routing data provided.
+     * @var string
+     */
     public $currentRoute;
+
+    /**
+     * This variable is used to expose the component to other aspects of the
+     * application. Do not users will have no interaction with this variable directly.
+     * @var array
+     */
     private static $exports = array();
 
 
 
     /**
      * @return mixed
-     * Can set all class var through this method, but not required
+     * Can set all class var through this method.
      */
     public abstract function attributes();
+
     /**
      * Component class entry point
      * iComponent constructor.
      * @param $page - The template page the component is for
+     * @param $route - The route associated with the component. Not required
      */
     public function __construct($page, $route='/'){
         $this->component = new iComponents();
@@ -69,6 +97,8 @@ abstract class iComponent
     public static function getExport($componentName){
         return self::$exports[$componentName];
     }
+
+
     public function __destruct(){
         $this->component->__destruct();
         unset($this->component);
@@ -78,6 +108,7 @@ abstract class iComponent
     public final function __set($name, $value){
         $this->component->__set($name,$value);
     }
+
     public final function __get($name){
         return $this->component->__get($name);
     }

@@ -1,18 +1,19 @@
 <?php
-/**
- * Author Isaac Parker
- * Date 8-30-2017
- * Class iForm
- * @package IEngine\ibase
- */
 
 namespace IEngine\ibase;
 
-
+/**
+ * This class handles the retrieval of form data.
+ * Class iForm
+ * @package IEngine\ibase
+ */
 class iForm
 {
     private $submit, $iArray;
 
+    /**
+     * iForm constructor. The entry point into the class.
+     */
     public function __construct(){
         $this->submit = $this->setFormData();
     }
@@ -53,7 +54,7 @@ class iForm
     }
 
     /**
-     * Check the lenght of a particular field
+     * Check the length of a particular field
      * @param $fieldName - the name of the field to check
      * @return int - the length of the field data
      */

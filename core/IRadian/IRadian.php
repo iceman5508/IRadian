@@ -1,15 +1,19 @@
 <?php
 /**
- * Created by PhpStorm.
- * User: parker10
- * Date: 9/6/2017
- * Time: 9:34 PM
+@version 1.0 Beta
+ * <br>
+ * This class is the entry point
+ * for the entire IRadian framework.
+ * Documentation in this file is limited since there is very little to no
+ * interaction with this file at all.
  */
-
-
 class IRadian{
     private static $instance = NULL;
 
+    /**
+     * The location of this class
+     * @return string
+     */
     public static function dirHome()
     {
         //return 	getcwd().'/';
@@ -26,6 +30,9 @@ class IRadian{
         return self::$instance;
     }
 
+    /**
+     * Load all package functions
+     */
     public function loadFunctions(){
         $dir =  self::dirHome().'Functions';
         foreach(glob($dir.'/*.php') as $function)

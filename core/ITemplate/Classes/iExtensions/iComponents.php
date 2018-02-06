@@ -1,15 +1,14 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: iceman5508
- * Date: 10/18/2017
- * Time: 10:18 AM
- * This class holds all component information
- */
 
 namespace ITemplate\iExtends;
 
 
+/**
+@version 1.0 Beta
+ * <br>
+ *This is the super class for all components.
+ * There is not interaction with this class directly.
+ */
 
 final class iComponents
 {

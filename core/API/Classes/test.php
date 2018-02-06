@@ -8,7 +8,7 @@
  */
 class test extends \IRadian\ibase\iModel
 {
-    private $users = array(
+    private $videos = array(
         array('name' => 'Dancing Dog', 'video' => 'EcOE1ScBozI')
        ,array('name' => 'Funny Cats Dancing To Music', 'video' => 'RUStXqbydY')
        ,array('name' => 'Tony Baker Comedy Compilations 21 fav', 'video' => 'v3DsBIvz0-0')
@@ -17,6 +17,7 @@ class test extends \IRadian\ibase\iModel
   function __destruct()
   {
       // TODO: Implement __destruct() method.
+      unset($this->videos);
   }
 
   public function __construct($request)
@@ -24,8 +25,8 @@ class test extends \IRadian\ibase\iModel
       parent::__construct($request);
   }
 
-  public function getUser(){
-      return $this->users;
+  public function getVideos(){
+      return $this->videos;
   }
 
 }

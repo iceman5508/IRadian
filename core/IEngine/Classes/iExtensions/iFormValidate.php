@@ -1,10 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: iceman5508
- * Date: 10/29/2017
- * Time: 3:30 PM
- */
 
 namespace IEngine\iExtends;
 use IEngine\ibase\iDatabase;
@@ -12,6 +6,12 @@ use IEngine\ibase\iForm;
 use IEngine\ibase\iSession;
 use IEngine\ibase\iToken;
 
+/**
+ * @version 1.0<br>
+ * This class is used to validate form data prior to submitting the data into a database.
+ * Class iFormValidate
+ * @package IEngine\iExtends
+ */
 class iFormValidate
 {
     private $db, $errors=array(), $isValid = false;

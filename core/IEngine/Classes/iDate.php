@@ -1,9 +1,9 @@
 <?php
 namespace IEngine\ibase;
+
 /**
- * Author Isaac Parker
- * Date 5-31-2017
- * Class iDate
+ * @version 1.0<br>
+ * Class iDate - This class handles dates
  * @package IEngine\ibase
  */
 class iDate {
@@ -11,7 +11,7 @@ class iDate {
 
     /**
      * Return the date.
-     * @param:
+     * @param $options:
      * an associative array with options
      *  array('date' => 'current', 'numeric'=>false or true, 'format' => 'm-d-y' or any sequence of this)
      * or

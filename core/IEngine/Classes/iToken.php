@@ -2,10 +2,7 @@
 namespace IEngine\ibase;
 
 /**
- * Created by PhpStorm.
- * User: parker10 aka Isaac Parker
- * Date: 5/27/2017
- * Time: 8:17 PM
+ * @version 1.0<br>
  * Create a random token that is secure to be used.
  * This token can be limited in length as well.
  *
@@ -17,15 +14,16 @@ namespace IEngine\ibase;
 class iToken
 {
 
-    /** @var string */
+    /** @var string the alphabet to work with*/
     protected $alphabet;
 
-    /** @var int */
+    /** @var int the alphabet length*/
     protected $alphabetLength;
 
 
     /**
-     * @param string $alphabet
+     * iToken constructor - The entry point into the class.
+     * @param string $alphabet - The string to create token around
      */
     public function __construct($alphabet = ''){
         if ('' !== $alphabet) {
@@ -44,6 +42,13 @@ class iToken
         unset($this->alphabetLength);
     }
 
+    /**
+     * Create hash
+     * @param $string - The string to be hashed
+     * @param string $algo - The hashing algorithm
+     * @param string $salt - The salt value to use.
+     * @return array|string
+     */
     public function makeHash($string, $algo='sha256', $salt = '' ){
         if(strlen(trim($salt))<1){
             $salt = $this->generate(8);
@@ -54,6 +59,7 @@ class iToken
 
 
     /**
+     * Set the alphabet string to hash with
      * @param string $alphabet
      */
     public function setAlphabet($alphabet){
@@ -61,8 +67,10 @@ class iToken
         $this->alphabetLength = strlen($alphabet);
     }
 
+
     /**
-     * @param int $length
+     * Generate a token
+     * @param int $length - The length of the token
      * @return string
      */
     public function generate($length){
@@ -76,8 +84,9 @@ class iToken
     }
 
     /**
-     * @param int $min
-     * @param int $max
+     * Return a random integer between two numbers
+     * @param int $min - The minimum number to set the generated int between.
+     * @param int $max - The maximum number to set the generated int between
      * @return int
      */
     private function getRandomInteger($min, $max)

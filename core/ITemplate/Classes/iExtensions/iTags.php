@@ -1,22 +1,26 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: iceman5508
- * Date: 10/18/2017
- * Time: 2:10 PM
- */
 
 namespace ITemplate\iExtends;
 
-
+/**
+@version 1.0 Beta
+ * <br>
+ *Handles the tag sub-language. Tags is how component variables are passed between the component
+ * and the template. This is similar to data binding imn angular.<br>
+ * Users will not interact with this class at all, but it runs in the background.
+ **/
 final class iTags
 {
+    /**
+     * List of all tags.
+     * @var array
+     */
     private static $tags = array();
 
     /**
      * Add a specific tag to the tag pool
      * @param $tag - the tag to use
-     * @param \ITemplate\iExtends\iComponent $component
+     * @param \ITemplate\iExtends\iComponent $component - The component the tag beelongs to.
      */
     public static function setTag($tag, iComponent &$component)
     {

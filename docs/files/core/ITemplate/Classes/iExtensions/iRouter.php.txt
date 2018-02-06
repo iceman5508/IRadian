@@ -1,25 +1,56 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: iceman5508
- * Date: 10/19/2017
- * Time: 9:12 PM
- * Router class
- */
+
 
 namespace  ITemplate\iExtends;
 
-
-
 use IEngine\ibase\iWeb;
+
+/**
+ *The original router class. However as of version 1.0 Beta
+ * This class is being replaced by the iAppRoute class in the
+ * IRadian package. Currently this is the secondary router class.
+ * iAppRoute is not the primary router class.
+ *
+ * version .9 Beta
+ *
+ **/
 
 class iRouter
 {
+    /**
+     * List of all routes
+     * @var array
+     */
     public static $route_list = array();
+
+    /**
+     * List of all params associated with the route
+     * @var null
+     */
     private static $route_param = null;
+
+    /**
+     * The component associated with the current route
+     * @var null
+     */
     private static $component=null;
+
+    /**
+     * The current active route
+     * @var null
+     */
     public static $route = null;
+
+    /**
+     * Current active url param
+     * @var null
+     */
     public static $params = null;
+
+    /**
+     * Current URL
+     * @var
+     */
     private static $url;
 
 
@@ -30,6 +61,7 @@ class iRouter
     public static function callMade(){
         return (isset($_GET[self::$route_param])? true : false);
     }
+
     /**
      * Get the current instance of the route param as well as  set the  router url value
      * @param $route_param - The url param to use to pull routes
@@ -68,8 +100,8 @@ class iRouter
     }
 
     /**The answer method that goes on the answering component page
-     * @param $route
-     * @param iComponent $component
+     * @param $route - The route to check for
+     * @param iComponent $component - The component to load if the route is given
      */
     public static function answer($route, iComponent $component){
         if(isset( self::$route_list[$route])){
@@ -140,7 +172,7 @@ class iRouter
 
     /**
      * Set a router link
-     * @param $linkName
+     * @param $linkName - The location to return
      * @return string
      */
     public static function routerLink($linkName){
@@ -149,7 +181,7 @@ class iRouter
 
     /**
      * Set the limit on number of / the router should expect to go through;
-     * @param $limit
+     * @param $limit - The limit of slashes to have in the url
      * @return bool - false if at or under limit, true if limit is exceeded
      */
     public static function routeLimit($limit){

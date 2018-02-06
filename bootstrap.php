@@ -1,10 +1,8 @@
 <?php
 /**
- * Created by Isaac Parker.
- * User: iceman5508
- * Date: 10/20/2017
- * Time: 1:00 PM
  * The bootstrap file for loading files
+ * This file needs to be included in files that are going to use
+ * the framework.
  */
 
 define('BASEPATH', __DIR__);

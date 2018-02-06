@@ -1,20 +1,18 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: iceman5508
- * Date: 10/24/2017
- * Time: 6:28 PM
- * Class can act as another database class, but primary purpose is to
- * handle seamless migration of data.
- */
+
 
 namespace IEngine\iExtends;
-use IEngine\iExtends\iEazyDBase;
 use IEngine\ibase\iDatabase;
 use mysqli;
 
 
-
+/**
+ * @version 1.0<br>
+ * Class can act as another database class, but primary purpose is to
+ * handle seamless migration of data.
+ * Class iMigration
+ * @package IEngine\iExtends
+ */
 class iMigration
 {
     private $myqli = null, $connect = false, $error=array(), $results =array();

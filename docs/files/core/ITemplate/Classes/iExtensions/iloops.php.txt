@@ -3,26 +3,24 @@
 namespace ITemplate\iExtends;
 
 /**
-@version 1.0 Beta
- * <br>
+ *
  *This class handles all template loops.
- * <br>
  * Possible looping types are for loops and foreach loop. However, while structurally
  * template loops may look the same as traditional loops; there are differences that matter.
  * Main, the keywords "of" and "in". <br>
  *
  * In a traditional foreach loop<br>
  * foreach(items as item)
- * <br>
  * In a template foreach loop<br>
  * (item in items)
- * <br>
+
  *  In a traditional for loop<br>
  * for(i=0; i<sizeof(items) i++)
- *<br>
+
  * In a template for loop<br>
  * (i of items 1)
  *
+ *version 1.0 Beta
  **/
 
 class iloops

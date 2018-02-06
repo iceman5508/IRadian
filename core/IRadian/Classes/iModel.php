@@ -12,10 +12,11 @@ namespace IRadian\ibase;
 use IEngine\ibase\iAPi;
 
 /**
+ * @version 1.0<br>
  * Class iModel
  * Class for handling the model aspect of the application.
  *
- * Note ALL MODELS MUST RUN THE PARENT CONSTRUCTOR
+ * Note ALL EXTENDED MODELS MUST RUN THE PARENT CONSTRUCTOR IF DEFAULT CONSTRUCTOR NOT USED
  * @package IRadian\ibase
  */
 

@@ -1,14 +1,13 @@
 <?php
 
-/**
- * Author Isaac Parker
- * Date 8-31-2017
- * Class iString
- * @package IEngine\ibase
- */
 namespace IEngine\ibase;
 
-
+/**
+ * Class iString - This class handles string related functions.
+ *
+ * @version 1.0<br>
+ * @package IEngine\ibase
+ */
 class iString
 {
     protected $string;

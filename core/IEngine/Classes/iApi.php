@@ -1,10 +1,7 @@
 <?php
 namespace IEngine\ibase;
 /**
- * Created by PhpStorm.
- * User: parker10 aka Isaac Parker
- * Date: 5/25/2017
- * Time: 3:22 PM
+* @version 1.0<br>
  * This class provides an abstract api class from which other api classes
  * or resources can be created.
  *

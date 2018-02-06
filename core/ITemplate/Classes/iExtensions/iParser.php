@@ -1,21 +1,54 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: iceman5508
- * Date: 1/2/2018
- * Time: 7:45 AM
- */
 
 namespace ITemplate\iExtends;
 
+/**
+@version 1.0 Beta
+ * <br>
+ *This class Handles all parsing from the template.
+ * It grabs the data in the template, and parse all special tokens
+ * before passing them to their respective handlers.
+ * Users will never interact with this class directly.
+ *
+ **/
+
 class iParser
 {
+    /**
+     * The content of the template file
+     * @var
+     */
     private $content;
+
+    /**
+     * All function tokens
+     * @var
+     */
     private $functions;
+
+    /**
+     * All loop tokens
+     * @var
+     */
     private $loops;
+
+    /**
+     * The component that the template belongs to
+     * @var
+     */
     private $component;
+
+    /**
+     * Hold all if tokens
+     * @var
+     */
     private $ifs;
 
+    /**
+     * iParser constructor.
+     * @param $content - The content of the template
+     * @param $component - The component associated with the content
+     */
     function __construct($content,$component){
         $this->content = $content;
         $this->component = $component;
@@ -26,6 +59,7 @@ class iParser
 
 
     }
+
 
     function __destruct()
     {
@@ -93,6 +127,7 @@ class iParser
 
 
     /**
+     * Return the parsed content.
      * @return mixed
      */
     public function getContent(){

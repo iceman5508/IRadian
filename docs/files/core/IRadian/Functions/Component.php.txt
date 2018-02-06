@@ -1,10 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: iceman5508
- * Date: 11/14/2017
- * Time: 2:10 PM
- */
 
 /**
  * Loads in a component to the file to be used
@@ -12,7 +6,8 @@
  * @param bool $relative, if component is being loaded directly from the root file - false
  * true - If component is in relative path to file loading it
  * $relative is true by default
- * @return bool
+ * @return bool - true if the component was loaded, false if not
+ * <br>DO NOT ALTER
  */
 function loadComponent( $name,  $relative = true){
     if(!$relative){

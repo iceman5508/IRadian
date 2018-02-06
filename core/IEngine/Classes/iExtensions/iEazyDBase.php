@@ -12,6 +12,12 @@ namespace IEngine\iExtends;
 
 use IEngine\ibase\iDatabase;
 
+/**
+ * @version 1.0<br>
+ * Class iEazyDBase - This class uses encapsulation on the iDatabase class to
+ * interact with the database in an easy to use way.
+ * @package IEngine\iExtends
+ */
 class iEazyDBase
 {
 

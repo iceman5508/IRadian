@@ -2,11 +2,9 @@
 namespace IEngine\ibase;
 
 /**
- * Created by PhpStorm.
- * User: parker10 aka Isaac Parker
- * Date: 5/27/2017
- * Time: 4:41 PM
- * This class is used to handle http requests
+ * @version 1.0<br>
+ * Class iRequest - This class handle http requests
+ * @package IEngine\ibase
  */
 class iRequest
 {

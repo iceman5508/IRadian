@@ -1,24 +1,32 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: iceman5508
- * Date: 10/26/2017
- * Time: 9:51 PM
- */
 
 namespace IRadian\ibase;
-
-
 use IEngine\iExtends\iMigration;
 
+/**
+ * Class iTables handles all database table related actions.
+ * Since this is an abstract class, it will need to be extended in order to be used.
+ *
+ * @version 1.0
+ * @package IRadian\ibase
+ */
 abstract class iTables
 {
+    /**
+     * The table that the class will be interacting with.
+     * @var
+     */
     protected $table;
+
+    /**
+     * The migration class object that handles database interaction.
+     * @var iMigration
+     */
     private $imigrate;
 
     /**
-     * iTables constructor.
-     * @param $table
+     * iTables constructor. This is the entry point for thr itables class.
+     * @param $table - The table that this class will be interacting with.
      */
     final function __construct($table){
         $this->table = $table;
@@ -30,27 +38,26 @@ abstract class iTables
 
         $this->imigrate->createTable($table);
 
+        $this->up();
+
     }
 
-    /**
-     * close off the table
-     */
+
     function __destruct(){
+        $this->down();
         unset($this->table);
         $this->imigrate->closeConnection();
         unset($this->imigrate);
     }
 
     /**
-     * Migrate up
-     * @return mixed
+     * Migrate up - The action to take place after the constructor is called.
      */
     public abstract function up();
 
 
     /**
-     * @return mixed
-     * migrate down
+     * migrate down - The action to take place right before the constructor is called.
      */
     public abstract function down();
 
@@ -267,8 +274,9 @@ abstract class iTables
 
     /**
      * Get data from table
-     * @param array $where
-     * @return array
+     * @param array $where - the where clause to use. However this is in array form.<br>
+     * Example $where=array('id', '=',2)
+     * @return array- An array of the results or an array of errors if one was found.
      */
     public final function get($where=array()){
         if($this->imigrate->get($this->table, $where)){
@@ -320,7 +328,7 @@ abstract class iTables
 
     /**
      * Clear the data from a table
-     * @return \IEngine\iExtends\boool
+     * @return boolean if the table was cleared or not
      */
     public final function clearTableData(){
         return $this->imigrate->clearTable($this->table);
@@ -328,7 +336,6 @@ abstract class iTables
 
     /**
      * Delete the table
-     * @return bool
      */
     public final function deleteTable(){
         if($this->imigrate->deleteTable($this->table)){
@@ -338,6 +345,11 @@ abstract class iTables
         }
     }
 
+    /**
+     * Remove a specific column from the table
+     * @param $columnName - The name of the column.
+     * @return bool - returns true if removed, false if not removed.
+     */
     public final function removeColumn($columnName){
         return $this->imigrate->removeColumn($this->table, $columnName);
     }
