@@ -2,60 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b7fce952-9c7b-4982-8c2b-317c756ae89b" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/IRadian/Classes/iAppRoute.php" afterPath="$PROJECT_DIR$/core/IRadian/Classes/iAppRoute.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/IEngine/Classes/iFile.php" afterPath="$PROJECT_DIR$/core/IEngine/Classes/iFile.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api.php" afterPath="$PROJECT_DIR$/api.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/IEngine/Classes/iRequest.php" afterPath="$PROJECT_DIR$/core/IEngine/Classes/iRequest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/IEngine/IEngine.php" afterPath="$PROJECT_DIR$/core/IEngine/IEngine.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/IEngine/Classes/iExtensions/iEazyDBase.php" afterPath="$PROJECT_DIR$/core/IEngine/Classes/iExtensions/iEazyDBase.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/IEngine/Classes/iExtensions/iMigration.php" afterPath="$PROJECT_DIR$/core/IEngine/Classes/iExtensions/iMigration.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/IEngine/Classes/iTime.php" afterPath="$PROJECT_DIR$/core/IEngine/Classes/iTime.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/IEngine/Classes/iDirectory.php" afterPath="$PROJECT_DIR$/core/IEngine/Classes/iDirectory.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/IEngine/Functions/inumbers.php" afterPath="$PROJECT_DIR$/core/IEngine/Functions/inumbers.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/IRadian/IRadian.php" afterPath="$PROJECT_DIR$/core/IRadian/IRadian.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/ITemplate/Classes/iExtensions/viewManager.php" afterPath="$PROJECT_DIR$/core/ITemplate/Classes/iExtensions/viewManager.php" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/index2.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/layout/content/content.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/layout/content/content.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/layout/header/header.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/layout/header/header.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/welcome/welcome.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/app/welcome/welcomeComponent.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/css/main.css" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/IRadian/Classes/iRParser.php" afterPath="$PROJECT_DIR$/core/IRadian/Classes/iRParser.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/IEngine/Functions/ivalidate.php" afterPath="$PROJECT_DIR$/core/IEngine/Functions/ivalidate.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/IEngine/Functions/ifunctions.php" afterPath="$PROJECT_DIR$/core/IEngine/Functions/ifunctions.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/ITemplate/Classes/iExtensions/iTags.php" afterPath="$PROJECT_DIR$/core/ITemplate/Classes/iExtensions/iTags.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/IEngine/Classes/iNumber.php" afterPath="$PROJECT_DIR$/core/IEngine/Classes/iNumber.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/IRadian/Classes/iApplication.php" afterPath="$PROJECT_DIR$/core/IRadian/Classes/iApplication.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/ITemplate/Classes/iTemplates.php" afterPath="$PROJECT_DIR$/core/ITemplate/Classes/iTemplates.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/ITemplate/Classes/iExtensions/iloops.php" afterPath="$PROJECT_DIR$/core/ITemplate/Classes/iExtensions/iloops.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/ITemplate/Classes/iExtensions/iParser.php" afterPath="$PROJECT_DIR$/core/ITemplate/Classes/iExtensions/iParser.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/IEngine/Classes/iWeb.php" afterPath="$PROJECT_DIR$/core/IEngine/Classes/iWeb.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/IEngine/Functions/istrings.php" afterPath="$PROJECT_DIR$/core/IEngine/Functions/istrings.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/ITemplate/Classes/iExtensions/iFunctions.php" afterPath="$PROJECT_DIR$/core/ITemplate/Classes/iExtensions/iFunctions.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/IEngine/Classes/iToken.php" afterPath="$PROJECT_DIR$/core/IEngine/Classes/iToken.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/ITemplate/Classes/iExtensions/iiF.php" afterPath="$PROJECT_DIR$/core/ITemplate/Classes/iExtensions/iiF.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/IRadian/Functions/Component.php" afterPath="$PROJECT_DIR$/core/IRadian/Functions/Component.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/API/Classes/test.php" afterPath="$PROJECT_DIR$/core/API/Classes/test.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/IEngine/Classes/iExtensions/iFileSystems.php" afterPath="$PROJECT_DIR$/core/IEngine/Classes/iExtensions/iFileSystems.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/ITemplate/Classes/iExtensions/iView.php" afterPath="$PROJECT_DIR$/core/ITemplate/Classes/iExtensions/iView.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/IEngine/Classes/iGlobal.php" afterPath="$PROJECT_DIR$/core/IEngine/Classes/iGlobal.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/ITemplate/Classes/iExtensions/iComponent.php" afterPath="$PROJECT_DIR$/core/ITemplate/Classes/iExtensions/iComponent.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/API/api.php" afterPath="$PROJECT_DIR$/core/API/api.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/IEngine/Classes/iSession.php" afterPath="$PROJECT_DIR$/core/IEngine/Classes/iSession.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/IEngine/Classes/iDate.php" afterPath="$PROJECT_DIR$/core/IEngine/Classes/iDate.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/IEngine/Classes/iForm.php" afterPath="$PROJECT_DIR$/core/IEngine/Classes/iForm.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/IEngine/Classes/iApi.php" afterPath="$PROJECT_DIR$/core/IEngine/Classes/iApi.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/IEngine/Classes/iString.php" afterPath="$PROJECT_DIR$/core/IEngine/Classes/iString.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/IRadian/Classes/iTables.php" afterPath="$PROJECT_DIR$/core/IRadian/Classes/iTables.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/ITemplate/ITemplate.php" afterPath="$PROJECT_DIR$/core/ITemplate/ITemplate.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/ITemplate/Classes/iExtensions/iComponents.php" afterPath="$PROJECT_DIR$/core/ITemplate/Classes/iExtensions/iComponents.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/ITemplate/Functions/tempFunctions.php" afterPath="$PROJECT_DIR$/core/ITemplate/Functions/tempFunctions.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/function.php" afterPath="$PROJECT_DIR$/libs/function.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/IRadian/Classes/iAppSecurity.php" afterPath="$PROJECT_DIR$/core/IRadian/Classes/iAppSecurity.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap.php" afterPath="$PROJECT_DIR$/bootstrap.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/IRadian/Classes/iModel.php" afterPath="$PROJECT_DIR$/core/IRadian/Classes/iModel.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/IEngine/Classes/iExtensions/iFormValidate.php" afterPath="$PROJECT_DIR$/core/IEngine/Classes/iExtensions/iFormValidate.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/IEngine/Classes/iDatabase.php" afterPath="$PROJECT_DIR$/core/IEngine/Classes/iDatabase.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/IEngine/Functions/isanitize.php" afterPath="$PROJECT_DIR$/core/IEngine/Functions/isanitize.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/iConfig.php" afterPath="$PROJECT_DIR$/iConfig.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/ITemplate/Classes/iExtensions/iRouter.php" afterPath="$PROJECT_DIR$/core/ITemplate/Classes/iExtensions/iRouter.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/iApp.php" afterPath="$PROJECT_DIR$/public/iApp.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/IEngine/Classes/iCookie.php" afterPath="$PROJECT_DIR$/core/IEngine/Classes/iCookie.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -66,13 +23,36 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="iApp.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/iApp.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="81">
+              <caret line="10" column="51" lean-forward="true" selection-start-line="10" selection-start-column="51" selection-end-line="10" selection-end-column="51" />
+              <folding>
+                <marker date="1517948179483" expanded="true" signature="534:545" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/app/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="188">
+              <caret line="87" column="72" lean-forward="false" selection-start-line="87" selection-start-column="72" selection-end-line="87" selection-end-column="72" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="JavaScript File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -93,6 +73,7 @@
       <find>if(iss</find>
       <find>new</find>
       <find>eazyDB</find>
+      <find>download</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -101,10 +82,8 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/api.php" />
         <option value="$PROJECT_DIR$/core/API/api.php" />
         <option value="$PROJECT_DIR$/core/API/Classes/test.php" />
-        <option value="$PROJECT_DIR$/public/iApp.php" />
         <option value="$PROJECT_DIR$/libs/function.php" />
         <option value="$PROJECT_DIR$/core/IEngine/IEngine.php" />
         <option value="$PROJECT_DIR$/core/ITemplate/Functions/tempFunctions.php" />
@@ -152,6 +131,8 @@
         <option value="$PROJECT_DIR$/core/IEngine/Functions/istrings.php" />
         <option value="$PROJECT_DIR$/core/IEngine/Functions/isanitize.php" />
         <option value="$PROJECT_DIR$/core/IEngine/Functions/ifunctions.php" />
+        <option value="$PROJECT_DIR$/public/app/index.html" />
+        <option value="$PROJECT_DIR$/public/iApp.php" />
       </list>
     </option>
   </component>
@@ -195,6 +176,60 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="IRadian" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="IRadian" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="IRadian" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="IRadian" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="IRadian" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="IRadian" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scratches" />
@@ -207,19 +242,19 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\IRadian\public\assets" />
+      <recent name="C:\wamp64\www\IRadian" />
+      <recent name="C:\wamp64\www\IRadian\core\IRadian\Classes" />
+      <recent name="C:\wamp64\www\IRadian\core\ITemplate\Classes\iExtensions" />
+      <recent name="C:\wamp64\www\IRadian\core\API\Classes" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\wamp64\www\IRadian\core\IRadian\Classes" />
       <recent name="C:\wamp64\www\IRadian\public\app" />
       <recent name="C:\wamp64\www\IRadian\public" />
       <recent name="C:\wamp64\www\IRadian" />
       <recent name="C:\wamp64\www\IRadian\public\app\welcome" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\wamp64\www\IRadian" />
-      <recent name="C:\wamp64\www\IRadian\core\IRadian\Classes" />
-      <recent name="C:\wamp64\www\IRadian\core\ITemplate\Classes\iExtensions" />
-      <recent name="C:\wamp64\www\IRadian\core\API\Classes" />
-      <recent name="C:\wamp64\www\IRadian\core\IEngine" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -352,12 +387,12 @@
       <workItem from="1517588870701" duration="496000" />
       <workItem from="1517764268692" duration="62557000" />
       <workItem from="1517942328260" duration="132000" />
-      <workItem from="1517944907806" duration="3000" />
+      <workItem from="1517944907806" duration="3002000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="190690000" />
+    <option name="totallyTimeSpent" value="193689000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -369,9 +404,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="1" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25567323" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25567323" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -403,27 +439,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/bootstrap.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="17" lean-forward="false" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/iConfig.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="23" lean-forward="true" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/ITemplate/Classes/iExtensions/iComponent.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="23" lean-forward="true" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/core/ITemplate/Classes/iTemplates.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -533,6 +548,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1972">
           <caret line="116" column="71" lean-forward="false" selection-start-line="116" selection-start-column="71" selection-end-line="116" selection-end-column="71" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -540,6 +556,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="166">
           <caret line="290" column="62" lean-forward="false" selection-start-line="290" selection-start-column="62" selection-end-line="290" selection-end-column="62" />
+          <folding>
+            <element signature="e#35#58#0#PHP" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -747,10 +766,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/public/assets/css/styles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/prettydocs-v1.1/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="17" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="160" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/app/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="188">
+          <caret line="87" column="72" lean-forward="false" selection-start-line="87" selection-start-column="72" selection-end-line="87" selection-end-column="72" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/public/iApp.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="319">
-          <caret line="51" column="8" lean-forward="false" selection-start-line="51" selection-start-column="8" selection-end-line="51" selection-end-column="8" />
+        <state relative-caret-position="81">
+          <caret line="10" column="51" lean-forward="true" selection-start-line="10" selection-start-column="51" selection-end-line="10" selection-end-column="51" />
+          <folding>
+            <marker date="1517948179483" expanded="true" signature="534:545" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>

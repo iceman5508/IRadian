@@ -16,37 +16,11 @@ require_once '../bootstrap.php';
          */
         public function main()
         {
-            $strapView = false;
-            if($strapView){
-                $this->html = 'index';
-            }else{
-                $this->html = 'index2';
-            }
+            $this->html = 'index';
 
-            $this->components = [
-                'header' => [
-                    'component' => 'header'
-                    ,'location' =>  'layout/header/header'
-                    ,'template' => 'layout/header/header.html'
-                    ,'onCondition' => [$strapView , true ]
-                ]
+           $this->components = [
 
-                ,
-                'content' =>[
-                   'component' =>'content'
-                    ,'location' => 'layout/content/content'
-                    ,'template' =>'layout/content/content.html'
-                    ,'onCondition' => [$strapView , true ]
-                    ,'route' => ['/','/home','/404']
-                ]
-                ,  'welcome' =>[
-                    'component' =>'welcomeComponent'
-                    ,'location' => 'welcome/welcomeComponent'
-                    ,'template' =>'welcome/welcome.html'
-                    ,'onCondition' => [$strapView , false ]
-
-                ]
-            ];
+           ];
 
 
         }
