@@ -1,8 +1,6 @@
 # IRadian
-pure php framework
+php framework
 
-
-When moving to production make sure to <b>DELETE DOCS FOLDER</b>
 
 
 <h2><b>Install Instructions</b></h2>
