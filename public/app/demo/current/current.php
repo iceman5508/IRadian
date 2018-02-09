@@ -9,7 +9,7 @@
 class current extends \ITemplate\iExtends\iComponent
 {
 
-    public $sel, $name;
+    public $sel, $video;
 
     public  function attributes(){
             $this->selected();
@@ -21,7 +21,10 @@ class current extends \ITemplate\iExtends\iComponent
         if(isset($_GET['selected'])){
             $this->selected = true;
             $this->sel = $_GET['selected'];
-            $this->name = $_GET['title'];
+            $videos = \IEngine\ibase\iGlobal::get('videos');
+            $all = array_column($videos, 'video');
+            $found_key = array_search($this->sel, $all);
+            $this->video = $videos[$found_key];
         }
 
     }

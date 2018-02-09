@@ -12,9 +12,8 @@ class all extends \ITemplate\iExtends\iComponent
 
     public  function attributes()
     {
-        $request = new \IEngine\ibase\iRequest();
-        $request->get('http://localhost/IRadian/api/', ['api' => 'test/getVideos']);
-        $this->videos = json_decode($request->response(), true);
+
+        $this->videos = \IEngine\ibase\iGlobal::get('videos');
 
 
     }

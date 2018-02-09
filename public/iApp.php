@@ -93,8 +93,13 @@ require_once '../bootstrap.php';
          * that will exist across all application
          */
         public function globals(){
+
+            $request = new \IEngine\ibase\iRequest();
+            $request->get('http://localhost/IRadian/api/', ['api' => 'test/getVideos']);
+            $result =  json_decode($request->response(), true);
+
             $this->globals = [
-                'team' => 'isaac'
+                'videos' => $result
             ];
         }
 

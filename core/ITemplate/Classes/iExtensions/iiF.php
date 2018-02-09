@@ -377,10 +377,34 @@ class iiF
 
 
        foreach($givenVar as $var){
-           if(isset($this->component->{$var})){
-               $replacement = $this->component->{$var};
-              $if =  $this->varEval($var, $replacement, $if);
+           $breakObj= explode('->',$var);
+           $breakArray = explode('[',$var);
+
+           if(count($breakArray) == 1 && count($breakObj) ==1){
+               if(isset($this->component->{$var})){
+                   $replacement = $this->component->{$var};
+                   $if =  $this->varEval($var, $replacement, $if);
+               }
+               unset($breakArray);
+               unset($breakObj);
            }
+           else if(count($breakArray) > 1){
+               if(isset($this->component->{trim($breakArray[0])})){
+                   $replacement = $this->component->{trim($breakArray[0])};
+                   $if =  $this->varEval($var, $replacement, $if);
+               }
+               unset($breakArray);
+               unset($breakObj);
+           }
+           else if(count($breakObj) > 1){
+               if(isset($this->component->{trim($breakObj[0])})){
+                   $replacement = $this->component->{trim($breakObj[0])};
+                   $if =  $this->varEval($var, $replacement, $if);
+               }
+               unset($breakArray);
+               unset($breakObj);
+           }
+
         }
 
             $breakElse  = explode('else', $if);
