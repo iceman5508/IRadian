@@ -104,12 +104,33 @@ class iiF
                     }
                 }
             }else if(count($conditionBreak)==1 && strlen(trim($conditionBreak[0]))>0){
+                  $strSpl = explode('!',trim($conditionBreak[0]));
+                  try {
+                      if(count($strSpl)>1){
+                          $no = true;
+                          $str = $strSpl[1];
+                      }else{
+                          $no = false;
+                          $str = $strSpl[0];
+                      }
+                      if ($no) {
+                            if($this->component->{$str}){
+                                $this->ifs[$if] = $this->handleIfElse(false, $if);
+                            }else{
+                                $this->ifs[$if] = $this->handleIfElse(true, $if);
+                            }
 
-                if(isset($this->component->{$conditionBreak[0]}) && $this->component->{$conditionBreak[0]} !== true){
-                    $this->ifs[$if]  = $this->handleIfElse(true,$if);
-                }else{
-                    $this->ifs[$if]  = $this->handleIfElse(false,$if);
-                }
+                      } else {
+                          if($this->component->{$str}){
+                              $this->ifs[$if] = $this->handleIfElse(true, $if);
+                          }else{
+                              $this->ifs[$if] = $this->handleIfElse(false, $if);
+                          }
+                      }
+
+                  }catch (\Exception $e){
+
+                  }
 
             }
 
