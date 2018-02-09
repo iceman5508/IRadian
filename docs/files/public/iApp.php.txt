@@ -17,6 +17,7 @@ require_once '../bootstrap.php';
         public function main()
         {
 
+            $this->html='';
 
             $this->components = [
 
@@ -33,6 +34,17 @@ require_once '../bootstrap.php';
          */
         public function router(){
 
+        }
+
+
+        /**
+         * In this function you can set global variables
+         * that will exist across all application
+         */
+        public function globals(){
+            $this->globals = [
+                
+            ];
         }
 
 

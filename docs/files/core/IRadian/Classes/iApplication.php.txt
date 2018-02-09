@@ -38,6 +38,12 @@ abstract class iApplication
      */
     protected $router;
 
+    /**
+     * Holds global variables to use across all application pages
+     * @var
+     */
+    protected $globals;
+
     private $viewManager, $parser, $content;
 
     private $jquery = [
@@ -263,6 +269,7 @@ abstract class iApplication
     private function initialSteps(){
         $this->router();
         $this->router->scanner();
+        $this->handleGlobals();
         $this->main();
         foreach ($this->components as $component){
             if(is_array($component)){
@@ -288,6 +295,15 @@ abstract class iApplication
         $this->__destruct();
     }
 
+    private function handleGlobals(){
+        $this->globals();
+        foreach ($this->globals as $global => $value) {
+            iGlobal::add($global, $value);
+        }
+        unset($this->globals);
+        iGlobal::add('router', $this->router);
+    }
+
 
     /**
      * The main function in which all application data is set.
@@ -300,6 +316,10 @@ abstract class iApplication
     protected abstract function router();
 
 
+    /**
+     * The function in which globals are set
+     */
+    protected abstract function globals();
 
 
 
