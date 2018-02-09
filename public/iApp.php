@@ -58,6 +58,13 @@ require_once '../bootstrap.php';
                         ,'template' => 'demo/current/current.html'
                         ,'route' => ['/demo']
                     ]
+                    , 'all' =>[
+                        'tag' => 'all'
+                        ,'component' => 'all'
+                        ,'location' => 'demo/all/all'
+                        ,'template' => 'demo/all/all.html'
+                        ,'route' => ['/demo']
+                    ]
                 ];
 
 
@@ -79,6 +86,16 @@ require_once '../bootstrap.php';
             $this->router->register('/quick');
             $this->router->register('/demo');
 
+        }
+
+        /**
+         * In this function you can set global variables
+         * that will exist across all application
+         */
+        public function globals(){
+            $this->globals = [
+                'team' => 'isaac'
+            ];
         }
 
 

@@ -9,6 +9,6 @@
 class header extends \ITemplate\iExtends\iComponent
 {
     public  function attributes(){
-
+        $this->title = iConfig::$project['title'];
     }
 }

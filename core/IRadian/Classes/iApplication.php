@@ -8,6 +8,7 @@ use IEngine\ibase\iWeb;
 use ITemplate\iExtends\iComponent;
 use ITemplate\iExtends\iTags;
 use ITemplate\iExtends\viewManager;
+use IEngine\ibase\iGlobal;
 
 /**
  * @version 1.0<br>
@@ -35,6 +36,11 @@ abstract class iApplication
      * @var iAppRoute
      */
     protected $router;
+
+    /**
+     * Holds global variables to use across all application pages
+     */
+    protected $globals;
 
     private $viewManager, $parser, $content;
 
@@ -261,6 +267,7 @@ abstract class iApplication
     private function initialSteps(){
         $this->router();
         $this->router->scanner();
+        $this->handleGlobals();
         $this->main();
         foreach ($this->components as $component){
             if(is_array($component)){
@@ -287,6 +294,15 @@ abstract class iApplication
     }
 
 
+    private function handleGlobals(){
+        $this->globals();
+       foreach ($this->globals as $global => $value) {
+           iGlobal::add($global, $value);
+       }
+       unset($this->globals);
+        iGlobal::add('router', $this->router);
+    }
+
     /**
      * The main function in which all application data is set.
      */
@@ -296,6 +312,11 @@ abstract class iApplication
      * The function in which route data is set
      */
     protected abstract function router();
+
+    /**
+     * The function in which globals are set
+     */
+    protected abstract function globals();
 
 
 
