@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b7fce952-9c7b-4982-8c2b-317c756ae89b" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/API/Classes/test.php" afterPath="$PROJECT_DIR$/core/API/Classes/test.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/ITemplate/Classes/iExtensions/iiF.php" afterPath="$PROJECT_DIR$/core/ITemplate/Classes/iExtensions/iiF.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/demo/all/all.html" afterPath="$PROJECT_DIR$/public/app/demo/all/all.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/demo/all/all.php" afterPath="$PROJECT_DIR$/public/app/demo/all/all.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/demo/current/current.html" afterPath="$PROJECT_DIR$/public/app/demo/current/current.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/demo/current/current.php" afterPath="$PROJECT_DIR$/public/app/demo/current/current.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/iApp.php" afterPath="$PROJECT_DIR$/public/iApp.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -21,11 +14,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="test.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="test.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/core/API/Classes/test.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="8" lean-forward="false" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
+            <state relative-caret-position="306">
+              <caret line="18" column="43" lean-forward="false" selection-start-line="18" selection-start-column="43" selection-end-line="18" selection-end-column="43" />
               <folding />
             </state>
           </provider>
@@ -56,18 +49,8 @@
       <file leaf-file-name="current.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/app/demo/current/current.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="16" column="41" lean-forward="false" selection-start-line="16" selection-start-column="41" selection-end-line="16" selection-end-column="41" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="iiF.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/core/ITemplate/Classes/iExtensions/iiF.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="275">
-              <caret line="388" column="32" lean-forward="false" selection-start-line="388" selection-start-column="32" selection-end-line="388" selection-end-column="32" />
+            <state relative-caret-position="200">
+              <caret line="19" column="28" lean-forward="false" selection-start-line="19" selection-start-column="28" selection-end-line="19" selection-end-column="28" />
               <folding />
             </state>
           </provider>
@@ -156,12 +139,12 @@
         <option value="$PROJECT_DIR$/core/ITemplate/Classes/iExtensions/iComponent.php" />
         <option value="$PROJECT_DIR$/public/app/demo/header/header.php" />
         <option value="$PROJECT_DIR$/public/iApp.php" />
-        <option value="$PROJECT_DIR$/core/API/Classes/test.php" />
         <option value="$PROJECT_DIR$/public/app/demo/all/all.php" />
         <option value="$PROJECT_DIR$/public/app/demo/all/all.html" />
         <option value="$PROJECT_DIR$/public/app/demo/current/current.php" />
-        <option value="$PROJECT_DIR$/public/app/demo/current/current.html" />
         <option value="$PROJECT_DIR$/core/ITemplate/Classes/iExtensions/iiF.php" />
+        <option value="$PROJECT_DIR$/public/app/demo/current/current.html" />
+        <option value="$PROJECT_DIR$/core/API/Classes/test.php" />
       </list>
     </option>
   </component>
@@ -376,12 +359,12 @@
       <workItem from="1517588870701" duration="496000" />
       <workItem from="1517764268692" duration="62557000" />
       <workItem from="1517942328260" duration="132000" />
-      <workItem from="1517944907806" duration="31142000" />
+      <workItem from="1517944907806" duration="31670000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="221829000" />
+    <option name="totallyTimeSpent" value="222357000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -912,14 +895,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/API/Classes/test.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="8" lean-forward="false" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/app/demo/current/current.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="269">
@@ -938,18 +913,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/app/demo/current/current.html">
+    <entry file="file://$PROJECT_DIR$/core/ITemplate/Classes/iExtensions/iiF.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="16" column="41" lean-forward="false" selection-start-line="16" selection-start-column="41" selection-end-line="16" selection-end-column="41" />
+        <state relative-caret-position="823">
+          <caret line="417" column="24" lean-forward="false" selection-start-line="417" selection-start-column="24" selection-end-line="417" selection-end-column="24" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/ITemplate/Classes/iExtensions/iiF.php">
+    <entry file="file://$PROJECT_DIR$/public/app/demo/current/current.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="388" column="32" lean-forward="false" selection-start-line="388" selection-start-column="32" selection-end-line="388" selection-end-column="32" />
+        <state relative-caret-position="200">
+          <caret line="19" column="28" lean-forward="false" selection-start-line="19" selection-start-column="28" selection-end-line="19" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/API/Classes/test.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="43" lean-forward="false" selection-start-line="18" selection-start-column="43" selection-end-line="18" selection-end-column="43" />
           <folding />
         </state>
       </provider>
