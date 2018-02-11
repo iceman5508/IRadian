@@ -33,11 +33,14 @@ abstract class iTables
         $this->imigrate = new iMigration(\iConfig::$database['host'],
             \iConfig::$database['username'], \iConfig::$database['password']);
 
-        $this->imigrate->connectToDB(\iConfig::$database['database']);
+        if($this->imigrate->connectToDB(\iConfig::$database['database'])){
+            $this->imigrate->createTable($table);
+            $this->up();
+        }else{
+            //throw error
+        }
 
-        $this->imigrate->createTable($table);
 
-        $this->up();
 
     }
 
