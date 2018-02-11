@@ -35,8 +35,8 @@ class iConfig
     public static $database = [
          'host'  => 'host'
         ,'username' => 'username'
-        ,'password' => 'password'
-        ,'database' => 'database'
+        ,'password' => ''
+        ,'database' => 'Demo'
     ];
 
     /**
