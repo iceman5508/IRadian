@@ -282,6 +282,7 @@ class iMigration
                 return false;
             }
         }
+        $this->error = iDatabase::getInstance()->error();
         return false;
     }
 

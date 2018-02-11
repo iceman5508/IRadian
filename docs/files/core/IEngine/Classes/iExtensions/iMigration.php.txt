@@ -238,7 +238,7 @@ class iMigration
         iEazyDBase::insert($table,$fields);
         $this->results = iDatabase::getInstance()->results();
         $this->error = iDatabase::getInstance()->error();
-        if(count($this->error)==0) {
+        if(!$this->error) {
             return true;
         }else
             return false;

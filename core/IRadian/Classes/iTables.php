@@ -283,14 +283,14 @@ abstract class iTables
         if($this->imigrate->get($this->table, $where)){
             return $this->imigrate->getResults();
         }else{
-            return $this->imigrate->getError();
+            return false;
         }
     }
 
     /**
      * Insert data into the table
      * @param array $fields
-     * @return array
+     * @return boolean | array
      */
     public final function insert($fields = array()){
         if($this->imigrate->insert($this->table,$fields)){

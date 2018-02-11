@@ -289,7 +289,7 @@ abstract class iTables
     /**
      * Insert data into the table
      * @param array $fields
-     * @return array
+     *  @return boolean | array
      */
     public final function insert($fields = array()){
         if($this->imigrate->insert($this->table,$fields)){

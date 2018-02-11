@@ -44,19 +44,27 @@ class videos extends \IEngine\ibase\iAPi
     }
 
     public function post(){
+        if(count($this->properties) >  1) {
+            $video = $this->properties[0];
+            $comment = $this->properties[1];
 
-       $video   = $this->properties[0];
-       $comment = $this->properties[1];
-
-       return $this->table->insert(array(
-            'name' => $video
-            ,'comment' => iescapeCode($comment)
-        ));
+            return $this->table->insert(array(
+                'name' => iescapeCode($video)
+            , 'comment' => iescapeCode($comment)
+            ));
+        }
+        return false;
 
     }
 
-    public function getPosts($video){
-
+    public function getPosts(){
+        if(count($this->properties) === 1){
+            return $this->table->get(array(
+                'video','=', iescapeCode($this->properties[0])
+            ));
+        }else{
+            return [];
+        }
     }
 
     public function getVideos(){
