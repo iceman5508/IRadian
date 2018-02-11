@@ -1,19 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b7fce952-9c7b-4982-8c2b-317c756ae89b" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/libs/function.php" afterPath="$PROJECT_DIR$/libs/functions/function.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap.php" afterPath="$PROJECT_DIR$/bootstrap.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/API/Classes/test.php" afterPath="$PROJECT_DIR$/core/API/Classes/test.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/ITemplate/Classes/iExtensions/iiF.php" afterPath="$PROJECT_DIR$/core/ITemplate/Classes/iExtensions/iiF.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/ITemplate/Functions/tempFunctions.php" afterPath="$PROJECT_DIR$/core/ITemplate/Functions/tempFunctions.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/iConfig.php" afterPath="$PROJECT_DIR$/iConfig.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/demo.html" afterPath="$PROJECT_DIR$/public/app/demo.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/demo/current/current.html" afterPath="$PROJECT_DIR$/public/app/demo/current/current.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/demo/header/header.html" afterPath="$PROJECT_DIR$/public/app/demo/header/header.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/demo/index.html" afterPath="$PROJECT_DIR$/public/app/demo/index.html" />
-    </list>
+    <list default="true" id="b7fce952-9c7b-4982-8c2b-317c756ae89b" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -28,7 +16,7 @@
         <entry file="file://$PROJECT_DIR$/bootstrap.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="319">
-              <caret line="63" column="5" lean-forward="true" selection-start-line="63" selection-start-column="5" selection-end-line="63" selection-end-column="5" />
+              <caret line="63" column="5" lean-forward="false" selection-start-line="63" selection-start-column="5" selection-end-line="63" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -164,24 +152,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="IRadian" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="IRadian" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="IRadian" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="libs" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="functions" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -356,12 +326,12 @@
       <workItem from="1517588870701" duration="496000" />
       <workItem from="1517764268692" duration="62557000" />
       <workItem from="1517942328260" duration="132000" />
-      <workItem from="1517944907806" duration="38771000" />
+      <workItem from="1517944907806" duration="39553000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="229458000" />
+    <option name="totallyTimeSpent" value="230240000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -373,7 +343,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25567323" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -408,21 +378,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/core/IEngine/Classes/iCookie.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/IEngine/Classes/iApi.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="18" lean-forward="false" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/core/IEngine/Classes/iExtensions/iFileSystems.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -814,10 +769,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/libs/classes/custom classes go here">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libs/functions/custom functions go here">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/bootstrap.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="319">
-          <caret line="63" column="5" lean-forward="true" selection-start-line="63" selection-start-column="5" selection-end-line="63" selection-end-column="5" />
+          <caret line="63" column="5" lean-forward="false" selection-start-line="63" selection-start-column="5" selection-end-line="63" selection-end-column="5" />
           <folding />
         </state>
       </provider>

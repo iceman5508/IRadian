@@ -45,7 +45,7 @@ class iMigration
      * @param $databasename - the name of the database to create
      * @return bool
      */
-    public function createDatabase($databasename){
+    private function createDatabase($databasename){
         $sql = "CREATE DATABASE IF NOT EXISTS {$databasename}";
         if($this->connect){
             if ($this->myqli->query($sql) === TRUE) {
@@ -84,7 +84,14 @@ class iMigration
             iDatabase::iDBaseConfig($this->host,$this->database,$this->username,$this->password);
             return true;
         }
+        if($this->createDatabase($databasename)){
+            $this->database = $databasename;
+            iDatabase::iDBaseConfig($this->host,$this->database,$this->username,$this->password);
+            return true;
+        }
         return false;
+
+
     }
 
     /**
