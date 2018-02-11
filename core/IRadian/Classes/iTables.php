@@ -39,9 +39,6 @@ abstract class iTables
         }else{
             //throw error
         }
-
-
-
     }
 
 
