@@ -26,7 +26,7 @@ require_once 'iConfig.php';
 //function for loading all library functions
 function loadFunctions(){
 
-    foreach(glob(LIBS.'/*.php') as $function)
+    foreach(glob(LIBS.'/functions/*.php') as $function)
     {
         if(basename($function) != 'index.php'){
             require_once($function);
@@ -53,8 +53,11 @@ function loadFunctions(){
             require_once CORE.'/IRadian/Classes/'.basename($classname).'.php';
         }else if(file_exists(CORE.'/IRadian/Classes/iExtensions/'.basename($classname).'.php')){
             require_once CORE.'/IRadian/Classes/iExtensions/'.basename($classname).'.php';
-        }else if(file_exists( BASEPATH.'\core/API/Classes/'.$classname.'.php')){
-            require_once BASEPATH.'\core/API/Classes/'.$classname.'.php';
+        }else if(file_exists( BASEPATH.'/core/API/Classes/'.$classname.'.php')){
+            require_once BASEPATH.'/core/API/Classes/'.$classname.'.php';
+        }
+        else if(file_exists( LIBS.'/classes/'.$classname.'.php')){
+            require_once  LIBS.'/classes/'.$classname.'.php';
         }
 
 

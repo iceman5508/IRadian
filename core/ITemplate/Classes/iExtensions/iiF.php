@@ -385,8 +385,6 @@ class iiF
                    $replacement = $this->component->{$var};
                    $if =  $this->varEval($var, $replacement, $if);
                }
-               unset($breakArray);
-               unset($breakObj);
            }
            else if(count($breakArray) > 1){
                if(isset($this->component->{trim($breakArray[0])})){

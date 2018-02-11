@@ -22,7 +22,7 @@ class iConfig
      * @var array
      */
     public static $project = [
-        'title' => 'Project Title'
+        'title' => 'IRadian'
         ,'author' => 'Author Name'
         ,'route_var' => 'route'
     ];

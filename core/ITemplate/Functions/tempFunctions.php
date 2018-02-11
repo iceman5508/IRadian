@@ -50,4 +50,4 @@ if(!function_exists("get_data_between_braceLoop")){
             return substr($content, $i, $len);
         }
     }
-}
+    }

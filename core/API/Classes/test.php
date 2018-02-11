@@ -10,10 +10,10 @@ class test extends \IRadian\ibase\iModel
 {
     private $videos = array(
          array('name' => 'Dancing Dog', 'video' => 'EcOE1ScBozI',
-             'desc' =>'Lit meme about dancing dogs and shooting stars.' )
+             'desc' =>'Let us enjoy watching dancing dogs and shooting stars.' )
        , array('name' => 'PSY - GANGNAM STYLE', 'video' => '9bZkp7q19f0',
             'desc' =>'Greatest Dance in history')
-       , array('name' => 'Tony Baker Comedy Compilations 21 fav', 'video' => 'v3DsBIvz0-0'
+       , array('name' => 'Tony Baker Comedy Compilations 35', 'video' => '8dsk4W39vNI'
         ,'desc' =>'When Animals talk')
        ,array('name' => 'What if you were a younger sibling of Jesus?', 'video' => 'LbP4KttZOcc'
         ,'desc' =>'James Christ..too funny!')
