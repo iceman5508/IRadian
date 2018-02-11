@@ -60,7 +60,7 @@ class videos extends \IEngine\ibase\iAPi
     public function getPosts(){
         if(count($this->properties) === 1){
             return $this->table->get(array(
-                'video','=', iescapeCode($this->properties[0])
+                'name','=', iescapeCode($this->properties[0])
             ));
         }else{
             return [];

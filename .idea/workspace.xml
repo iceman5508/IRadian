@@ -6,103 +6,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/API/Classes/videos.php" afterPath="$PROJECT_DIR$/core/API/Classes/videos.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/IEngine/Classes/iExtensions/iMigration.php" afterPath="$PROJECT_DIR$/core/IEngine/Classes/iExtensions/iMigration.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/IRadian/Classes/iTables.php" afterPath="$PROJECT_DIR$/core/IRadian/Classes/iTables.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/classes/IEngine.iExtends.iEazyDBase.html" afterPath="$PROJECT_DIR$/docs/classes/IEngine.iExtends.iEazyDBase.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/classes/IEngine.iExtends.iFileSystems.html" afterPath="$PROJECT_DIR$/docs/classes/IEngine.iExtends.iFileSystems.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/classes/IEngine.iExtends.iFormValidate.html" afterPath="$PROJECT_DIR$/docs/classes/IEngine.iExtends.iFormValidate.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/classes/IEngine.iExtends.iMigration.html" afterPath="$PROJECT_DIR$/docs/classes/IEngine.iExtends.iMigration.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/classes/IEngine.ibase.iAPi.html" afterPath="$PROJECT_DIR$/docs/classes/IEngine.ibase.iAPi.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/classes/IEngine.ibase.iCookie.html" afterPath="$PROJECT_DIR$/docs/classes/IEngine.ibase.iCookie.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/classes/IEngine.ibase.iDatabase.html" afterPath="$PROJECT_DIR$/docs/classes/IEngine.ibase.iDatabase.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/classes/IEngine.ibase.iDate.html" afterPath="$PROJECT_DIR$/docs/classes/IEngine.ibase.iDate.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/classes/IEngine.ibase.iDirectory.html" afterPath="$PROJECT_DIR$/docs/classes/IEngine.ibase.iDirectory.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/classes/IEngine.ibase.iFile.html" afterPath="$PROJECT_DIR$/docs/classes/IEngine.ibase.iFile.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/classes/IEngine.ibase.iForm.html" afterPath="$PROJECT_DIR$/docs/classes/IEngine.ibase.iForm.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/classes/IEngine.ibase.iGlobal.html" afterPath="$PROJECT_DIR$/docs/classes/IEngine.ibase.iGlobal.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/classes/IEngine.ibase.iNumber.html" afterPath="$PROJECT_DIR$/docs/classes/IEngine.ibase.iNumber.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/classes/IEngine.ibase.iRequest.html" afterPath="$PROJECT_DIR$/docs/classes/IEngine.ibase.iRequest.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/classes/IEngine.ibase.iSession.html" afterPath="$PROJECT_DIR$/docs/classes/IEngine.ibase.iSession.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/classes/IEngine.ibase.iString.html" afterPath="$PROJECT_DIR$/docs/classes/IEngine.ibase.iString.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/classes/IEngine.ibase.iTime.html" afterPath="$PROJECT_DIR$/docs/classes/IEngine.ibase.iTime.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/classes/IEngine.ibase.iToken.html" afterPath="$PROJECT_DIR$/docs/classes/IEngine.ibase.iToken.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/classes/IEngine.ibase.iWeb.html" afterPath="$PROJECT_DIR$/docs/classes/IEngine.ibase.iWeb.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/classes/IRadian.ibase.iAppRoute.html" afterPath="$PROJECT_DIR$/docs/classes/IRadian.ibase.iAppRoute.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/classes/IRadian.ibase.iAppSecurity.html" afterPath="$PROJECT_DIR$/docs/classes/IRadian.ibase.iAppSecurity.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/classes/IRadian.ibase.iApplication.html" afterPath="$PROJECT_DIR$/docs/classes/IRadian.ibase.iApplication.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/classes/IRadian.ibase.iRParser.html" afterPath="$PROJECT_DIR$/docs/classes/IRadian.ibase.iRParser.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/classes/IRadian.ibase.iTables.html" afterPath="$PROJECT_DIR$/docs/classes/IRadian.ibase.iTables.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/classes/ITemplate.iExtends.iComponent.html" afterPath="$PROJECT_DIR$/docs/classes/ITemplate.iExtends.iComponent.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/classes/ITemplate.iExtends.iComponents.html" afterPath="$PROJECT_DIR$/docs/classes/ITemplate.iExtends.iComponents.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/classes/ITemplate.iExtends.iFunctions.html" afterPath="$PROJECT_DIR$/docs/classes/ITemplate.iExtends.iFunctions.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/classes/ITemplate.iExtends.iParser.html" afterPath="$PROJECT_DIR$/docs/classes/ITemplate.iExtends.iParser.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/classes/ITemplate.iExtends.iRouter.html" afterPath="$PROJECT_DIR$/docs/classes/ITemplate.iExtends.iRouter.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/classes/ITemplate.iExtends.iTags.html" afterPath="$PROJECT_DIR$/docs/classes/ITemplate.iExtends.iTags.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/classes/ITemplate.iExtends.iView.html" afterPath="$PROJECT_DIR$/docs/classes/ITemplate.iExtends.iView.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/classes/ITemplate.iExtends.iiF.html" afterPath="$PROJECT_DIR$/docs/classes/ITemplate.iExtends.iiF.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/classes/ITemplate.iExtends.iloops.html" afterPath="$PROJECT_DIR$/docs/classes/ITemplate.iExtends.iloops.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/classes/ITemplate.iExtends.viewManager.html" afterPath="$PROJECT_DIR$/docs/classes/ITemplate.iExtends.viewManager.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/classes/ITemplate.ibase.iTemplates.html" afterPath="$PROJECT_DIR$/docs/classes/ITemplate.ibase.iTemplates.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/classes/api.html" afterPath="$PROJECT_DIR$/docs/classes/api.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/classes/iApp.html" afterPath="$PROJECT_DIR$/docs/classes/iApp.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/files/core.API.api.html" afterPath="$PROJECT_DIR$/docs/files/core.API.api.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/files/core.IEngine.Classes.iApi.html" afterPath="$PROJECT_DIR$/docs/files/core.IEngine.Classes.iApi.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/files/core.IEngine.Classes.iCookie.html" afterPath="$PROJECT_DIR$/docs/files/core.IEngine.Classes.iCookie.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/files/core.IEngine.Classes.iDatabase.html" afterPath="$PROJECT_DIR$/docs/files/core.IEngine.Classes.iDatabase.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/files/core.IEngine.Classes.iDate.html" afterPath="$PROJECT_DIR$/docs/files/core.IEngine.Classes.iDate.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/files/core.IEngine.Classes.iDirectory.html" afterPath="$PROJECT_DIR$/docs/files/core.IEngine.Classes.iDirectory.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/files/core.IEngine.Classes.iExtensions.iEazyDBase.html" afterPath="$PROJECT_DIR$/docs/files/core.IEngine.Classes.iExtensions.iEazyDBase.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/files/core.IEngine.Classes.iExtensions.iFileSystems.html" afterPath="$PROJECT_DIR$/docs/files/core.IEngine.Classes.iExtensions.iFileSystems.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/files/core.IEngine.Classes.iExtensions.iFormValidate.html" afterPath="$PROJECT_DIR$/docs/files/core.IEngine.Classes.iExtensions.iFormValidate.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/files/core.IEngine.Classes.iExtensions.iMigration.html" afterPath="$PROJECT_DIR$/docs/files/core.IEngine.Classes.iExtensions.iMigration.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/files/core.IEngine.Classes.iFile.html" afterPath="$PROJECT_DIR$/docs/files/core.IEngine.Classes.iFile.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/files/core.IEngine.Classes.iForm.html" afterPath="$PROJECT_DIR$/docs/files/core.IEngine.Classes.iForm.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/files/core.IEngine.Classes.iGlobal.html" afterPath="$PROJECT_DIR$/docs/files/core.IEngine.Classes.iGlobal.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/files/core.IEngine.Classes.iNumber.html" afterPath="$PROJECT_DIR$/docs/files/core.IEngine.Classes.iNumber.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/files/core.IEngine.Classes.iRequest.html" afterPath="$PROJECT_DIR$/docs/files/core.IEngine.Classes.iRequest.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/files/core.IEngine.Classes.iSession.html" afterPath="$PROJECT_DIR$/docs/files/core.IEngine.Classes.iSession.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/files/core.IEngine.Classes.iString.html" afterPath="$PROJECT_DIR$/docs/files/core.IEngine.Classes.iString.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/files/core.IEngine.Classes.iTime.html" afterPath="$PROJECT_DIR$/docs/files/core.IEngine.Classes.iTime.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/files/core.IEngine.Classes.iToken.html" afterPath="$PROJECT_DIR$/docs/files/core.IEngine.Classes.iToken.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/files/core.IEngine.Classes.iWeb.html" afterPath="$PROJECT_DIR$/docs/files/core.IEngine.Classes.iWeb.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/files/core.IEngine.Functions.ifunctions.html" afterPath="$PROJECT_DIR$/docs/files/core.IEngine.Functions.ifunctions.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/files/core.IEngine.Functions.inumbers.html" afterPath="$PROJECT_DIR$/docs/files/core.IEngine.Functions.inumbers.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/files/core.IEngine.Functions.isanitize.html" afterPath="$PROJECT_DIR$/docs/files/core.IEngine.Functions.isanitize.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/files/core.IEngine.Functions.istrings.html" afterPath="$PROJECT_DIR$/docs/files/core.IEngine.Functions.istrings.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/files/core.IEngine.Functions.ivalidate.html" afterPath="$PROJECT_DIR$/docs/files/core.IEngine.Functions.ivalidate.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/files/core.IRadian.Classes.iAppRoute.html" afterPath="$PROJECT_DIR$/docs/files/core.IRadian.Classes.iAppRoute.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/files/core.IRadian.Classes.iAppSecurity.html" afterPath="$PROJECT_DIR$/docs/files/core.IRadian.Classes.iAppSecurity.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/files/core.IRadian.Classes.iApplication.html" afterPath="$PROJECT_DIR$/docs/files/core.IRadian.Classes.iApplication.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/files/core.IRadian.Classes.iRParser.html" afterPath="$PROJECT_DIR$/docs/files/core.IRadian.Classes.iRParser.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/files/core.IRadian.Classes.iTables.html" afterPath="$PROJECT_DIR$/docs/files/core.IRadian.Classes.iTables.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/files/core.IRadian.Functions.Component.html" afterPath="$PROJECT_DIR$/docs/files/core.IRadian.Functions.Component.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/files/core.ITemplate.Classes.iExtensions.iComponent.html" afterPath="$PROJECT_DIR$/docs/files/core.ITemplate.Classes.iExtensions.iComponent.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/files/core.ITemplate.Classes.iExtensions.iComponents.html" afterPath="$PROJECT_DIR$/docs/files/core.ITemplate.Classes.iExtensions.iComponents.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/files/core.ITemplate.Classes.iExtensions.iFunctions.html" afterPath="$PROJECT_DIR$/docs/files/core.ITemplate.Classes.iExtensions.iFunctions.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/files/core.ITemplate.Classes.iExtensions.iParser.html" afterPath="$PROJECT_DIR$/docs/files/core.ITemplate.Classes.iExtensions.iParser.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/files/core.ITemplate.Classes.iExtensions.iRouter.html" afterPath="$PROJECT_DIR$/docs/files/core.ITemplate.Classes.iExtensions.iRouter.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/files/core.ITemplate.Classes.iExtensions.iTags.html" afterPath="$PROJECT_DIR$/docs/files/core.ITemplate.Classes.iExtensions.iTags.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/files/core.ITemplate.Classes.iExtensions.iView.html" afterPath="$PROJECT_DIR$/docs/files/core.ITemplate.Classes.iExtensions.iView.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/files/core.ITemplate.Classes.iExtensions.iiF.html" afterPath="$PROJECT_DIR$/docs/files/core.ITemplate.Classes.iExtensions.iiF.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/files/core.ITemplate.Classes.iExtensions.iloops.html" afterPath="$PROJECT_DIR$/docs/files/core.ITemplate.Classes.iExtensions.iloops.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/files/core.ITemplate.Classes.iExtensions.viewManager.html" afterPath="$PROJECT_DIR$/docs/files/core.ITemplate.Classes.iExtensions.viewManager.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/files/core.ITemplate.Classes.iTemplates.html" afterPath="$PROJECT_DIR$/docs/files/core.ITemplate.Classes.iTemplates.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/files/core.ITemplate.Functions.tempFunctions.html" afterPath="$PROJECT_DIR$/docs/files/core.ITemplate.Functions.tempFunctions.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/files/core.iModuels.index.html" afterPath="$PROJECT_DIR$/docs/files/core.iModuels.index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/files/core.index.html" afterPath="$PROJECT_DIR$/docs/files/core.index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/files/core/IEngine/Classes/iExtensions/iMigration.php.txt" afterPath="$PROJECT_DIR$/docs/files/core/IEngine/Classes/iExtensions/iMigration.php.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/files/core/IRadian/Classes/iTables.php.txt" afterPath="$PROJECT_DIR$/docs/files/core/IRadian/Classes/iTables.php.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/files/libs.function.html" afterPath="$PROJECT_DIR$/docs/files/libs.function.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/files/public.iApp.html" afterPath="$PROJECT_DIR$/docs/files/public.iApp.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/graphs/class.html" afterPath="$PROJECT_DIR$/docs/graphs/class.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/index.html" afterPath="$PROJECT_DIR$/docs/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/namespaces/IEngine.html" afterPath="$PROJECT_DIR$/docs/namespaces/IEngine.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/namespaces/IEngine.iExtends.html" afterPath="$PROJECT_DIR$/docs/namespaces/IEngine.iExtends.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/namespaces/IEngine.ibase.html" afterPath="$PROJECT_DIR$/docs/namespaces/IEngine.ibase.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/namespaces/IRadian.html" afterPath="$PROJECT_DIR$/docs/namespaces/IRadian.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/namespaces/IRadian.ibase.html" afterPath="$PROJECT_DIR$/docs/namespaces/IRadian.ibase.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/namespaces/ITemplate.html" afterPath="$PROJECT_DIR$/docs/namespaces/ITemplate.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/namespaces/ITemplate.iExtends.html" afterPath="$PROJECT_DIR$/docs/namespaces/ITemplate.iExtends.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/namespaces/ITemplate.ibase.html" afterPath="$PROJECT_DIR$/docs/namespaces/ITemplate.ibase.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/namespaces/default.html" afterPath="$PROJECT_DIR$/docs/namespaces/default.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -117,8 +20,8 @@
       <file leaf-file-name="videos.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/core/API/Classes/videos.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="61" column="19" lean-forward="false" selection-start-line="61" selection-start-column="19" selection-end-line="61" selection-end-column="19" />
+            <state relative-caret-position="193">
+              <caret line="62" column="21" lean-forward="false" selection-start-line="62" selection-start-column="21" selection-end-line="62" selection-end-column="21" />
               <folding>
                 <element signature="e#7#98#0#PHP" expanded="true" />
               </folding>
@@ -129,9 +32,26 @@
       <file leaf-file-name="iTables.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/IRadian/Classes/iTables.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="261">
-              <caret line="285" column="25" lean-forward="true" selection-start-line="285" selection-start-column="25" selection-end-line="285" selection-end-column="25" />
+            <state relative-caret-position="125">
+              <caret line="282" column="29" lean-forward="false" selection-start-line="282" selection-start-column="29" selection-end-line="282" selection-end-column="29" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="iMigration.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/IEngine/Classes/iExtensions/iMigration.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="79">
+              <caret line="278" column="65" lean-forward="false" selection-start-line="278" selection-start-column="65" selection-end-line="278" selection-end-column="65" />
+              <folding>
+                <marker date="1518374047810" expanded="true" signature="2823:2913" ph="CREATE TABLE... $" />
+                <marker date="1518374047810" expanded="true" signature="3564:3575" ph="DROP TABLE $... " />
+                <marker date="1518374047810" expanded="true" signature="4142:4216" ph="ALTER TABLE `${{$tableName}}`... " />
+                <marker date="1518374047810" expanded="true" signature="4254:4317" ph="ALTER TABLE `${{$tableName}}`... " />
+                <marker date="1518374047810" expanded="true" signature="5356:5393" ph="ALTER TABLE $... " />
+                <marker date="1518374047810" expanded="true" signature="8508:8520" ph="DELETE FROM " />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -230,9 +150,9 @@
         <option value="$PROJECT_DIR$/iConfig.php" />
         <option value="$PROJECT_DIR$/../docRadian/IRadian/core/IRadian/Classes/iTables.php" />
         <option value="$PROJECT_DIR$/../docRadian/IRadian/core/IEngine/Classes/iExtensions/iMigration.php" />
-        <option value="$PROJECT_DIR$/core/API/Classes/videos.php" />
-        <option value="$PROJECT_DIR$/core/IEngine/Classes/iExtensions/iMigration.php" />
         <option value="$PROJECT_DIR$/core/IRadian/Classes/iTables.php" />
+        <option value="$PROJECT_DIR$/core/IEngine/Classes/iExtensions/iMigration.php" />
+        <option value="$PROJECT_DIR$/core/API/Classes/videos.php" />
       </list>
     </option>
   </component>
@@ -433,12 +353,12 @@
       <workItem from="1517588870701" duration="496000" />
       <workItem from="1517764268692" duration="62557000" />
       <workItem from="1517942328260" duration="132000" />
-      <workItem from="1517944907806" duration="49367000" />
+      <workItem from="1517944907806" duration="50378000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="240054000" />
+    <option name="totallyTimeSpent" value="241065000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -485,14 +405,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/public/app/quick/quickstart.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="44" lean-forward="false" selection-start-line="11" selection-start-column="44" selection-end-line="11" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/app/demo/footer/footer.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -871,51 +783,61 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/IEngine/Classes/iDatabase.php">
+    <entry file="file://$PROJECT_DIR$/../IEngine2/classes/DBaseConnect/Database.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="243" column="0" lean-forward="false" selection-start-line="243" selection-start-column="0" selection-end-line="243" selection-end-column="0" />
+        <state relative-caret-position="-3445">
+          <caret line="49" column="20" lean-forward="false" selection-start-line="49" selection-start-column="20" selection-end-line="49" selection-end-column="20" />
           <folding>
-            <marker date="1517938820163" expanded="true" signature="3445:3517" ph="INSERT INTO ${$table}... " />
+            <marker date="1504455112000" expanded="true" signature="2217:2289" ph="INSERT INTO ${$table}... " />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/core/IEngine/Classes/iExtensions/iEazyDBase.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="143">
-          <caret line="94" column="43" lean-forward="true" selection-start-line="94" selection-start-column="43" selection-end-line="94" selection-end-column="43" />
+        <state relative-caret-position="126">
+          <caret line="93" column="27" lean-forward="false" selection-start-line="93" selection-start-column="27" selection-end-line="93" selection-end-column="27" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/IEngine/Classes/iDatabase.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="71" column="20" lean-forward="false" selection-start-line="71" selection-start-column="20" selection-end-line="71" selection-end-column="20" />
+          <folding>
+            <marker date="1517938820163" expanded="true" signature="3445:3517" ph="INSERT INTO ${$table}... " />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/core/IEngine/Classes/iExtensions/iMigration.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="274" column="29" lean-forward="false" selection-start-line="274" selection-start-column="29" selection-end-line="274" selection-end-column="29" />
+        <state relative-caret-position="79">
+          <caret line="278" column="65" lean-forward="false" selection-start-line="278" selection-start-column="65" selection-end-line="278" selection-end-column="65" />
           <folding>
-            <marker date="1518373020552" expanded="true" signature="2823:2913" ph="CREATE TABLE... $" />
-            <marker date="1518373020552" expanded="true" signature="3564:3575" ph="DROP TABLE $... " />
-            <marker date="1518373020552" expanded="true" signature="4142:4216" ph="ALTER TABLE `${{$tableName}}`... " />
-            <marker date="1518373020552" expanded="true" signature="4254:4317" ph="ALTER TABLE `${{$tableName}}`... " />
-            <marker date="1518373020552" expanded="true" signature="5356:5393" ph="ALTER TABLE $... " />
-            <marker date="1518373020552" expanded="true" signature="8418:8430" ph="DELETE FROM " />
+            <marker date="1518374047810" expanded="true" signature="2823:2913" ph="CREATE TABLE... $" />
+            <marker date="1518374047810" expanded="true" signature="3564:3575" ph="DROP TABLE $... " />
+            <marker date="1518374047810" expanded="true" signature="4142:4216" ph="ALTER TABLE `${{$tableName}}`... " />
+            <marker date="1518374047810" expanded="true" signature="4254:4317" ph="ALTER TABLE `${{$tableName}}`... " />
+            <marker date="1518374047810" expanded="true" signature="5356:5393" ph="ALTER TABLE $... " />
+            <marker date="1518374047810" expanded="true" signature="8508:8520" ph="DELETE FROM " />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/core/IRadian/Classes/iTables.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="285" column="25" lean-forward="true" selection-start-line="285" selection-start-column="25" selection-end-line="285" selection-end-column="25" />
+        <state relative-caret-position="125">
+          <caret line="282" column="29" lean-forward="false" selection-start-line="282" selection-start-column="29" selection-end-line="282" selection-end-column="29" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/core/API/Classes/videos.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="61" column="19" lean-forward="false" selection-start-line="61" selection-start-column="19" selection-end-line="61" selection-end-column="19" />
+        <state relative-caret-position="193">
+          <caret line="62" column="21" lean-forward="false" selection-start-line="62" selection-start-column="21" selection-end-line="62" selection-end-column="21" />
           <folding>
             <element signature="e#7#98#0#PHP" expanded="true" />
           </folding>
