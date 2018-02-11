@@ -39,6 +39,8 @@ abstract class iTables
         }else{
             //throw error
         }
+
+
     }
 
 
@@ -292,7 +294,7 @@ abstract class iTables
      */
     public final function insert($fields = array()){
         if($this->imigrate->insert($this->table,$fields)){
-            return $this->imigrate->getResults();
+            return true;
         }else{
             return $this->imigrate->getError();
         }

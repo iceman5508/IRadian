@@ -95,7 +95,7 @@ require_once '../bootstrap.php';
         public function globals(){
 
             $request = new \IEngine\ibase\iRequest();
-            $request->get('http://localhost/IRadian/api/', ['api' => 'test/getVideos']);
+            $request->get('http://localhost/IRadian/api/', ['api' => 'videos/getVideos']);
             $result =  json_decode($request->response(), true);
 
             $this->globals = [

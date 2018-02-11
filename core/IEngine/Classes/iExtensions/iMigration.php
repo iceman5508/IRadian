@@ -45,7 +45,7 @@ class iMigration
      * @param $databasename - the name of the database to create
      * @return bool
      */
-    private function createDatabase($databasename){
+    public function createDatabase($databasename){
         $sql = "CREATE DATABASE IF NOT EXISTS {$databasename}";
         if($this->connect){
             if ($this->myqli->query($sql) === TRUE) {
@@ -84,14 +84,7 @@ class iMigration
             iDatabase::iDBaseConfig($this->host,$this->database,$this->username,$this->password);
             return true;
         }
-        if($this->createDatabase($databasename)){
-            $this->database = $databasename;
-            iDatabase::iDBaseConfig($this->host,$this->database,$this->username,$this->password);
-            return true;
-        }
         return false;
-
-
     }
 
     /**
@@ -237,7 +230,7 @@ class iMigration
         iEazyDBase::insert($table,$fields);
         $this->results = iDatabase::getInstance()->results();
         $this->error = iDatabase::getInstance()->error();
-        if(count($this->error)==0) {
+        if(!$this->error) {
             return true;
         }else
             return false;

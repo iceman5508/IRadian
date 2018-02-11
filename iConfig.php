@@ -33,8 +33,8 @@ class iConfig
      * @var array
      */
     public static $database = [
-         'host'  => 'host'
-        ,'username' => 'username'
+         'host'  => 'localhost'
+        ,'username' => 'root'
         ,'password' => ''
         ,'database' => 'Demo'
     ];
@@ -64,8 +64,7 @@ class iConfig
     public static $api = [
         'var' => 'api'
         ,'resources' => [
-            'test'
-            ,'Users'
+            'videos'
         ]
     ];
 
