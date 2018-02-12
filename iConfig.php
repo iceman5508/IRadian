@@ -33,10 +33,10 @@ class iConfig
      * @var array
      */
     public static $database = [
-         'host'  => 'localhost'
-        ,'username' => 'root'
-        ,'password' => ''
-        ,'database' => 'Demo'
+         'host'  => 'host'
+        ,'username' => 'username'
+        ,'password' => 'password'
+        ,'database' => 'Databasename'
     ];
 
     /**
@@ -62,9 +62,9 @@ class iConfig
      * @var array
      */
     public static $api = [
-        'var' => 'api'
+        'var' => ''
         ,'resources' => [
-            'videos'
+
         ]
     ];
 

@@ -1,4 +1,0 @@
-<?php
-/**
- **blank functions file
- */
