@@ -1,26 +1,52 @@
 var url = 'http://localhost/IRadian/api/';
+var selected = iEnviornment.param('selected');
 
-function getComments(videoId) {
+/**
+ * Get all comments
+ * @param videoId
+ * @returns {string}
+ */
+function getComments() {
    var comments =  iHttpService.get(
         url
        ,{
-            'api' : 'videos/getPosts/'+videoId
+            'api' : 'videos/getPosts/'+selected
        });
 
    return comments.data;
-
-
-
 }
 
-function loadComments(videoId) {
+/**
+ * Load comments
+ * @param videoId
+ */
+function loadComments() {
 
     var commentBox = $('#comments');
-    var comments = getComments(videoId);
+    var comments = getComments(selected);
     for(var i=0; i<comments.length; i++){
         commentBox.html( commentBox.html()+'<p>'+comments[i].comment+'</p><hr>');
     }
-
 }
 
-console.log(iEnviornment.param('selected'));
+
+if(!selected){}else{ loadComments(selected);}
+
+/**
+ * Post a comment
+ */
+function postComment() {
+    var message =$('#commentArea').val();
+    if(message.trim().length > 0) {
+        var comment = iHttpService.post(
+            url
+            , {
+                'api': 'videos/post/' + selected + '/' + message
+            });
+    }
+    if(comment.data){
+        $('#commentArea').val('');
+        var commentBox = $('#comments');
+        $("#comments").prepend('<p>'+message+'</p><hr>');
+    }
+}
