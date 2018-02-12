@@ -16,7 +16,7 @@ require_once '../bootstrap.php';
          */
         public function main()
         {
-                $this->html = 'home';
+                $this->html = 'app';
 
                 $this->components = [
                     'Hello' => [
