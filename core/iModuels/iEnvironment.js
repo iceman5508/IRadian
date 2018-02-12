@@ -45,6 +45,24 @@ const iEnviornment = new function () {
         return path.split("/").pop();
     }
 
+    /**
+     * Return the current url
+     */
+    this.url = function () {
+        return window.location.href;
+    }
+
+    /**
+     * Return a specific param from the url
+     * @param name - The param name
+     * @returns {string}
+     */
+    this.param = function getUrlParameter(name) {
+        name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
+        var regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
+        var results = regex.exec(location.search);
+        return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
+    };
 
 
 
