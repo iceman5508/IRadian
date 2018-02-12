@@ -23,3 +23,4 @@ function loadComments(videoId) {
 
 }
 
+console.log(iEnviornment.param('selected'));
