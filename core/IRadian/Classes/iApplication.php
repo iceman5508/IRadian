@@ -164,17 +164,21 @@ abstract class iApplication
      * handle loads from config
      */
     private function handleConfig($config){
+        $replacements = array();
         foreach ($config as $c){
             $conName = "#config[$c]";
-            $breakConfig = explode(',',$c);
-            $value='';
-            foreach ($breakConfig as $break){
-                if(isset(\iConfig::$project[trim($break)])) {
-                    $value .= \iConfig::$project[trim($break)];
+                $value='';
+                if(isset(\iConfig::$project[trim($c)])) {
+                    $value .= \iConfig::$project[trim($c)];
+
                 }
+            if(!in_array($value, $replacements)) {
+                $this->content = $this->replaceAllInstance($this->content, $conName, $value);
+                $replacements[] = $value;
             }
-            $this->content = $this->replaceAllInstance($this->content,$conName,$value);
+
         }
+
     }
 
 
