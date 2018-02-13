@@ -36,37 +36,7 @@ const iEnviornment = new function () {
             return check;
     }
 
-    /**
-     * Return the current page being viewed
-     * @returns {*}
-     */
-    this.currentPage = function () {
-       var path =  window.location.pathname;
-        return path.split("/").pop();
-    }
 
-    /**
-     * Return the current url
-     */
-    this.url = function () {
-        return window.location.href;
-    }
-
-    /**
-     * Return a specific param from the url
-     * @param name - The param name
-     * @returns {string}
-     */
-    this.param = function getParameterByName(name) {
-        var url = this.url();
-        if (!url) url = window.location.href;
-        name = name.replace(/[\[\]]/g, "\\$&");
-        var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
-            results = regex.exec(url);
-        if (!results) return null;
-        if (!results[2]) return '';
-        return decodeURIComponent(results[2].replace(/\+/g, " "));
-    }
 
 
 

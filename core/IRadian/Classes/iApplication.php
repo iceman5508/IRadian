@@ -58,16 +58,10 @@ abstract class iApplication
 
 
     private $imoduels=[
-        'iHttpService' => PROJECT.'/core/iModuels/iHttpService.js'
-        ,'iEnvironment' => PROJECT.'/core/iModuels/iEnvironment.js'
-        ,'iModal' => [
+        'iModal' => [
             'js' => PROJECT.'/core/iModuels/imodal/iModal.js'
             ,'css' => PROJECT.'/core/iModuels/imodal/iModal.css'
             ]
-        ,'iVariable' => PROJECT.'/core/iModuels/iVariable.js'
-        ,'iRedirect' => PROJECT.'/core/iModuels/iRedirect.js'
-
-
     ];
 
     function __destruct()
@@ -151,11 +145,15 @@ abstract class iApplication
         $breakModuel = explode(',',$m);
         $value='';
         foreach ($breakModuel as $break){
-            if(isset($this->imoduels[trim($break)])) {
-                $value .= '<script type="text/javascript" src="' . $this->imoduels[trim($break)] . '"></script>';
+            $location = PROJECT.'/core/iModuels/'.trim($break).'.js';
+
+            $content = file_get_contents($location);
+            if(strlen($content) > 1){
+                $value .= '<script type="text/javascript" src="' . $location . '"></script>';
             }
         }
         $this->content = $this->replaceAllInstance($this->content,$modName,$value);
+        unset($content);
     }
 }
 

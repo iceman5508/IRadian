@@ -11,5 +11,7 @@ class home extends \ITemplate\iExtends\iComponent
     public  function attributes(){
         $this->helloWorld = 'Welcome to '.iConfig::$project['title'];
         $this->image = 'public/assets/logo3.png';
+
+
     }
 }
