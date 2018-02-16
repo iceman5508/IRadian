@@ -30,7 +30,7 @@ class iRParser
      */
     function __construct($content){
         $this->content = $content;
-        $this->parsed =  array('ui'=> $this->parseUI(), 'config' => $this->parseConfig(), 'moduel' => $this->parseModuel());
+        $this->parsed =  array('ui'=> $this->parseUI(), 'config' => $this->parseConfig(), 'module' => $this->parseModuel());
     }
 
     function __destruct()

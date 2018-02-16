@@ -141,7 +141,7 @@ abstract class iApplication
      */
     private function handleModuel($moduel){
     foreach ($moduel as $m){
-        $modName = "#moduel[$m]";
+        $modName = "#module[$m]";
         $breakModuel = explode(',',$m);
         $value='';
         foreach ($breakModuel as $break){
