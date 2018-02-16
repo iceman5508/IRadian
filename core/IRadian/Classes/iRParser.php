@@ -61,7 +61,7 @@ class iRParser
      * @return mixed - The parsed moduel data.
      */
     private function parseModuel(){
-        return $this->parser('moduel');
+        return $this->parser('module');
     }
 
     /**

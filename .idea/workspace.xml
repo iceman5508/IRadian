@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="b7fce952-9c7b-4982-8c2b-317c756ae89b" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/IRadian/Classes/iRParser.php" afterPath="$PROJECT_DIR$/core/IRadian/Classes/iRParser.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -14,23 +15,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="app.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/public/app/app.html">
+      <file leaf-file-name="iRParser.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/core/IRadian/Classes/iRParser.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="377">
-              <caret line="60" column="0" lean-forward="false" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="28" />
-              <folding>
-                <element signature="e#1564#1570#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="home.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/app/Hello/home.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="8" lean-forward="false" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
+            <state relative-caret-position="17">
+              <caret line="32" column="91" lean-forward="false" selection-start-line="32" selection-start-column="91" selection-end-line="32" selection-end-column="97" />
               <folding />
             </state>
           </provider>
@@ -76,6 +65,7 @@
       <find>config</find>
       <find>file</find>
       <find>unset</find>
+      <find>#moduel</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -84,7 +74,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/core/IEngine/Classes/iCookie.php" />
         <option value="$PROJECT_DIR$/core/IEngine/Classes/iApi.php" />
         <option value="$PROJECT_DIR$/core/IEngine/Classes/iExtensions/iEazyDBase.php" />
         <option value="$PROJECT_DIR$/core/IEngine/Classes/iExtensions/iFileSystems.php" />
@@ -130,11 +119,12 @@
         <option value="$PROJECT_DIR$/public/iApp.php" />
         <option value="$PROJECT_DIR$/public/app/Hello/home.html" />
         <option value="$PROJECT_DIR$/core/iModuels/imodal/iWeb.js" />
-        <option value="$PROJECT_DIR$/core/IRadian/Classes/iApplication.php" />
         <option value="$PROJECT_DIR$/core/iModuels/iEnvironment.js" />
         <option value="$PROJECT_DIR$/core/iModuels/iWeb.js" />
         <option value="$PROJECT_DIR$/public/app/Hello/home.php" />
         <option value="$PROJECT_DIR$/public/app/app.html" />
+        <option value="$PROJECT_DIR$/core/IRadian/Classes/iRParser.php" />
+        <option value="$PROJECT_DIR$/core/IRadian/Classes/iApplication.php" />
       </list>
     </option>
   </component>
@@ -178,6 +168,78 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="IRadian" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="IRadian" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="IRadian" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="IRadian" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="IRadian" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="IRadian" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="IRadian" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="IRadian" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Classes" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="IRadian" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="IRadian" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="IEngine" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -190,19 +252,19 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\wamp64\www\IRadian\public\assets" />
-      <recent name="C:\wamp64\www\IRadian" />
-      <recent name="C:\wamp64\www\IRadian\core\IRadian\Classes" />
-      <recent name="C:\wamp64\www\IRadian\core\ITemplate\Classes\iExtensions" />
-      <recent name="C:\wamp64\www\IRadian\core\API\Classes" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\wamp64\www\IRadian\core\iModuels" />
       <recent name="C:\wamp64\www\IRadian\libs\functions" />
       <recent name="C:\wamp64\www\IRadian\core\IRadian\Classes" />
       <recent name="C:\wamp64\www\IRadian\public\app" />
       <recent name="C:\wamp64\www\IRadian\public" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\IRadian\core\IRadian\Classes" />
+      <recent name="C:\wamp64\www\IRadian\public\assets" />
+      <recent name="C:\wamp64\www\IRadian" />
+      <recent name="C:\wamp64\www\IRadian\core\ITemplate\Classes\iExtensions" />
+      <recent name="C:\wamp64\www\IRadian\core\API\Classes" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -341,12 +403,12 @@
       <workItem from="1518516725856" duration="8098000" />
       <workItem from="1518537065167" duration="121000" />
       <workItem from="1518618982251" duration="331000" />
-      <workItem from="1518715656581" duration="1377000" />
+      <workItem from="1518715656581" duration="1836000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="269828000" />
+    <option name="totallyTimeSpent" value="270287000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -585,13 +647,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/IRadian/Classes/iRParser.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="918">
-          <caret line="54" column="21" lean-forward="false" selection-start-line="54" selection-start-column="21" selection-end-line="54" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/iApp.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="86">
@@ -621,13 +676,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/IRadian/Classes/iApplication.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="149" column="24" lean-forward="true" selection-start-line="149" selection-start-column="24" selection-end-line="149" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/core/iModuels/iEnvironment.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="646">
@@ -649,10 +697,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/app/Hello/home.php">
+    <entry file="file://$PROJECT_DIR$/core/IRadian/Classes/iApplication.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
-          <caret line="11" column="8" lean-forward="false" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
+          <caret line="15" column="91" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="328" selection-end-column="1" />
           <folding />
         </state>
       </provider>
@@ -664,6 +712,22 @@
           <folding>
             <element signature="e#1564#1570#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/app/Hello/home.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="8" lean-forward="false" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/IRadian/Classes/iRParser.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="32" column="91" lean-forward="false" selection-start-line="32" selection-start-column="91" selection-end-line="32" selection-end-column="97" />
+          <folding />
         </state>
       </provider>
     </entry>

@@ -288,7 +288,7 @@ abstract class iApplication
         $this->parser = new iRParser($this->content);
         $parsed = $this->parser->getParsed();
         $this->handleUI($parsed['ui']);
-        $this->handleModuel($parsed['moduel']);
+        $this->handleModuel($parsed['module']);
         $this->handleConfig($parsed['config']);
         $this->viewManager =  new viewManager($this->content,true);
         $this->viewManager->render();
