@@ -2,10 +2,9 @@
 
 
 use IEngine\ibase\iWeb;
-
 define('PROJECT', iWeb::projectUrl());
 define('LIBS', BASEPATH.'\libs');
-define('VENDORS', iWeb::projectUrl().'/vendors');
+define('VENDORS', iWeb::projectUrl().'vendors');
 
 /**
  * Author: Isaac Parker

@@ -40,6 +40,10 @@ function loadFunctions(){
      * @throws Exception
      */
     function __autoload($classname){
+
+        $parts = explode('\\', $classname);
+        $classname = end($parts);
+
         if(file_exists(CORE.'/IEngine/Classes/'.basename($classname).'.php')){
             require_once CORE.'/IEngine/Classes/'.basename($classname).'.php';
         }else if(file_exists(CORE.'/IEngine/Classes/iExtensions/'.basename($classname).'.php')){
