@@ -166,10 +166,12 @@ class iWeb
      * @return string
      */
     public static function projectUrl(){
-        $array = explode("/",  $_SERVER['HTTP_HOST'].''.$_SERVER['REQUEST_URI']);
-        $location = $array[0]."/".$array[1];
-        return "http://".$location;
-
+        return sprintf(
+            "%s://%s%s",
+            isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] != 'off' ? 'https' : 'http',
+            $_SERVER['SERVER_NAME'],
+            $_SERVER['REQUEST_URI']
+        );
     }
 
     /**

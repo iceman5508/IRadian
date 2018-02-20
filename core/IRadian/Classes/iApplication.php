@@ -45,22 +45,22 @@ abstract class iApplication
     private $viewManager, $parser, $content;
 
     private $jquery = [
-        'js' => PROJECT.'/vendors/jquery/jquery.js'
-        ,'ui' =>   PROJECT.'/vendors/jquery/jquery-ui.min.js'
-        ,'css' =>   PROJECT.'/vendors/jquery/jquery-ui.min.css'
+        'js' => PROJECT.'vendors/jquery/jquery.js'
+        ,'ui' =>   PROJECT.'vendors/jquery/jquery-ui.min.js'
+        ,'css' =>   PROJECT.'vendors/jquery/jquery-ui.min.css'
     ];
 
     private $bootstrap = [
-        'js' =>  PROJECT.'/vendors/bootstrap/bootstrap.bundle.min.js'
-        ,'css' =>  PROJECT.'/vendors/bootstrap/bootstrap.css'
+        'js' =>  PROJECT.'vendors/bootstrap/bootstrap.bundle.min.js'
+        ,'css' =>  PROJECT.'vendors/bootstrap/bootstrap.css'
 
     ];
 
 
     private $imoduels=[
         'iModal' => [
-            'js' => PROJECT.'/core/iModuels/imodal/iModal.js'
-            ,'css' => PROJECT.'/core/iModuels/imodal/iModal.css'
+            'js' => PROJECT.'core/iModuels/imodal/iModal.js'
+            ,'css' => PROJECT.'core/iModuels/imodal/iModal.css'
             ]
     ];
 
