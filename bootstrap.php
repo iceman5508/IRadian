@@ -70,5 +70,8 @@ function loadFunctions(){
 
 loadFunctions();
 
+    print \IEngine\ibase\iWeb::removeLastSlash();
+    die();
+
 
 /**********************************Custom bootstraps******************************************/

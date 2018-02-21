@@ -111,8 +111,12 @@ class iWeb
      * @return string
      */
     public static function currentUrl() {
-        $activeURL = "http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
-        return $activeURL;
+        return sprintf(
+            "%s://%s%s",
+            isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] != 'off' ? 'https' : 'http',
+            $_SERVER['HTTP_HOST'],
+            $_SERVER['REQUEST_URI']
+        );
     }
 
 
@@ -144,7 +148,13 @@ class iWeb
         $array = explode("/",  $_SERVER['HTTP_HOST'].''.$_SERVER['REQUEST_URI']);
         unset($array[sizeof($array)-1]);
         $location = implode("/", $array);
-        return "http://".$location;
+        return sprintf(
+            "%s://%s%s",
+            isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] != 'off' ? 'https' : 'http',
+           $location,
+            ''
+        );
+
 
     }
 
@@ -179,8 +189,12 @@ class iWeb
      * @return string
      */
     public static function host(){
-        $activeURL = "http://".$_SERVER['HTTP_HOST'];
-        return $activeURL;
+        return sprintf(
+            "%s://%s%s",
+            isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] != 'off' ? 'https' : 'http',
+            $_SERVER['HTTP_HOST'],
+            ''
+        );
     }
 
     /**
@@ -188,13 +202,18 @@ class iWeb
      * @return mixed
      */
     public static function removeUrlEx(){
-        $activeURL = "http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
+       $activeURL = sprintf(
+            "%s://%s%s",
+            isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] != 'off' ? 'https' : 'http',
+            $_SERVER['HTTP_HOST'],
+            $_SERVER['REQUEST_URI']
+        );
         $withoutExt = preg_replace('/\\.[^.\\s]{3,4}$/', '', $activeURL);
         return $withoutExt;
     }
 
     /**
-     * Redirects the user to a safe version of the requested url without a trailiong back slash
+     * Redirects the user to a safe version of the requested url without a trailing back slash
      */
     public static function removeLastSlash(){
         $activeURL = "http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
