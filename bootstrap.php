@@ -6,7 +6,7 @@
  */
 
 define('BASEPATH', __DIR__);
-define('CORE', BASEPATH.'\core');
+define('CORE', BASEPATH.'/core');
 
 //include IEngine Library
 require_once 'core/IEngine/IEngine.php';
