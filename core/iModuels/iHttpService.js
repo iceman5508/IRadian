@@ -8,22 +8,17 @@ const iHttpService = new function(){
      * @param params
      * @returns {{data: string, code: number}}
      */
-    this.get = function (requestUrl, params = {}) {
-        var response = {
-            data: '',
-            code: 400
-        };
+    this.get = function (requestUrl, params = {}, callback) {
         $.ajax({
             type: "GET",
             url: requestUrl,
             data: params,
-            async: false,
-            success: function (text) {
-                response.data = text;
-                response.code = 200;
-            }
+            success: function(text) {
+                callback({'data': text, 'success': true})
+            },
+            error: callback({'data' : '', 'success':false} )
         });
-        return response;
+
     }
 
     /**
@@ -32,21 +27,15 @@ const iHttpService = new function(){
      * @param params
      * @returns {{data: boolean, code: number}}
      */
-    this.post = function (requestUrl, params = {}) {
-        var response = {
-            data: false,
-            code: 400
-        };
+    this.post = function (requestUrl, params = {}, callback) {
         $.ajax({
             type: "POST",
             url: requestUrl,
             data: params,
-            async: false,
-            success: function (text) {
-                response.data = text;
-                response.code = 200;
-            }
+            success: function(text) {
+                callback({'data': text, 'success': true})
+            },
+            error: callback({'data' : '', 'success':false} )
         });
-        return response;
     }
 }
