@@ -161,7 +161,8 @@ abstract class iAPi
 
 
     /**
-     * Returns an associative array of the passed data
+     * Returns an associative array of the passed data.
+     * Expect passed data to be in json format
      * @return mixed
      */
     public function requestParams(){
