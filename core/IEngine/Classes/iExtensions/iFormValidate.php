@@ -150,9 +150,7 @@ class iFormValidate
     final public static function makeToken($tokenName){
         $token = new iToken();
         $token = $token->makeHash($token->generate(irand_num(4,16)));
-        $salt = $token[1];
-        $token = $token[0];
-        iSession::set($tokenName,  $token);
+        iSession::set($tokenName,  $token[0]);
         return iSession::get($tokenName);
     }
 
