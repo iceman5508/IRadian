@@ -26,7 +26,7 @@ function iForm(formClass){
             obj[item.name] = item.value;
         }
 
-       this.data = obj;
+        this.data = obj;
 
 
     };
@@ -69,7 +69,7 @@ function iForm(formClass){
      * @param name - The field name
      */
     this.getDataCount = function (name) {
-       return this.data[name].length;
+        return this.data[name].length;
     };
 
 
@@ -83,7 +83,7 @@ function iForm(formClass){
         var val1 = this.data[field1].trim();
         var val2 = this.data[field2].trim();
 
-       return (val1.toLowerCase().localeCompare(val2.toLowerCase()) == 0? true : false);
+        return (val1.toLowerCase().localeCompare(val2.toLowerCase()) == 0? true : false);
     };
 
 
@@ -95,16 +95,28 @@ function iForm(formClass){
      */
     this.submit = function (requestType, url, callback) {
         var xmlhttp = new XMLHttpRequest();
+
+
         xmlhttp.onreadystatechange = function() {
             if (this.readyState == 4 && this.status == 200) {
-              callback(xmlhttp.responseText);
+                callback(xmlhttp.responseText);
 
             }
         }
 
-       var queryString = this.serialize();
-        xmlhttp.open(requestType, url+queryString, true);
-        xmlhttp.send();
+        var queryString = this.serialize();
+
+
+        if(requestType == 'POST'){
+            xmlhttp.open(requestType, url, true);
+            xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+            xmlhttp.send(queryString);
+        }else{
+            xmlhttp.open(requestType, url+queryString, true);
+            xmlhttp.send();
+        }
+
+
     };
 
 
