@@ -103,7 +103,7 @@ function iForm(formClass){
         }
 
        var queryString = this.serialize();
-        xmlhttp.open(requestType, url+"?"+queryString, true);
+        xmlhttp.open(requestType, url+queryString, true);
         xmlhttp.send();
     };
 
