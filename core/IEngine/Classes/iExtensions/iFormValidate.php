@@ -15,7 +15,6 @@ use IEngine\ibase\iToken;
 class iFormValidate
 {
     private $db, $errors=array(), $isValid = false;
-    private static $token, $salt;
 
     /**
      * iFormValidate constructor.
@@ -150,10 +149,10 @@ class iFormValidate
      */
     final public static function makeToken($tokenName){
         $token = new iToken();
-        self::$token = $token->makeHash($token->generate(irand_num(4,16)));
-        self::$salt = self::$token[1];
-        self::$token = self::$token[0];
-        iSession::set($tokenName,  self::$token);
+        $token = $token->makeHash($token->generate(irand_num(4,16)));
+        $salt = $token[1];
+        $token = $token[0];
+        iSession::set($tokenName,  $token);
         return iSession::get($tokenName);
     }
 
@@ -163,7 +162,7 @@ class iFormValidate
      * @return bool
      */
     final public static function checkToken($tokenName){
-        if(iSession::exists($tokenName) &&  self::$token === iSession::get($tokenName)){
+        if(iSession::exists($tokenName) &&   $_REQUEST[$tokenName] === iSession::get($tokenName)){
             iSession::delete($tokenName);
             return true;
         }

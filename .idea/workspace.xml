@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b7fce952-9c7b-4982-8c2b-317c756ae89b" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/IEngine/Classes/iApi.php" afterPath="$PROJECT_DIR$/core/IEngine/Classes/iApi.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/IEngine/Classes/iExtensions/iFormValidate.php" afterPath="$PROJECT_DIR$/core/IEngine/Classes/iExtensions/iFormValidate.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -15,21 +14,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="iApi.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/core/IEngine/Classes/iApi.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="413">
-              <caret line="170" column="23" lean-forward="true" selection-start-line="170" selection-start-column="23" selection-end-line="170" selection-end-column="23" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="iFormValidate.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="iFormValidate.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/core/IEngine/Classes/iExtensions/iFormValidate.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
-              <caret line="64" column="53" lean-forward="true" selection-start-line="64" selection-start-column="53" selection-end-line="64" selection-end-column="53" />
+            <state relative-caret-position="171">
+              <caret line="16" column="51" lean-forward="false" selection-start-line="16" selection-start-column="51" selection-end-line="16" selection-end-column="51" />
               <folding />
             </state>
           </provider>
@@ -85,7 +74,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/core/IEngine/Functions/isanitize.php" />
         <option value="$PROJECT_DIR$/core/IEngine/Functions/ifunctions.php" />
         <option value="$PROJECT_DIR$/public/app/index.html" />
         <option value="$PROJECT_DIR$/public/app/404/found.php" />
@@ -136,6 +124,7 @@
         <option value="$PROJECT_DIR$/core/iModuels/iForm.js" />
         <option value="$PROJECT_DIR$/core/IEngine/Classes/iForm.php" />
         <option value="$PROJECT_DIR$/core/IEngine/Classes/iApi.php" />
+        <option value="$PROJECT_DIR$/core/IEngine/Classes/iExtensions/iFormValidate.php" />
       </list>
     </option>
   </component>
@@ -354,12 +343,12 @@
       <workItem from="1519588992363" duration="1238000" />
       <workItem from="1519592198510" duration="21000" />
       <workItem from="1519783471852" duration="22818000" />
-      <workItem from="1519916400193" duration="4588000" />
+      <workItem from="1519916400193" duration="5721000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="305633000" />
+    <option name="totallyTimeSpent" value="306766000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -371,7 +360,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33585477" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -674,18 +663,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/IEngine/Classes/iExtensions/iFormValidate.php">
+    <entry file="file://$PROJECT_DIR$/core/IEngine/Classes/iApi.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="64" column="53" lean-forward="true" selection-start-line="64" selection-start-column="53" selection-end-line="64" selection-end-column="53" />
+        <state relative-caret-position="294">
+          <caret line="163" column="55" lean-forward="false" selection-start-line="163" selection-start-column="55" selection-end-line="163" selection-end-column="55" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/IEngine/Classes/iApi.php">
+    <entry file="file://$PROJECT_DIR$/core/IEngine/Classes/iExtensions/iFormValidate.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="413">
-          <caret line="170" column="23" lean-forward="true" selection-start-line="170" selection-start-column="23" selection-end-line="170" selection-end-column="23" />
+        <state relative-caret-position="171">
+          <caret line="16" column="51" lean-forward="false" selection-start-line="16" selection-start-column="51" selection-end-line="16" selection-end-column="51" />
           <folding />
         </state>
       </provider>
