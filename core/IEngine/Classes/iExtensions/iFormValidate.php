@@ -88,7 +88,7 @@ class iFormValidate
                             case 'tblUnique':
                                 if($table !== false ){
                                 if($dbFieldName !== false){
-                                        $check = $this->db->getQuery($table , array($dbFieldName ,"=", $fieldValue));
+                                        $check = $this->db->getQuery($table , array($dbFieldName ,"=", iescapeCode($fieldValue)));
                                         if($check!==false){
                                             if( $check->count()) {
                                                 if($data===true){
