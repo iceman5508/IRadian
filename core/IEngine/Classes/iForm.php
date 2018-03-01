@@ -88,12 +88,8 @@ class iForm
     }
 
     private function setFormData(){
-        if(!empty($_POST)){
-            foreach($_POST AS $key => $value) {
-                $this->iArray[$key] =$value;
-            }
-        }else if(!empty($_GET)){
-            foreach($_GET AS $key => $value) {
+        if(!empty($_REQUEST)){
+            foreach($_REQUEST AS $key => $value) {
                 $this->iArray[$key] =$value;
             }
         }else { return false; }
