@@ -43,7 +43,7 @@ class iFormValidate
      * @param $fieldData - The rules to follow with the validation
      * @param $checkName - The initial check name to run across, recommend the use of the form's submit button here
      */
-    public function validate($type, $fieldData, $checkName ){
+    public function validate($type, $fieldData = array(), $checkName ){
         $dbFieldName = false;
         $table=false;
         if(isset($type[$checkName])){
