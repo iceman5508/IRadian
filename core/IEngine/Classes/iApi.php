@@ -162,13 +162,12 @@ abstract class iAPi
 
     /**
      * Returns an associative array of the passed data.
-     * Expect passed data to be in json format
      * @return mixed
      */
     public function requestParams(){
         $request = $_REQUEST;
         array_shift($request);
-        return json_decode($request);
+        return $request;
     }
 
 
