@@ -167,7 +167,7 @@ abstract class iAPi
     public function requestParams(){
         $request = $_REQUEST;
         array_shift($request);
-        return $request;
+        return json_decode($request);
     }
 
 
