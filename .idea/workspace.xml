@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b7fce952-9c7b-4982-8c2b-317c756ae89b" name="Default" comment="" />
+    <list default="true" id="b7fce952-9c7b-4982-8c2b-317c756ae89b" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/IEngine/Classes/iExtensions/iMigration.php" afterPath="$PROJECT_DIR$/core/IEngine/Classes/iExtensions/iMigration.php" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -12,11 +14,28 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="iForm.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/core/iModuels/iForm.js">
+      <file leaf-file-name="iMigration.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/IEngine/Classes/iExtensions/iMigration.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="439">
-              <caret line="139" column="0" lean-forward="false" selection-start-line="139" selection-start-column="0" selection-end-line="139" selection-end-column="0" />
+            <state relative-caret-position="313">
+              <caret line="239" column="4" lean-forward="false" selection-start-line="239" selection-start-column="4" selection-end-line="239" selection-end-column="4" />
+              <folding>
+                <marker date="1520007734707" expanded="true" signature="2823:2913" ph="CREATE TABLE... $" />
+                <marker date="1520007734707" expanded="true" signature="3564:3575" ph="DROP TABLE $... " />
+                <marker date="1520007734707" expanded="true" signature="4142:4216" ph="ALTER TABLE `${{$tableName}}`... " />
+                <marker date="1520007734707" expanded="true" signature="4254:4317" ph="ALTER TABLE `${{$tableName}}`... " />
+                <marker date="1520007734707" expanded="true" signature="5356:5393" ph="ALTER TABLE $... " />
+                <marker date="1520007734707" expanded="true" signature="8548:8560" ph="DELETE FROM " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="iTables.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/core/IRadian/Classes/iTables.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="295" column="30" lean-forward="false" selection-start-line="295" selection-start-column="30" selection-end-line="295" selection-end-column="30" />
               <folding />
             </state>
           </provider>
@@ -92,7 +111,6 @@
         <option value="$PROJECT_DIR$/../docRadian/IRadian/core/IRadian/Classes/iTables.php" />
         <option value="$PROJECT_DIR$/../docRadian/IRadian/core/IEngine/Classes/iExtensions/iMigration.php" />
         <option value="$PROJECT_DIR$/core/IRadian/Classes/iTables.php" />
-        <option value="$PROJECT_DIR$/core/IEngine/Classes/iExtensions/iMigration.php" />
         <option value="$PROJECT_DIR$/core/API/Classes/videos.php" />
         <option value="$PROJECT_DIR$/public/assets/css/styles.css" />
         <option value="$PROJECT_DIR$/public/app/demo/header/header.html" />
@@ -121,8 +139,9 @@
         <option value="$PROJECT_DIR$/core/IRadian/Classes/iApplication.php" />
         <option value="$PROJECT_DIR$/core/IEngine/Classes/iForm.php" />
         <option value="$PROJECT_DIR$/core/IEngine/Classes/iApi.php" />
-        <option value="$PROJECT_DIR$/core/IEngine/Classes/iExtensions/iFormValidate.php" />
         <option value="$PROJECT_DIR$/core/iModuels/iForm.js" />
+        <option value="$PROJECT_DIR$/core/IEngine/Classes/iExtensions/iFormValidate.php" />
+        <option value="$PROJECT_DIR$/core/IEngine/Classes/iExtensions/iMigration.php" />
       </list>
     </option>
   </component>
@@ -194,7 +213,29 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="iModuels" />
+              <option name="myItemId" value="IRadian" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="IRadian" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="IRadian" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="IRadian" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Classes" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -373,12 +414,12 @@
       <workItem from="1519588992363" duration="1238000" />
       <workItem from="1519592198510" duration="21000" />
       <workItem from="1519783471852" duration="22818000" />
-      <workItem from="1519916400193" duration="8159000" />
+      <workItem from="1519916400193" duration="9589000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="309204000" />
+    <option name="totallyTimeSpent" value="310634000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -390,7 +431,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="1" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33585477" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -400,7 +441,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18003273" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18003273" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -504,23 +545,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/IEngine/Classes/iExtensions/iMigration.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="228" column="20" lean-forward="false" selection-start-line="228" selection-start-column="20" selection-end-line="228" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/assets/css/styles.css" />
     <entry file="file://$PROJECT_DIR$/public/app/demo/header/header.html" />
     <entry file="file://$PROJECT_DIR$/public/app/demo/index.html" />
-    <entry file="file://$PROJECT_DIR$/core/IRadian/Classes/iTables.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-847">
-          <caret line="295" column="30" lean-forward="false" selection-start-line="295" selection-start-column="30" selection-end-line="295" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/app/demo/current/current.html" />
     <entry file="file://$PROJECT_DIR$/core/API/Classes/videos.php" />
     <entry file="file://$PROJECT_DIR$/public/app/demo/current/current.php" />
@@ -618,6 +645,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="158">
           <caret line="198" column="9" lean-forward="false" selection-start-line="198" selection-start-column="9" selection-end-line="198" selection-end-column="9" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -693,18 +721,41 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/IEngine/Classes/iExtensions/iFormValidate.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="45" column="56" lean-forward="false" selection-start-line="45" selection-start-column="36" selection-end-line="45" selection-end-column="56" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/core/iModuels/iForm.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="439">
           <caret line="139" column="0" lean-forward="false" selection-start-line="139" selection-start-column="0" selection-end-line="139" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/IEngine/Classes/iExtensions/iFormValidate.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="90" column="127" lean-forward="false" selection-start-line="90" selection-start-column="127" selection-end-line="90" selection-end-column="127" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/IEngine/Classes/iExtensions/iMigration.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="313">
+          <caret line="239" column="4" lean-forward="false" selection-start-line="239" selection-start-column="4" selection-end-line="239" selection-end-column="4" />
+          <folding>
+            <marker date="1520007734707" expanded="true" signature="2823:2913" ph="CREATE TABLE... $" />
+            <marker date="1520007734707" expanded="true" signature="3564:3575" ph="DROP TABLE $... " />
+            <marker date="1520007734707" expanded="true" signature="4142:4216" ph="ALTER TABLE `${{$tableName}}`... " />
+            <marker date="1520007734707" expanded="true" signature="4254:4317" ph="ALTER TABLE `${{$tableName}}`... " />
+            <marker date="1520007734707" expanded="true" signature="5356:5393" ph="ALTER TABLE $... " />
+            <marker date="1520007734707" expanded="true" signature="8548:8560" ph="DELETE FROM " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/IRadian/Classes/iTables.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="295" column="30" lean-forward="false" selection-start-line="295" selection-start-column="30" selection-end-line="295" selection-end-column="30" />
           <folding />
         </state>
       </provider>

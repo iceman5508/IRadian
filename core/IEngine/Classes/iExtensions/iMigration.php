@@ -229,11 +229,14 @@ class iMigration
     public function insert($table, $fields = array()){
         iEazyDBase::insert($table,$fields);
         $this->results = iDatabase::getInstance()->results();
-        $this->error = iDatabase::getInstance()->error();
-        if(!$this->error) {
-            return true;
-        }else
+        if(iDatabase::getInstance()->error()){
+            $this->error = true;
             return false;
+        }else{
+            $this->error = false;
+            return true;
+        }
+
     }
 
     /**

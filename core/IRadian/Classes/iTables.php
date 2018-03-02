@@ -296,7 +296,7 @@ abstract class iTables
         if($this->imigrate->insert($this->table,$fields)){
             return true;
         }else{
-            return $this->imigrate->getError();
+            return false;
         }
     }
 
