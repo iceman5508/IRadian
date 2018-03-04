@@ -283,7 +283,9 @@ abstract class iTables
         if($this->imigrate->get($this->table, $where)){
             return $this->imigrate->getResults();
         }else{
-            return $this->imigrate->getError();
+            if($this->imigrate->getError()){
+                return false;
+            }
         }
     }
 
