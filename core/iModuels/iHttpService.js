@@ -15,8 +15,7 @@ const iHttpService = new function(){
             data: params,
             success: function(text) {
                 callback({'data': text, 'success': true})
-            },
-            error: callback({'data' : '', 'success':false} )
+            }
         });
 
     }
@@ -34,8 +33,7 @@ const iHttpService = new function(){
             data: params,
             success: function(text) {
                 callback({'data': text, 'success': true})
-            },
-            error: callback({'data' : '', 'success':false} )
+            }
         });
     }
 }
