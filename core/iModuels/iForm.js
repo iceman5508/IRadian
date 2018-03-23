@@ -119,6 +119,64 @@ function iForm(formClass){
 
     };
 
+    /**
+     * Upload file through submission of the entire form the
+     * upload file is apart of. In order to use this method, the
+     * param passed into the iForm constructor must match the id of the form
+     * @param url - The url the data is going to pass to
+     * @param sanitize - The function that cleans the data and and does security checks
+     * before submitting to the server.
+     * @param callback -The call back function, after the form submits.
+     */
+    this.submitUpload = function(url,sanitize, callback){
+        var form = document.getElementById(this.tag);
+        var formData = new FormData(form);
+
+        var xmlhttp = new XMLHttpRequest();
+        xmlhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                callback(xmlhttp.responseText);
+
+            }
+        }
+
+        if(sanitize(formData)==true) {
+            xmlhttp.open('POST', url, true);
+            xmlhttp.send(formData);
+        }
+
+    }
+
+    /**
+     * Function very similar to submitUpload, except this function only submits the file
+     * and not the entire form.
+     * @param url - The url the data is going to pass to
+     * @param sanitize - The function that cleans the data and and does security checks
+     * before submitting to the server.
+     * @param callback -The call back function, after the file submits.
+     */
+    this.submitFile = function(url,sanitize, callback){
+
+        var fileInput = document.getElementById(this.tag);
+        var file = fileInput.files[0];
+        var formData = new FormData();
+        formData.append('file', file);
+
+        var xmlhttp = new XMLHttpRequest();
+        xmlhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                callback(xmlhttp.responseText);
+
+            }
+        }
+
+        if(sanitize(formData)==true) {
+            xmlhttp.open('POST', url, true);
+            xmlhttp.send(formData);
+        }
+
+    }
+
 
 
     this.serialize = function() {
