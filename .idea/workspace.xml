@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="b7fce952-9c7b-4982-8c2b-317c756ae89b" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/iModuels/iForm.js" afterPath="$PROJECT_DIR$/core/iModuels/iForm.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/IEngine/Classes/iFile.php" afterPath="$PROJECT_DIR$/core/IEngine/Classes/iFile.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/IEngine/Classes/iForm.php" afterPath="$PROJECT_DIR$/core/IEngine/Classes/iForm.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -20,6 +21,16 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="566">
               <caret line="177" column="5" lean-forward="true" selection-start-line="177" selection-start-column="5" selection-end-line="177" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="iForm.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/IEngine/Classes/iForm.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="294">
+              <caret line="106" column="51" lean-forward="false" selection-start-line="106" selection-start-column="51" selection-end-line="106" selection-end-column="51" />
               <folding />
             </state>
           </provider>
@@ -75,7 +86,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/public/app/404/found.php" />
         <option value="$PROJECT_DIR$/public/app/404/index.html" />
         <option value="$PROJECT_DIR$/public/app/quick/quickstart.php" />
         <option value="$PROJECT_DIR$/public/app/demo/footer/footer.php" />
@@ -117,7 +127,6 @@
         <option value="$PROJECT_DIR$/public/app/app.html" />
         <option value="$PROJECT_DIR$/public/app/Hello/home.html" />
         <option value="$PROJECT_DIR$/core/IRadian/Classes/iApplication.php" />
-        <option value="$PROJECT_DIR$/core/IEngine/Classes/iForm.php" />
         <option value="$PROJECT_DIR$/core/IEngine/Classes/iApi.php" />
         <option value="$PROJECT_DIR$/core/IEngine/Classes/iExtensions/iFormValidate.php" />
         <option value="$PROJECT_DIR$/core/IEngine/Classes/iExtensions/iMigration.php" />
@@ -126,6 +135,8 @@
         <option value="$PROJECT_DIR$/core/API/api.php" />
         <option value="$PROJECT_DIR$/core/iModuels/iHttpService.js" />
         <option value="$PROJECT_DIR$/core/iModuels/iForm.js" />
+        <option value="$PROJECT_DIR$/core/IEngine/Classes/iFile.php" />
+        <option value="$PROJECT_DIR$/core/IEngine/Classes/iForm.php" />
       </list>
     </option>
   </component>
@@ -380,12 +391,12 @@
       <workItem from="1520218948579" duration="2685000" />
       <workItem from="1520362084387" duration="64000" />
       <workItem from="1520432084565" duration="50000" />
-      <workItem from="1521817857889" duration="2425000" />
+      <workItem from="1521817857889" duration="7618000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="318410000" />
+    <option name="totallyTimeSpent" value="323603000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -397,16 +408,17 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3570348" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3570348" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18003273" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18003273" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -431,14 +443,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/libs/classes/videos.php" />
-    <entry file="file://$PROJECT_DIR$/../mySchool/core/IRadian/Classes/iExtensions/Users.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-956">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/core/IEngine/Functions/isanitize.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-208">
@@ -641,13 +645,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/IEngine/Classes/iForm.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1049">
-          <caret line="17" column="32" lean-forward="false" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/core/IEngine/Classes/iApi.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="294">
@@ -703,6 +700,30 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="275">
           <caret line="39" column="5" lean-forward="false" selection-start-line="39" selection-start-column="5" selection-end-line="39" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/IEngine/Classes/iFile.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="328">
+          <caret line="669" column="5" lean-forward="true" selection-start-line="669" selection-start-column="5" selection-end-line="669" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../IEngine2/classes/Forms.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1236">
+          <caret line="2" column="13" lean-forward="true" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/IEngine/Classes/iForm.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="106" column="51" lean-forward="false" selection-start-line="106" selection-start-column="51" selection-end-line="106" selection-end-column="51" />
           <folding />
         </state>
       </provider>

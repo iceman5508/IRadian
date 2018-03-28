@@ -96,5 +96,20 @@ class iForm
         return true;
     }
 
+    /**
+     * Upload a file to the server
+     * @param $fileFormName - The name of the file field
+     * @param $uploadDir - the dir to upload the file to
+     * @return bool - return true or false on success.
+     */
+    public static function uploadFile($fileFormName, $uploadDir){
+        $uploadfile = $uploadDir . basename($_FILES[$fileFormName]['name']);
+        if(move_uploaded_file($_FILES[$fileFormName]['tmp_name'], $uploadfile)){
+            return true;
+        }else{
+            return false;
+        }
+    }
+
 
 }

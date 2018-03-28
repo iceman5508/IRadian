@@ -668,4 +668,6 @@ class iFile
         $this->setNumLines ();
         $this->setFileSize ();
     }
+
+
 }
