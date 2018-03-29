@@ -5,6 +5,8 @@
 function iUpload(id) {
 
     this.file = document.getElementById(id).files[0];
+   
+
 
     /**
      * Post a file for upload
