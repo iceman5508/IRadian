@@ -310,7 +310,7 @@ abstract class iTables
      */
     public final function update($whereField, $whereEqual, $fields=array()){
         if($this->imigrate->update($this->table,$whereField, $whereEqual, $fields)){
-            return $this->imigrate->getResults();
+            return true;
         }else{
             return $this->imigrate->getError();
         }

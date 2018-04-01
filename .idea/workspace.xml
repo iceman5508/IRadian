@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b7fce952-9c7b-4982-8c2b-317c756ae89b" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/IEngine/Classes/iExtensions/iMigration.php" afterPath="$PROJECT_DIR$/core/IEngine/Classes/iExtensions/iMigration.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/IRadian/Classes/iTables.php" afterPath="$PROJECT_DIR$/core/IRadian/Classes/iTables.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -28,7 +28,6 @@
       <find>get()</find>
       <find>delete</find>
       <find>fields</find>
-      <find>update</find>
       <find>register</find>
       <find>if not</find>
       <find>app</find>
@@ -55,6 +54,7 @@
       <find>vend</find>
       <find>PROJECT.</find>
       <find>get</find>
+      <find>update</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -63,7 +63,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/public/app/quick/quickstart.php" />
         <option value="$PROJECT_DIR$/public/app/demo/footer/footer.php" />
         <option value="$PROJECT_DIR$/public/app/demo/footer/footer.html" />
         <option value="$PROJECT_DIR$/../projectx/public/app/default/home.php" />
@@ -105,7 +104,6 @@
         <option value="$PROJECT_DIR$/core/IRadian/Classes/iApplication.php" />
         <option value="$PROJECT_DIR$/core/IEngine/Classes/iApi.php" />
         <option value="$PROJECT_DIR$/core/IEngine/Classes/iExtensions/iFormValidate.php" />
-        <option value="$PROJECT_DIR$/core/IRadian/Classes/iTables.php" />
         <option value="$USER_HOME$/Desktop/views/bootstrap.php" />
         <option value="$PROJECT_DIR$/core/API/api.php" />
         <option value="$PROJECT_DIR$/core/iModuels/iHttpService.js" />
@@ -114,6 +112,8 @@
         <option value="$PROJECT_DIR$/core/iModuels/iUpload.js" />
         <option value="$PROJECT_DIR$/core/IEngine/Classes/iForm.php" />
         <option value="$PROJECT_DIR$/core/IEngine/Classes/iExtensions/iMigration.php" />
+        <option value="$PROJECT_DIR$/core/IEngine/Classes/iDatabase.php" />
+        <option value="$PROJECT_DIR$/core/IRadian/Classes/iTables.php" />
       </list>
     </option>
   </component>
@@ -154,38 +154,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="IRadian" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="IRadian" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="IRadian" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="core" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="IRadian" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="IRadian" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="core" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="iModuels" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -369,12 +337,12 @@
       <workItem from="1520362084387" duration="64000" />
       <workItem from="1520432084565" duration="50000" />
       <workItem from="1521817857889" duration="11005000" />
-      <workItem from="1522303810407" duration="1135000" />
+      <workItem from="1522303810407" duration="1959000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="328125000" />
+    <option name="totallyTimeSpent" value="328949000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -421,13 +389,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../CME/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../CME/resources/iUsers.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-3047">
@@ -467,13 +428,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
           <caret line="93" column="27" lean-forward="false" selection-start-line="93" selection-start-column="27" selection-end-line="93" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/IEngine/Classes/iDatabase.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="71" column="20" lean-forward="false" selection-start-line="71" selection-start-column="20" selection-end-line="71" selection-end-column="20" />
         </state>
       </provider>
     </entry>
@@ -624,13 +578,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/IRadian/Classes/iTables.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="289" column="5" lean-forward="false" selection-start-line="289" selection-start-column="5" selection-end-line="289" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Desktop/views/bootstrap.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="226">
@@ -716,6 +663,32 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="141">
           <caret line="114" column="46" lean-forward="false" selection-start-line="114" selection-start-column="46" selection-end-line="114" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/IEngine/Classes/iDate.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/IEngine/Classes/iDatabase.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="229">
+          <caret line="199" column="94" lean-forward="false" selection-start-line="199" selection-start-column="94" selection-end-line="199" selection-end-column="94" />
+          <folding>
+            <marker date="1522542545492" expanded="true" signature="3445:3517" ph="INSERT INTO ${$table}... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/IRadian/Classes/iTables.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="258">
+          <caret line="312" column="24" lean-forward="false" selection-start-line="312" selection-start-column="24" selection-end-line="312" selection-end-column="24" />
           <folding />
         </state>
       </provider>
