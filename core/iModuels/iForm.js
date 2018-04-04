@@ -31,6 +31,8 @@ function iForm(formClass){
 
     };
 
+    this.getFormData();
+
 
     /**
      * Get a specific data value
@@ -118,9 +120,6 @@ function iForm(formClass){
 
 
     };
-
-
-
 
 
     this.serialize = function() {
