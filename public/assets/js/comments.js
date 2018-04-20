@@ -1,5 +1,5 @@
-var url = 'http://localhost/IRadian/api/';
-var selected = iEnviornment.param('selected');
+var url = 'http://localhost/Radian/api/';
+var selected = iWeb.param('selected');
 
 /**
  * Get all comments
@@ -43,10 +43,12 @@ function postComment() {
             , {
                 'api': 'videos/post/' + selected + '/' + message
             });
+
+        if(comment.data){
+            $('#commentArea').val('');
+            var commentBox = $('#comments');
+            $("#comments").prepend('<p>'+message+'</p><hr>');
+        }
     }
-    if(comment.data){
-        $('#commentArea').val('');
-        var commentBox = $('#comments');
-        $("#comments").prepend('<p>'+message+'</p><hr>');
-    }
+
 }

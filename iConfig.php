@@ -2,10 +2,10 @@
 
 
 use IEngine\ibase\iWeb;
-
 define('PROJECT', iWeb::projectUrl());
-define('LIBS', BASEPATH.'\libs');
-define('VENDORS', iWeb::projectUrl().'/vendors');
+
+define('LIBS', BASEPATH.'/libs');
+define('VENDORS', iWeb::projectUrl().'vendors');
 
 /**
  * Author: Isaac Parker
@@ -23,7 +23,7 @@ class iConfig
      */
     public static $project = [
         'title' => 'IRadian'
-        ,'author' => 'Author Name'
+        ,'author' => 'Isaac Parker'
         ,'route_var' => 'route'
     ];
 
@@ -36,7 +36,7 @@ class iConfig
          'host'  => 'localhost'
         ,'username' => 'root'
         ,'password' => ''
-        ,'database' => 'Demo'
+        ,'database' => 'demo'
     ];
 
     /**
@@ -65,6 +65,7 @@ class iConfig
         'var' => 'api'
         ,'resources' => [
             'videos'
+
         ]
     ];
 

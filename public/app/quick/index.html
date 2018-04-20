@@ -49,90 +49,392 @@
                         </p>
                     </div><!--//section-block-->
                 </section><!--//doc-section-->
+                <section id="demo-section" class="doc-section">
+                    <h2 class="section-title">Demo Project: My Video Site</h2>
+                    <div id="demo"  class="section-block">
+                        The My Video Site tutorial covers the fundamentals of The IRadian Framework.
+                        In this tutorial you will build an video sharing site that allows for users to comment on each video.
+                        <p></p>
+                        <p>By the end of the tutorial you will be able to do the following:</p>
+                        <ul>
+                            <li>Use iTag sub-language to separate the application into components.</li>
+                            <li>Use built-in UI loaders to load UI libraries and application data.</li>
+                            <li>How to build and use components</li>
+                            <li>How to build and use api with the framework</li>
+                            <li>Using built in routing to navigate to different views</li>
+                            <li>Control data with IRadian template based if and loops</li>
+                            <li>Using built-in module loaders to load in modules</li>
+                            <li>Interact with a database</li>
+                            <li>Have a deep understanding of iComponents and their importance to the application</li>
+                        </ul>
+
+                        After completing all tutorial steps, the final app will look like this live <a href="demo" target="_blank">example.</a>
+                        <p></p>
+                        <p>
+                            In terms of setup nothing special has to be done. Just follow the installation steps.
+                        </p>
+                    </div>
+                </section>
 
                 <section id="code-section" class="doc-section">
-                    <h2 class="section-title">Code</h2>
+                    <h2 class="section-title">My Video Site</h2>
                     <div class="section-block">
-                        <p>
-                            <a href="http://prismjs.com/" target="_blank">PrismJS</a> is used as the syntax highlighter here. You can <a href="http://prismjs.com/download.html" target="_blank">build your own version</a> via their website should you need to.
-                        </p>
+                    When you first load the framework in your browser, you should be greeted by a page that looks like
+                        like the one below.
+                        <p></p>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <img src="public/assets/images/demo/home.PNG" class="img-responsive">
+                            </div>
+                        </div>
+
 
                     </div><!--//section-block-->
                     <div id="html" class="section-block">
 
-                        <div class="callout-block callout-success">
-                            <div class="icon-holder">
-                                <i class="fa fa-thumbs-up"></i>
-                            </div><!--//icon-holder-->
-                            <div class="content">
-                                <h4 class="callout-title">Useful Tip:</h4>
-                                <p>You can use this online <a href="https://mothereff.in/html-entities" target="_blank">HTML entity encoder/decoder</a> to generate your code examples.</p>
-                            </div><!--//content-->
+                     Let us go to the code. Currently the structure of the framework is as follows:
+                        <p></p>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <img src="public/assets/images/demo/structure.PNG" class="img-responsive">
+                            </div>
                         </div>
+
+                        <p></p>
+                        In the app folder, open app.html and let us look at the code.
+
                         <div class="code-block">
-                            <h6>HTML Code Example</h6>
-                            <pre><code class="language-markup">&lt;!DOCTYPE html&gt;
-&lt;html lang=&quot;en&quot;&gt;
-    ...
-    &lt;div class=&quot;jumbotron&quot;&gt;
-        &lt;h1&gt;Hello, world!&lt;/h1&gt;
-        &lt;p&gt;...&lt;/p&gt;
-        &lt;p&gt;&lt;a class=&quot;btn btn-primary btn-lg&quot; href=&quot;#&quot; role=&quot;button&quot;&gt;Learn more&lt;/a&gt;&lt;/p&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot;jumbotron&quot;&gt;
-        &lt;h1&gt;Hello, world!&lt;/h1&gt;
-        &lt;p&gt;...&lt;/p&gt;
-        &lt;p&gt;&lt;a class=&quot;btn btn-primary btn-lg&quot; href=&quot;#&quot; role=&quot;button&quot;&gt;Learn more&lt;/a&gt;&lt;/p&gt;
-    &lt;/div&gt;
-    ...
-&lt;/html&gt;</code></pre>
+                            <h6>app.html</h6>
+                            <pre><code class="language-markup">
+                                <?php
+
+                                print iescapeCode('
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="#config[author]">
+    <link rel="icon" type="image/png" href="public/assets/logo3.png">
+
+    <title>#config[title]</title>
+
+   #ui[bootstrap_css]
+
+    <link href="https://blackrockdigital.github.io/startbootstrap-portfolio-item/css/portfolio-item.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="#">My Video Site</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Page Content -->
+<div class="container">
+
+
+
+    {#content}
+
+
+</div>
+<!-- /.container -->
+
+<!-- Footer -->
+<footer class="py-5 bg-dark">
+    <div class="container">
+        <p class="m-0 text-center text-white">Copyright &copy; #config[title] 2018</p>
+    </div>
+    <!-- /.container -->
+</footer>
+
+#ui[jquery_js, bootstrap_js]
+
+</body>
+
+</html>
+
+
+
+                                '
+                                );
+
+
+                                 ?>
+
+                            </code></pre>
                         </div><!--//code-block-->
                     </div><!--//section-block-->
                     <div id="css" class="section-block">
+                        Look at the code, it seems pretty standard. However, there should be a few things that do not
+                        look familiar/ like native html. More specifically,<p></p>
+                        <ul>
+                           <li>#config[title]</li>
+                            <li>#ui[bootstrap_css]</li>
+                            <li>{#content}</li>
+                            <li>#config[title]</li>
+                            <li>#ui[jquery_js, bootstrap_js]</li>
+                        </ul>
                         <div class="code-block">
-                            <h6>CSS Code Example</h6>
-                            <pre><code class="language-css">/* ======= Base Styling ======= */
-body {
-    font-family: 'Open Sans', arial, sans-serif;
-    color: #333;
-    font-size: 16px;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}</code></pre>
+                            <h6>loaders</h6>
+                            <div id="row">
+                            #config[title],#ui[bootstrap_css],#config[title] and #ui[jquery_js, bootstrap_js]
+                                are all examples of loaders.
+                                <p></p>
+                                Loaders are ways to include ui libraries, project data, and modules into the template.
+                                IRadian currently has three different types of loaders.<br><p></p>
+
+                                The first of these loaders is the <b>#config</b> loader. This loader bring application information to the
+                                template. Currently in our app.html file, we see that the loader is being used to bring in the
+                                'title' variable as in #config[title]. config loaders are the only loaders in which users can set the values to.
+                                This can be done in the iConfig file. Additionally, users are not restricted to the default variables in that file
+                                as any variable added to the project array can be accessed as a loader.
+                                <br><p></p>
+
+                                The second of the loaders is the <b>#ui</b> loader. This loader brings UI libraries to the application
+                                and template. Currently in the app.html file, we see that the loader is being used to bring in the
+                                bootstrap css library as in #ui[bootstrap_css] and the jquery and bootstrap javascript libraries with
+                                #ui[jquery_js, bootstrap_js]. ui are external libraries that IRadian developers believed are commonly used
+                                my many developers. Full list of ui loader commands and their libraries are as follows:<p></p>
+                                <ul>
+                                    <li><b>bootstrap_css</b> = bootstrap css file</li>
+                                    <li><b>bootstrap_js</b> = bootstrap js file</li>
+                                    <li><b>jquery_css</b> = jquery css file</li>
+                                    <li><b>jquery_js</b> = jquery js file</li>
+                                    <li><b>imodal_css</b> = modal css file</li>
+                                    <li><b>imodal_js</b> = modal js file</li>
+                                </ul>
+                                <br><p></p>
+
+                                The final type of loader is the <b>#module</b> loader. This loader brings in javascript
+                                libraries written by IRadian developers to the application and template. At the moment in our code we are not using
+                                this loader. But no worries, we will use it later in the project. Calling this loader is the same as the previous two,
+                                simply call the #module[whatever library/libraries you want to load]. Full list of current module loader commands and their purpose are as follows:<p></p>
+                                <ul>
+                                    <li><b>iEnvironment</b> = This module hold information about the
+                                        web environment such as browser size, and mobile device type. </li>
+                                    <li><b>iHttpService</b> = I believe the name of this module says it all. Note on this module,
+                                    it requires jquery. So uses the #ui[jquery_js] loader with it.</li>
+                                    <li><b>iRedirect</b> = This module handles page redirects.</li>
+                                    <li><b>iVariable</b> = This module handles variable validation</li>
+                                    <li><b>iWeb</b> = This module is the js equivalent of the <a href="docs/classes/IEngine.ibase.iWeb.html" target="_blank">iWeb class</a></li>
+                                </ul>
+                                <br><p></p>
+
+                                One final important note about loaders, is that they can only be loaded in the application (main) template file.
+                                Loaders will not work if loaded in component template files.
+
+                            </div>
+
                         </div><!--//code-block-->
                     </div><!--//section-block-->
                     <div id="less" class="section-block">
                         <div class="code-block">
-                            <h6>LESS Code Example</h6>
-                            <pre><code class="language-css">/*
-* Template Name: prettyDocs - Responsive Website Template for documentations
-* Version: 1.0
-* Author: Xiaoying Riley
-* License: Creative Commons Attribution 3.0 License
-* Twitter: @3rdwave_themes
-* Website: http://themes.3rdwavemedia.com/
-*/
-@import &quot;mixins.less&quot;;
-@import &quot;theme-default.less&quot;;
-@import &quot;base.less&quot;;
-@import &quot;doc.less&quot;;
-@import &quot;landing.less&quot;;
-@import &quot;responsive.less&quot;;</code></pre>
-                        </div><!--//code-block-->
-                    </div><!--//section-block-->
-                    <div id="sass" class="section-block">
-                        <div class="code-block">
-                            <h6>Sass Code Example</h6>
-                            <pre><code class="language-sass">#main {
-    $width: 5em;
-    width: $width;
-}
+                            <h6>Components and component template files</h6>
+                               <div class="row" >
+                                    Along with the loaders, another strange code that was in the app.html file is <b>{#content}</b>.
+                                   Loaders and this {#content} call are all apart of the iTags sub-language that is built into the framework.
+                                   Users will never use the language directly, rather it is a language the core parts of the framework use to
+                                   communicate with each other. As for the {#content}, the application template (app.html) is telling the
+                                   framework to bring in the component and view with the signature of content.<p></p>
 
-#sidebar {
-    width: $width;
-}</code></pre>
+                                   At its core, IRadian is a MVVM framework. So each view is accompanied by a view model that controls that view.
+                                   Currently, the view with the content signature can be found in <b>public/app/Hello</b> folder.
+                                   Open up the home.html file and lets being coding the first part of our application.
+                               </div>
+
+                                <div class="row">
+                                            <h6>Home.html</h6>
+                                            <pre><code class="language-markup">
+                                        <?php
+                                        print iescapeCode('
+                                            <div class="row">
+                                                <h1 class="my-4">{helloWorld}
+                                                    <div class="col-md-4">
+                                                        <img class="img-fluid" src="{image}" alt="" style="text-align: center; float:right;">
+                                                    </div></h1>
+                                            </div>');?>
+                                    </code></pre>
+                                </div>
+
+                            <div class="row">
+                                <p></p>
+                                The code above is the html that is currently in our home.html file/ content component view.
+                                Lets change this view a bit, replace everything in that file with the following.
+                                <p></p>
+                                <h6>Home.html</h6>
+                                <pre><code class="language-markup">
+                                        <?php
+
+                                        print iescapeCode('
+<h1 class="my-4">
+    <small></small>
+</h1>
+    <div class="row">
+        <div class="col-md-8">
+          <img class="img-fluid" src="http://placehold.it/750x500" alt="">
+        </div>
+
+        <div class="col-md-4">
+          <h3 class="my-3">Name</h3>
+          <p>Video Name</p>
+          <h3 class="my-3">Video Details</h3>
+          <p>Video Detail</p>
+        </div>
+
+      </div>
+
+    <div class="card card-outline-secondary my-4" style="width:100%;">
+	<div class="card-header">
+      	   Comments
+	</div>
+
+        <div class="card-body">
+	 	 <div id="comments"></div>
+
+        	 <div class="form-group">
+              		 <textarea class="form-control" id="commentArea row="3"></textarea>
+        	 </div>
+        	 <button type="submit" class="btn btn-primary mb-2">Post Comment</button>
+	</div>
+
+
+    </div>
+
+
+      <h3 class="my-4">All Videos</h3>
+
+      <div class="row">
+
+        <div class="col-md-3 col-sm-6 mb-4">
+          <a href="#">
+            <img class="img-fluid" src="http://placehold.it/500x300" alt="">
+          </a>
+        </div>
+
+        <div class="col-md-3 col-sm-6 mb-4">
+          <a href="#">
+            <img class="img-fluid" src="http://placehold.it/500x300" alt="">
+          </a>
+        </div>
+
+        <div class="col-md-3 col-sm-6 mb-4">
+          <a href="#">
+            <img class="img-fluid" src="http://placehold.it/500x300" alt="">
+          </a>
+        </div>
+
+        <div class="col-md-3 col-sm-6 mb-4">
+          <a href="#">
+            <img class="img-fluid" src="http://placehold.it/500x300" alt="">
+          </a>
+        </div>
+
+      </div>
+
+                                         ');?>
+                        </code></pre>
+                            </div>
+                        <p>Now reload the project in the browser. Your display should now look like the following.</p>
+
+                        <div class="row">
+                            <div class="col-md-12">
+                                <img src="public/assets/images/demo/home2.PNG" class="img-responsive">
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <p></p><br>
+                            <p>Now let us take a closer look as to what components are, how they are created,
+                                registered with the application, and called into view. </p>
+                            <div>
+                                <h6>What are components</h6>
+                                <p>Components are self contained html code that relate to a specific view. In short,
+                                components are modular views. For example, in our current application, we have one component.
+                                That component is the content component, and it is responsible for all that we see with the
+                                exception of the navigation bar and footer.</p>
+                            </div>
+
+                            <div>
+                                <h6>How are components created.</h6>
+                                <p>
+                                    To understand how components are created, let us create a component together.
+                                    In the app folder, create a new folder called header. Then in that folder create two files:<p></p>
+                                1) header.php<br> 2) header.html <p></p>
+                                    Both file names do not have to be the same, but as good coding practice it is recommended that both
+                                files do have the same name.<p></p>
+                                The <b>header.php</b> file is the component/view model that will handel all the data aspect of our view.
+                                each component and only alter the view that they are connected to. In this respect, the data scope is
+                                local only to that specific view. <p></p>
+                                The <b>header.html</b> file is the component template/view. This file contains all the html, and display data.
+                                It is important to note, that each component share style detail from whatever css is presented in the application
+                                template. For example, since bootstrap is loaded in our app.html/application template, each component can use bootstrap.
+                                </p>
+
+                                <p></p>Now open the header.html file and add the following code to that file. We will detail what the code means/does shortly.
+                            </div>
+                        </div>
+
+                        <div class="code-block">
+                            <h6>header.php</h6>
+                            <pre><code class="language-php">
+                                 <?php print iescapeCode('
+ <?php
+
+ class header extends \ITemplate\iExtends\iComponent
+ {
+    public function attributes(){
+
+    }
+
+
+ }
+
+
+
+?>
+
+ ');
+                                ?>
+                            </code>
+                            </pre>
                         </div><!--//code-block-->
-                    </div><!--//section-block-->
+
+
+The code above shows how to create a component. <P></P>
+                        1) You first create a class<br>
+                        2) Have that class extend the iComponent class <br>
+                        3) Implement the abstract method <b>attributes</b><br><p></p>
+                        The attribute method is the container that holds all of the component properties.
+
+
+
+                        </div><!--//code-block-->
+                    </div><!--//components-->
+
+
+
+
+
                     <div id="javascript" class="section-block">
                         <div class="code-block">
                             <h6>JavaScript Code Example</h6>
@@ -390,15 +692,11 @@ echo $y;
                             <div class="col-md-6 col-sm-6 col-xs-12">
                                 <h6>Responsive Video 16:9</h6>
                                 <!-- 16:9 aspect ratio -->
-                                <div class="embed-responsive embed-responsive-16by9">
-                                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/ejBkOjEG6F0?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
-                                </div>
                             </div>
                             <div class="col-md-6 col-sm-6 col-xs-12">
                                 <h6>Responsive Video 4:3</h6>
                                 <!-- 4:3 aspect ratio -->
                                 <div class="embed-responsive embed-responsive-4by3">
-                                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/ejBkOjEG6F0?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
                                 </div>
                             </div>
                         </div><!--//row-->
@@ -411,11 +709,10 @@ echo $y;
                         </div><!--//section-block-->
                         <div class="section-block">
                             <h6>Elegant Icon Font</h6>
-                            <a href="https://www.elegantthemes.com/blog/resources/elegant-icon-font" target="_blank"><img class="img-responsive" src="assets/images/demo/elegant-icon-font.jpg" alt="elegant icons" /></a>
+
                         </div><!--//section-block-->
                         <div class="section-block">
                             <h6>FontAwesome Icon Font</h6>
-                            <a href="https://fortawesome.github.io/Font-Awesome/" target="_blank"><img class="img-responsive" src="assets/images/demo/fontawesome-icons.png" alt="fontawesome" /></a>
                         </div><!--//section-block-->
 
                     </section><!--//doc-section-->
@@ -436,11 +733,14 @@ echo $y;
                         </ul><!--//nav-->
                     </li>
                     <li>
-                        <a class="scrollto" href="#code-section">Code</a>
+                        <a class="scrollto" href="#demo-section">Demo Project</a>
+                    </li>
+                    <li>
+                        <a class="scrollto" href="#code-section">My Video Site</a>
                         <ul class="nav doc-sub-menu">
-                            <li><a class="scrollto" href="#html">HTML</a></li>
-                            <li><a class="scrollto" href="#css">CSS</a></li>
-                            <li><a class="scrollto" href="#less">LESS</a></li>
+                            <li><a class="scrollto" href="#html">Structure and app.html</a></li>
+                            <li><a class="scrollto" href="#css">Loaders</a></li>
+                            <li><a class="scrollto" href="#less">Components</a></li>
                             <li><a class="scrollto" href="#sass">Sass</a></li>
                             <li><a class="scrollto" href="#javascript">JavaScript</a></li>
                             <li><a class="scrollto" href="#python">Python</a></li>

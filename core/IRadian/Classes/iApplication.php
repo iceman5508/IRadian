@@ -45,29 +45,23 @@ abstract class iApplication
     private $viewManager, $parser, $content;
 
     private $jquery = [
-        'js' => PROJECT.'/vendors/jquery/jquery.js'
-        ,'ui' =>   PROJECT.'/vendors/jquery/jquery-ui.min.js'
-        ,'css' =>   PROJECT.'/vendors/jquery/jquery-ui.min.css'
+        'js' => PROJECT.'vendors/jquery/jquery.js'
+        ,'ui' =>   PROJECT.'vendors/jquery/jquery-ui.min.js'
+        ,'css' =>   PROJECT.'vendors/jquery/jquery-ui.min.css'
     ];
 
     private $bootstrap = [
-        'js' =>  PROJECT.'/vendors/bootstrap/bootstrap.bundle.min.js'
-        ,'css' =>  PROJECT.'/vendors/bootstrap/bootstrap.css'
+        'js' =>  PROJECT.'vendors/bootstrap/bootstrap.bundle.min.js'
+        ,'css' =>  PROJECT.'vendors/bootstrap/bootstrap.css'
 
     ];
 
 
     private $imoduels=[
-        'iHttpService' => PROJECT.'/core/iModuels/iHttpService.js'
-        ,'iEnvironment' => PROJECT.'/core/iModuels/iEnvironment.js'
-        ,'iModal' => [
-            'js' => PROJECT.'/core/iModuels/imodal/iModal.js'
-            ,'css' => PROJECT.'/core/iModuels/imodal/iModal.css'
+        'iModal' => [
+            'js' => PROJECT.'core/iModuels/imodal/iModal.js'
+            ,'css' => PROJECT.'core/iModuels/imodal/iModal.css'
             ]
-        ,'iVariable' => PROJECT.'/core/iModuels/iVariable.js'
-        ,'iRedirect' => PROJECT.'/core/iModuels/iRedirect.js'
-
-
     ];
 
     function __destruct()
@@ -147,15 +141,19 @@ abstract class iApplication
      */
     private function handleModuel($moduel){
     foreach ($moduel as $m){
-        $modName = "#moduel[$m]";
+        $modName = "#module[$m]";
         $breakModuel = explode(',',$m);
         $value='';
         foreach ($breakModuel as $break){
-            if(isset($this->imoduels[trim($break)])) {
-                $value .= '<script type="text/javascript" src="' . $this->imoduels[trim($break)] . '"></script>';
+            $location = PROJECT.'/core/iModuels/'.trim($break).'.js';
+
+            $content = file_get_contents($location);
+            if(strlen($content) > 1){
+                $value .= '<script type="text/javascript" src="' . $location . '"></script>';
             }
         }
         $this->content = $this->replaceAllInstance($this->content,$modName,$value);
+        unset($content);
     }
 }
 
@@ -164,17 +162,21 @@ abstract class iApplication
      * handle loads from config
      */
     private function handleConfig($config){
+        $replacements = array();
         foreach ($config as $c){
             $conName = "#config[$c]";
-            $breakConfig = explode(',',$c);
-            $value='';
-            foreach ($breakConfig as $break){
-                if(isset(\iConfig::$project[trim($break)])) {
-                    $value .= \iConfig::$project[trim($break)];
+                $value='';
+                if(isset(\iConfig::$project[trim($c)])) {
+                    $value .= \iConfig::$project[trim($c)];
+
                 }
+            if(!in_array($value, $replacements)) {
+                $this->content = $this->replaceAllInstance($this->content, $conName, $value);
+                $replacements[] = $value;
             }
-            $this->content = $this->replaceAllInstance($this->content,$conName,$value);
+
         }
+
     }
 
 
@@ -286,7 +288,7 @@ abstract class iApplication
         $this->parser = new iRParser($this->content);
         $parsed = $this->parser->getParsed();
         $this->handleUI($parsed['ui']);
-        $this->handleModuel($parsed['moduel']);
+        $this->handleModuel($parsed['module']);
         $this->handleConfig($parsed['config']);
         $this->viewManager =  new viewManager($this->content,true);
         $this->viewManager->render();

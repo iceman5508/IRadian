@@ -6,7 +6,7 @@
  */
 
 define('BASEPATH', __DIR__);
-define('CORE', BASEPATH.'\core');
+define('CORE', BASEPATH.'/core');
 
 //include IEngine Library
 require_once 'core/IEngine/IEngine.php';
@@ -40,6 +40,10 @@ function loadFunctions(){
      * @throws Exception
      */
     function __autoload($classname){
+
+        $parts = explode('\\', $classname);
+        $classname = end($parts);
+
         if(file_exists(CORE.'/IEngine/Classes/'.basename($classname).'.php')){
             require_once CORE.'/IEngine/Classes/'.basename($classname).'.php';
         }else if(file_exists(CORE.'/IEngine/Classes/iExtensions/'.basename($classname).'.php')){
@@ -65,6 +69,8 @@ function loadFunctions(){
 
 
 loadFunctions();
+
+
 
 
 /**********************************Custom bootstraps******************************************/

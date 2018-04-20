@@ -243,6 +243,7 @@ class iDatabase
                 $this->results = $this->query->fetchAll(PDO::FETCH_OBJ);
                 $this->count = $this->query->rowCount();
             } else {
+                var_dump($this->query->errorInfo());
                 $this->error = true;
             }
         }
