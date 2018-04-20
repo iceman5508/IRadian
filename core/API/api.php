@@ -22,10 +22,12 @@ class api
 
             $this->route->register('/'.$route);
             $this->pullRequests();
-            if(class_exists($route)) {
 
-               $apiClass = new $route($this->getFullResource());
-               print $apiClass->response();
+            $location =__DIR__.'/Classes/'.$route.'.php';
+            if(file_exists($location)) {
+                require_once $location;
+                $apiClass = new $route($this->getFullResource());
+                print $apiClass->response();
 
             }else{
 

@@ -145,7 +145,11 @@ abstract class iApplication
         $breakModuel = explode(',',$m);
         $value='';
         foreach ($breakModuel as $break){
+<<<<<<< HEAD
             $location = PROJECT.'/core/iModuels/'.trim($break).'.js';
+=======
+            $location = PROJECT.'core/iModuels/'.trim($break).'.js';
+>>>>>>> 2cc20c9749f936d4dbcbd422b7ecf8f93639ee61
 
             $content = file_get_contents($location);
             if(strlen($content) > 1){

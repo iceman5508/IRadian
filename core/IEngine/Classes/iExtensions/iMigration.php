@@ -229,11 +229,14 @@ class iMigration
     public function insert($table, $fields = array()){
         iEazyDBase::insert($table,$fields);
         $this->results = iDatabase::getInstance()->results();
-        $this->error = iDatabase::getInstance()->error();
-        if(!$this->error) {
-            return true;
-        }else
+        if(iDatabase::getInstance()->error()){
+            $this->error = true;
             return false;
+        }else{
+            $this->error = false;
+            return true;
+        }
+
     }
 
     /**
@@ -399,8 +402,15 @@ class iMigration
                 }
                 return true;
             } else {
-                $this->error[]= $this->myqli->error;
-                return false;
+                $temp_er = $this->myqli->error;
+                $type=explode(' ',$temp_er);
+                if(in_array('Table',$type)&&in_array('already', $type)&&in_array('exists', $type))
+                {
+                    return true;
+                }else{
+                    $this->error[]= $temp_er;
+                    return false;
+                }
             }
         }
         return false;

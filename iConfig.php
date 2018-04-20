@@ -3,7 +3,10 @@
 
 use IEngine\ibase\iWeb;
 define('PROJECT', iWeb::projectUrl());
+<<<<<<< HEAD
 
+=======
+>>>>>>> 2cc20c9749f936d4dbcbd422b7ecf8f93639ee61
 define('LIBS', BASEPATH.'/libs');
 define('VENDORS', iWeb::projectUrl().'vendors');
 
@@ -33,10 +36,17 @@ class iConfig
      * @var array
      */
     public static $database = [
+<<<<<<< HEAD
          'host'  => 'localhost'
         ,'username' => 'root'
         ,'password' => ''
         ,'database' => 'demo'
+=======
+         'host'  => 'host'
+        ,'username' => 'username'
+        ,'password' => 'password'
+        ,'database' => 'Databasename'
+>>>>>>> 2cc20c9749f936d4dbcbd422b7ecf8f93639ee61
     ];
 
     /**
@@ -62,9 +72,12 @@ class iConfig
      * @var array
      */
     public static $api = [
-        'var' => 'api'
+        'var' => ''
         ,'resources' => [
+<<<<<<< HEAD
             'videos'
+=======
+>>>>>>> 2cc20c9749f936d4dbcbd422b7ecf8f93639ee61
 
         ]
     ];

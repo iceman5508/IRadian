@@ -197,7 +197,7 @@ class iDatabase
             $x++;
         }
 
-        $sql = 'UPDATE '.$table.' SET '.$set.' WHERE '.$whereColumn.' = '.$whereValue.' ';
+        $sql = 'UPDATE '.$table.' SET '.$set.' WHERE '.$whereColumn.' = '."'$whereValue'".' ';
         if(!$this->query($sql, $fields)->error()) {
             return true;
         }else {

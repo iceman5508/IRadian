@@ -283,7 +283,9 @@ abstract class iTables
         if($this->imigrate->get($this->table, $where)){
             return $this->imigrate->getResults();
         }else{
-            return $this->imigrate->getError();
+            if($this->imigrate->getError()){
+                return false;
+            }
         }
     }
 
@@ -296,7 +298,7 @@ abstract class iTables
         if($this->imigrate->insert($this->table,$fields)){
             return true;
         }else{
-            return $this->imigrate->getError();
+            return false;
         }
     }
 
@@ -308,7 +310,7 @@ abstract class iTables
      */
     public final function update($whereField, $whereEqual, $fields=array()){
         if($this->imigrate->update($this->table,$whereField, $whereEqual, $fields)){
-            return $this->imigrate->getResults();
+            return true;
         }else{
             return $this->imigrate->getError();
         }

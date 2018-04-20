@@ -15,7 +15,6 @@ use IEngine\ibase\iToken;
 class iFormValidate
 {
     private $db, $errors=array(), $isValid = false;
-    private static $token, $salt;
 
     /**
      * iFormValidate constructor.
@@ -44,7 +43,7 @@ class iFormValidate
      * @param $fieldData - The rules to follow with the validation
      * @param $checkName - The initial check name to run across, recommend the use of the form's submit button here
      */
-    public function validate($type, $fieldData, $checkName ){
+    public function validate($type, $fieldData = array(), $checkName ){
         $dbFieldName = false;
         $table=false;
         if(isset($type[$checkName])){
@@ -89,7 +88,7 @@ class iFormValidate
                             case 'tblUnique':
                                 if($table !== false ){
                                 if($dbFieldName !== false){
-                                        $check = $this->db->getQuery($table , array($dbFieldName ,"=", $fieldValue));
+                                        $check = $this->db->getQuery($table , array($dbFieldName ,"=", iescapeCode($fieldValue)));
                                         if($check!==false){
                                             if( $check->count()) {
                                                 if($data===true){
@@ -150,10 +149,8 @@ class iFormValidate
      */
     final public static function makeToken($tokenName){
         $token = new iToken();
-        self::$token = $token->makeHash($token->generate(irand_num(4,16)));
-        self::$salt = self::$token[1];
-        self::$token = self::$token[0];
-        iSession::set($tokenName,  self::$token);
+        $token = $token->makeHash($token->generate(irand_num(4,16)));
+        iSession::set($tokenName,  $token[0]);
         return iSession::get($tokenName);
     }
 
@@ -163,7 +160,7 @@ class iFormValidate
      * @return bool
      */
     final public static function checkToken($tokenName){
-        if(iSession::exists($tokenName) &&  self::$token === iSession::get($tokenName)){
+        if(iSession::exists($tokenName) &&   $_REQUEST[$tokenName] === iSession::get($tokenName)){
             iSession::delete($tokenName);
             return true;
         }

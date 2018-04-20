@@ -16,63 +16,27 @@ require_once '../bootstrap.php';
          */
         public function main()
         {
-
-
-            if($this->router->getRoute() == '/home' || $this->router->getRoute() == '/') {
-                $this->html = 'home';
-
-
-            }else{
-
-                if($this->router->getRoute() == '/demo' ) {
-                    $this->html = 'demo/index';
-                }else{  $this->html = 'demo'; }
+                $this->html = 'app';
 
                 $this->components = [
-                    'start' => [
+                    'Hello' => [
                         'tag' => 'content'
-                        ,'component' => 'quickstart'
-                        ,'location' => 'quick/quickstart'
-                        ,'template' => 'quick/index.html'
-                        ,'route' => ['/quick']
+                        ,'component' => 'home'
+                        ,'location' => 'Hello/home'
+                        ,'template' => 'Hello/home.html'
+                        ,'route' => ['/home','/']
                     ]
-                    ,
-                    '404' => [
+                    ,'404' => [
                         'tag' => 'content'
-                        ,'component' => 'found'
-                        ,'location' => '404/found'
-                        ,'template' => '404/index.html'
-                        ,'route' => ['/404']
+                        ,'component' => 'fof'
+                        ,'location' => 'notFound/fof'
+                        ,'template' => 'notFound/404.html'
+                        ,'route' => ['/404',]
                     ]
-                    ,'demo' =>[
-                        'tag' => 'header'
-                        ,'component' => 'header'
-                        ,'location' => 'demo/header/header'
-                        ,'template' => 'demo/header/header.html'
-                        ,'route' => ['/demo']
-                    ]
-                    , 'playing' =>[
-                        'tag' => 'playing'
-                        ,'component' => 'current'
-                        ,'location' => 'demo/current/current'
-                        ,'template' => 'demo/current/current.html'
-                        ,'route' => ['/demo']
-                    ]
-                    , 'all' =>[
-                        'tag' => 'all'
-                        ,'component' => 'all'
-                        ,'location' => 'demo/all/all'
-                        ,'template' => 'demo/all/all.html'
-                        ,'route' => ['/demo']
-                    ]
+
                 ];
-
-
-
-            }
-
-
         }
+
 
         /**
          * Holds all the registered routes
@@ -83,8 +47,6 @@ require_once '../bootstrap.php';
         public function router(){
             $this->router->register('/');
             $this->router->register('/home');
-            $this->router->register('/quick');
-            $this->router->register('/demo');
 
         }
 
@@ -93,6 +55,7 @@ require_once '../bootstrap.php';
          * that will exist across all application
          */
         public function globals(){
+<<<<<<< HEAD
 
             $request = new \IEngine\ibase\iRequest();
             $url = \IEngine\ibase\iWeb::projectUrl();
@@ -102,8 +65,10 @@ require_once '../bootstrap.php';
 
 
 
+=======
+>>>>>>> 2cc20c9749f936d4dbcbd422b7ecf8f93639ee61
             $this->globals = [
-                'videos' => $result
+
             ];
         }
 

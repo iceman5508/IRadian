@@ -88,16 +88,43 @@ class iForm
     }
 
     private function setFormData(){
-        if(!empty($_POST)){
-            foreach($_POST AS $key => $value) {
-                $this->iArray[$key] =$value;
-            }
-        }else if(!empty($_GET)){
-            foreach($_GET AS $key => $value) {
+        if(!empty($_REQUEST)){
+            foreach($_REQUEST AS $key => $value) {
                 $this->iArray[$key] =$value;
             }
         }else { return false; }
         return true;
+    }
+
+    /**
+     * Upload a file to the server
+     * @param $fileFormName - The name of the file field
+     * @param $uploadDir - the dir to upload the file to
+     * @return bool - return true or false on success.
+     */
+    public static function uploadFile($fileFormName, $uploadDir){
+        $uploadfile = $uploadDir .'/'. basename($_FILES[$fileFormName]['name']);
+        if(move_uploaded_file($_FILES[$fileFormName]['tmp_name'], $uploadfile)){
+            return true;
+        }else{
+            return false;
+        }
+    }
+
+    /**
+     * Upload a file to the server with a given name
+     * @param $fileFormName - The name of the file field
+     * @param $uploadDir - the dir to upload the file to
+     * @param $filename - The name to give the file
+     * @return bool - return true or false on success.
+     */
+    public static function uploadFile2($fileFormName, $uploadDir, $filename){
+        $uploadfile = $uploadDir .'/'. $filename;
+        if(move_uploaded_file($_FILES[$fileFormName]['tmp_name'], $uploadfile)){
+            return true;
+        }else{
+            return false;
+        }
     }
 
 

@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b7fce952-9c7b-4982-8c2b-317c756ae89b" name="Default" comment="">
+<<<<<<< HEAD
       <change type="DELETED" beforePath="$PROJECT_DIR$/README.md" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/images/demo/appkit-account-billing-thumb.jpg" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/images/demo/appkit-account-billing.jpg" afterPath="" />
@@ -97,6 +98,9 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/quick/index.html" afterPath="$PROJECT_DIR$/public/app/quick/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/js/comments.js" afterPath="$PROJECT_DIR$/public/assets/js/comments.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/iApp.php" afterPath="$PROJECT_DIR$/public/iApp.php" />
+=======
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+>>>>>>> 2cc20c9749f936d4dbcbd422b7ecf8f93639ee61
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -107,6 +111,7 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
+<<<<<<< HEAD
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="videos.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/core/API/Classes/videos.php">
@@ -119,6 +124,9 @@
         </entry>
       </file>
     </leaf>
+=======
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+>>>>>>> 2cc20c9749f936d4dbcbd422b7ecf8f93639ee61
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -130,6 +138,18 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
+<<<<<<< HEAD
+=======
+      <find>get()</find>
+      <find>delete</find>
+      <find>fields</find>
+      <find>register</find>
+      <find>if not</find>
+      <find>app</find>
+      <find>__con</find>
+      <find>route</find>
+      <find>if(iss</find>
+>>>>>>> 2cc20c9749f936d4dbcbd422b7ecf8f93639ee61
       <find>new</find>
       <find>eazyDB</find>
       <find>index.html</find>
@@ -142,6 +162,7 @@
       <find>iDatabase::getInstance()-&gt;error()</find>
       <find>getE</find>
       <find>insert</find>
+<<<<<<< HEAD
       <find>get</find>
       <find>code</find>
       <find>My Video Site</find>
@@ -160,6 +181,17 @@
       <find>elegant</find>
       <find>consectetur</find>
       <find>yout</find>
+=======
+      <find>config</find>
+      <find>file</find>
+      <find>unset</find>
+      <find>#moduel</find>
+      <find>project</find>
+      <find>vend</find>
+      <find>PROJECT.</find>
+      <find>get</find>
+      <find>update</find>
+>>>>>>> 2cc20c9749f936d4dbcbd422b7ecf8f93639ee61
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -168,6 +200,7 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/core/IEngine/Classes/iSession.php" />
         <option value="$PROJECT_DIR$/core/IEngine/Classes/iRequest.php" />
         <option value="$PROJECT_DIR$/core/IEngine/Classes/iGlobal.php" />
@@ -185,6 +218,8 @@
         <option value="$PROJECT_DIR$/public/app/404/found.php" />
         <option value="$PROJECT_DIR$/public/app/404/index.html" />
         <option value="$PROJECT_DIR$/public/app/quick/quickstart.php" />
+=======
+>>>>>>> 2cc20c9749f936d4dbcbd422b7ecf8f93639ee61
         <option value="$PROJECT_DIR$/public/app/demo/footer/footer.php" />
         <option value="$PROJECT_DIR$/public/app/demo/footer/footer.html" />
         <option value="$PROJECT_DIR$/../projectx/public/app/default/home.php" />
@@ -193,16 +228,28 @@
         <option value="$PROJECT_DIR$/public/app/demo/all/all.html" />
         <option value="$PROJECT_DIR$/core/ITemplate/Functions/tempFunctions.php" />
         <option value="$PROJECT_DIR$/core/ITemplate/Classes/iExtensions/iiF.php" />
+<<<<<<< HEAD
+=======
+        <option value="$PROJECT_DIR$/public/app/demo.html" />
+>>>>>>> 2cc20c9749f936d4dbcbd422b7ecf8f93639ee61
         <option value="$PROJECT_DIR$/libs/classes/videos.php" />
         <option value="$PROJECT_DIR$/core/API/Classes/test.php" />
         <option value="$PROJECT_DIR$/../docRadian/IRadian/core/IRadian/Classes/iTables.php" />
         <option value="$PROJECT_DIR$/../docRadian/IRadian/core/IEngine/Classes/iExtensions/iMigration.php" />
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/core/IRadian/Classes/iTables.php" />
         <option value="$PROJECT_DIR$/core/IEngine/Classes/iExtensions/iMigration.php" />
         <option value="$PROJECT_DIR$/public/assets/css/styles.css" />
         <option value="$PROJECT_DIR$/public/app/demo/header/header.html" />
         <option value="$PROJECT_DIR$/public/app/demo/current/current.php" />
         <option value="$PROJECT_DIR$/core/iModuels/iEnvironment.js" />
+=======
+        <option value="$PROJECT_DIR$/core/API/Classes/videos.php" />
+        <option value="$PROJECT_DIR$/public/assets/css/styles.css" />
+        <option value="$PROJECT_DIR$/public/app/demo/header/header.html" />
+        <option value="$PROJECT_DIR$/public/app/demo/current/current.php" />
+        <option value="$PROJECT_DIR$/public/app/demo/index.html" />
+>>>>>>> 2cc20c9749f936d4dbcbd422b7ecf8f93639ee61
         <option value="$PROJECT_DIR$/public/app/demo/current/current.html" />
         <option value="$PROJECT_DIR$/public/app/demo.html" />
         <option value="$PROJECT_DIR$/public/app/home.html" />
@@ -212,6 +259,7 @@
         <option value="$PROJECT_DIR$/.htaccess" />
         <option value="$PROJECT_DIR$/public/app/demo/index.html" />
         <option value="$PROJECT_DIR$/public/app/quick/index.html" />
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/core/IEngine/Classes/iWeb.php" />
         <option value="$PROJECT_DIR$/public/assets/js/comments.js" />
         <option value="$PROJECT_DIR$/core/API/Classes/videos.php" />
@@ -219,6 +267,37 @@
         <option value="$PROJECT_DIR$/public/app/demo/all/all.php" />
         <option value="$PROJECT_DIR$/bootstrap.php" />
         <option value="$PROJECT_DIR$/iConfig.php" />
+=======
+        <option value="$PROJECT_DIR$/public/app/Hello/welcome.html" />
+        <option value="$PROJECT_DIR$/public/app/notFound/404.html" />
+        <option value="$PROJECT_DIR$/public/app/notFound/fof.php" />
+        <option value="$PROJECT_DIR$/public/app/home.html" />
+        <option value="$PROJECT_DIR$/public/iApp.php" />
+        <option value="$PROJECT_DIR$/core/iModuels/imodal/iWeb.js" />
+        <option value="$PROJECT_DIR$/core/iModuels/iEnvironment.js" />
+        <option value="$PROJECT_DIR$/core/iModuels/iWeb.js" />
+        <option value="$PROJECT_DIR$/public/app/Hello/home.php" />
+        <option value="$PROJECT_DIR$/core/IRadian/Classes/iRParser.php" />
+        <option value="$PROJECT_DIR$/core/IEngine/Classes/iWeb.php" />
+        <option value="$PROJECT_DIR$/bootstrap.php" />
+        <option value="$PROJECT_DIR$/iConfig.php" />
+        <option value="$PROJECT_DIR$/test.php" />
+        <option value="$PROJECT_DIR$/public/app/app.html" />
+        <option value="$PROJECT_DIR$/public/app/Hello/home.html" />
+        <option value="$PROJECT_DIR$/core/IRadian/Classes/iApplication.php" />
+        <option value="$PROJECT_DIR$/core/IEngine/Classes/iApi.php" />
+        <option value="$PROJECT_DIR$/core/IEngine/Classes/iExtensions/iFormValidate.php" />
+        <option value="$USER_HOME$/Desktop/views/bootstrap.php" />
+        <option value="$PROJECT_DIR$/core/API/api.php" />
+        <option value="$PROJECT_DIR$/core/iModuels/iHttpService.js" />
+        <option value="$PROJECT_DIR$/core/IEngine/Classes/iFile.php" />
+        <option value="$PROJECT_DIR$/core/iModuels/iUpload.js" />
+        <option value="$PROJECT_DIR$/core/IEngine/Classes/iForm.php" />
+        <option value="$PROJECT_DIR$/core/IEngine/Classes/iExtensions/iMigration.php" />
+        <option value="$PROJECT_DIR$/core/IEngine/Classes/iDatabase.php" />
+        <option value="$PROJECT_DIR$/core/IRadian/Classes/iTables.php" />
+        <option value="$PROJECT_DIR$/core/iModuels/iForm.js" />
+>>>>>>> 2cc20c9749f936d4dbcbd422b7ecf8f93639ee61
       </list>
     </option>
   </component>
@@ -230,10 +309,10 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1382" />
-    <option name="height" value="744" />
+    <option name="x" value="-7" />
+    <option name="y" value="1" />
+    <option name="width" value="1378" />
+    <option name="height" value="692" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -318,8 +397,45 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="IRadian" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="IRadian" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="IRadian" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="IRadian" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="iModuels" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
+<<<<<<< HEAD
+=======
+      <pane id="Scope" />
+      <pane id="Scratches" />
+>>>>>>> 2cc20c9749f936d4dbcbd422b7ecf8f93639ee61
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -330,6 +446,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+<<<<<<< HEAD
       <recent name="C:\wamp64\www\Radian\public\assets\images\demo" />
       <recent name="C:\wamp64\www\Radian\public\assets\images" />
       <recent name="C:\wamp64\www\IRadian\libs\functions" />
@@ -340,8 +457,20 @@
       <recent name="C:\wamp64\www\Radian" />
       <recent name="C:\wamp64\www\Radian\public\assets" />
       <recent name="C:\wamp64\www\Radian\core\IRadian\Classes" />
+=======
+      <recent name="C:\wamp64\www\IRadian\core\iModuels" />
+      <recent name="C:\wamp64\www\IRadian\libs\functions" />
+      <recent name="C:\wamp64\www\IRadian\core\IRadian\Classes" />
+      <recent name="C:\wamp64\www\IRadian\public\app" />
+      <recent name="C:\wamp64\www\IRadian\public" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\IRadian\core\IRadian\Classes" />
+>>>>>>> 2cc20c9749f936d4dbcbd422b7ecf8f93639ee61
       <recent name="C:\wamp64\www\IRadian\public\assets" />
       <recent name="C:\wamp64\www\IRadian" />
+      <recent name="C:\wamp64\www\IRadian\core\ITemplate\Classes\iExtensions" />
+      <recent name="C:\wamp64\www\IRadian\core\API\Classes" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -474,6 +603,7 @@
       <workItem from="1517588870701" duration="496000" />
       <workItem from="1517764268692" duration="62557000" />
       <workItem from="1517942328260" duration="132000" />
+<<<<<<< HEAD
       <workItem from="1517944907806" duration="67403000" />
       <workItem from="1518452531807" duration="816000" />
       <workItem from="1518469118789" duration="117000" />
@@ -487,11 +617,41 @@
       <workItem from="1519590415216" duration="55000" />
       <workItem from="1519591969068" duration="201000" />
       <workItem from="1519872917576" duration="235000" />
+=======
+      <workItem from="1517944907806" duration="63103000" />
+      <workItem from="1518452753167" duration="3318000" />
+      <workItem from="1518459032570" duration="2793000" />
+      <workItem from="1518516725856" duration="8098000" />
+      <workItem from="1518537065167" duration="121000" />
+      <workItem from="1518618982251" duration="331000" />
+      <workItem from="1518715656581" duration="3108000" />
+      <workItem from="1519154819890" duration="77000" />
+      <workItem from="1519154917802" duration="325000" />
+      <workItem from="1519155288230" duration="1354000" />
+      <workItem from="1519157054691" duration="924000" />
+      <workItem from="1519160238731" duration="160000" />
+      <workItem from="1519224028446" duration="2126000" />
+      <workItem from="1519421182039" duration="127000" />
+      <workItem from="1519581313786" duration="316000" />
+      <workItem from="1519588992363" duration="1238000" />
+      <workItem from="1519592198510" duration="21000" />
+      <workItem from="1519783471852" duration="22818000" />
+      <workItem from="1519916400193" duration="12141000" />
+      <workItem from="1520218948579" duration="2685000" />
+      <workItem from="1520362084387" duration="64000" />
+      <workItem from="1520432084565" duration="50000" />
+      <workItem from="1521817857889" duration="11005000" />
+      <workItem from="1522303810407" duration="4104000" />
+>>>>>>> 2cc20c9749f936d4dbcbd422b7ecf8f93639ee61
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="305193000" />
+=======
+    <option name="totallyTimeSpent" value="331094000" />
+>>>>>>> 2cc20c9749f936d4dbcbd422b7ecf8f93639ee61
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -503,17 +663,25 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
-    <editor active="true" />
+    <frame x="-7" y="1" width="1378" height="692" extended-state="1" />
     <layout>
+<<<<<<< HEAD
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30635402" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+=======
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36342943" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+>>>>>>> 2cc20c9749f936d4dbcbd422b7ecf8f93639ee61
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+<<<<<<< HEAD
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33387887" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+=======
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19677997" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+>>>>>>> 2cc20c9749f936d4dbcbd422b7ecf8f93639ee61
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -538,6 +706,7 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/core/IEngine/Functions/isanitize.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-208">
@@ -684,11 +853,185 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="81">
           <caret line="24" column="75" lean-forward="false" selection-start-line="24" selection-start-column="75" selection-end-line="24" selection-end-column="75" />
+=======
+    <entry file="file://$PROJECT_DIR$/../CME/resources/iUsers.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3047">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../CME/resources/iPosts.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-962">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../docRadian/IRadian/core/IRadian/Classes/iTables.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="294" column="31" lean-forward="false" selection-start-line="294" selection-start-column="31" selection-end-line="294" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../docRadian/IRadian/core/IEngine/Classes/iExtensions/iMigration.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="278">
+          <caret line="240" column="24" lean-forward="false" selection-start-line="240" selection-start-column="24" selection-end-line="240" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../IEngine2/classes/DBaseConnect/Database.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3445">
+          <caret line="49" column="20" lean-forward="false" selection-start-line="49" selection-start-column="20" selection-end-line="49" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/IEngine/Classes/iExtensions/iEazyDBase.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="93" column="27" lean-forward="false" selection-start-line="93" selection-start-column="27" selection-end-line="93" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/assets/css/styles.css" />
+    <entry file="file://$PROJECT_DIR$/public/app/demo/header/header.html" />
+    <entry file="file://$PROJECT_DIR$/public/app/demo/index.html" />
+    <entry file="file://$PROJECT_DIR$/public/app/demo/current/current.html" />
+    <entry file="file://$PROJECT_DIR$/core/API/Classes/videos.php" />
+    <entry file="file://$PROJECT_DIR$/public/app/demo/current/current.php" />
+    <entry file="file://$PROJECT_DIR$/public/assets/js/comments.js" />
+    <entry file="file://$PROJECT_DIR$/public/app/quick/quickstart.php" />
+    <entry file="file://$PROJECT_DIR$/public/app/demo.html" />
+    <entry file="file://$PROJECT_DIR$/public/app/quick/index.html" />
+    <entry file="file://$PROJECT_DIR$/public/app/notFound/fof.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="19" lean-forward="false" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/app/notFound/404.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="30" lean-forward="false" selection-start-line="3" selection-start-column="30" selection-end-line="3" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/iApp.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="86">
+          <caret line="18" column="34" lean-forward="false" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/.htaccess">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/iModuels/iEnvironment.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="646">
+          <caret line="38" column="3" lean-forward="false" selection-start-line="38" selection-start-column="3" selection-end-line="38" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/app/Hello/home.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="8" lean-forward="false" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/IRadian/Classes/iRParser.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="32" column="91" lean-forward="false" selection-start-line="32" selection-start-column="91" selection-end-line="32" selection-end-column="97" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/IEngine/Classes/iWeb.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3128">
+          <caret line="184" column="5" lean-forward="false" selection-start-line="184" selection-start-column="5" selection-end-line="184" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bootstrap.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="8" column="26" lean-forward="false" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/IEngine/Functions/ivalidate.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="158">
+          <caret line="198" column="9" lean-forward="false" selection-start-line="198" selection-start-column="9" selection-end-line="198" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/API/Classes/test.php" />
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/AJAX.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="157">
+          <caret line="86" column="0" lean-forward="false" selection-start-line="86" selection-start-column="0" selection-end-line="86" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.php" />
+    <entry file="file://$PROJECT_DIR$/vendors/jquery/jquery.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="157">
+          <caret line="5964" column="8" lean-forward="false" selection-start-line="5964" selection-start-column="8" selection-end-line="5964" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/app/Hello/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/app/app.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="277">
+          <caret line="62" column="0" lean-forward="false" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/IRadian/Classes/iApplication.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="47" column="24" lean-forward="false" selection-start-line="47" selection-start-column="16" selection-end-line="47" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/IEngine/Classes/iApi.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="163" column="55" lean-forward="false" selection-start-line="163" selection-start-column="55" selection-end-line="163" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/IEngine/Classes/iExtensions/iFormValidate.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="90" column="127" lean-forward="false" selection-start-line="90" selection-start-column="127" selection-end-line="90" selection-end-column="127" />
+>>>>>>> 2cc20c9749f936d4dbcbd422b7ecf8f93639ee61
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/app/demo/current/current.php">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="136">
           <caret line="8" column="52" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="52" />
         </state>
@@ -785,10 +1128,97 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+=======
+        <state relative-caret-position="413">
+          <caret line="36" column="33" lean-forward="false" selection-start-line="36" selection-start-column="33" selection-end-line="36" selection-end-column="33" />
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$USER_HOME$/Desktop/views/bootstrap.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="226">
+          <caret line="78" column="61" lean-forward="false" selection-start-line="78" selection-start-column="61" selection-end-line="78" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/API/api.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="39" column="5" lean-forward="false" selection-start-line="39" selection-start-column="5" selection-end-line="39" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/IEngine/Classes/iFile.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="328">
+          <caret line="669" column="5" lean-forward="true" selection-start-line="669" selection-start-column="5" selection-end-line="669" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../IEngine2/classes/Forms.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1236">
+          <caret line="2" column="13" lean-forward="true" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/iModuels/iVariable.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="3" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/iModuels/iHttpService.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="35" column="13" lean-forward="false" selection-start-line="35" selection-start-column="13" selection-end-line="35" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/iModuels/iWeb.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="354">
+          <caret line="77" column="1" lean-forward="true" selection-start-line="77" selection-start-column="1" selection-end-line="77" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/iModuels/iUpload.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="7" column="3" lean-forward="false" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/IEngine/Classes/iExtensions/iMigration.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="412" column="17" lean-forward="false" selection-start-line="412" selection-start-column="17" selection-end-line="412" selection-end-column="17" />
+          <folding>
+            <marker date="1522542317845" expanded="true" signature="2823:2913" ph="CREATE TABLE... $" />
+            <marker date="1522542317845" expanded="true" signature="3564:3575" ph="DROP TABLE $... " />
+            <marker date="1522542317845" expanded="true" signature="4142:4216" ph="ALTER TABLE `${{$tableName}}`... " />
+            <marker date="1522542317845" expanded="true" signature="4254:4317" ph="ALTER TABLE `${{$tableName}}`... " />
+            <marker date="1522542317845" expanded="true" signature="5356:5393" ph="ALTER TABLE $... " />
+            <marker date="1522542317845" expanded="true" signature="8548:8560" ph="DELETE FROM " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/IEngine/Classes/iForm.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="141">
+          <caret line="114" column="46" lean-forward="false" selection-start-line="114" selection-start-column="46" selection-end-line="114" selection-end-column="46" />
+>>>>>>> 2cc20c9749f936d4dbcbd422b7ecf8f93639ee61
+          <folding />
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/public/assets/js/comments.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="11">
@@ -828,11 +1258,39 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="8" column="26" lean-forward="false" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
+=======
+    <entry file="file://$PROJECT_DIR$/core/IEngine/Classes/iDate.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/core/IEngine/Classes/iDatabase.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="229">
+          <caret line="199" column="94" lean-forward="false" selection-start-line="199" selection-start-column="94" selection-end-line="199" selection-end-column="94" />
+          <folding>
+            <marker date="1522542545492" expanded="true" signature="3445:3517" ph="INSERT INTO ${$table}... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/IRadian/Classes/iTables.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="258">
+          <caret line="312" column="24" lean-forward="false" selection-start-line="312" selection-start-column="24" selection-end-line="312" selection-end-column="24" />
+>>>>>>> 2cc20c9749f936d4dbcbd422b7ecf8f93639ee61
+          <folding />
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/iConfig.php">
+=======
+    <entry file="file://$PROJECT_DIR$/.htaccess">
+>>>>>>> 2cc20c9749f936d4dbcbd422b7ecf8f93639ee61
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
@@ -840,6 +1298,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/core/IEngine/Classes/iWeb.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
@@ -852,6 +1311,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
           <caret line="36" column="42" lean-forward="true" selection-start-line="36" selection-start-column="42" selection-end-line="36" selection-end-column="42" />
+=======
+    <entry file="file://$PROJECT_DIR$/core/iModuels/iForm.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="27" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+>>>>>>> 2cc20c9749f936d4dbcbd422b7ecf8f93639ee61
           <folding />
         </state>
       </provider>
