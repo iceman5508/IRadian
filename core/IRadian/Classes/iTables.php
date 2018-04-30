@@ -323,9 +323,9 @@ abstract class iTables
      */
     public final function delete($where = array()){
         if($this->imigrate->delete($this->table,$where)){
-            return $this->imigrate->getResults();
+            return true;
         }else{
-            return $this->imigrate->getError();
+            return false;
         }
     }
 
