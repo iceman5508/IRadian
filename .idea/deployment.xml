@@ -2,6 +2,16 @@
 <project version="4">
   <component name="PublishConfigData">
     <serverData>
+<<<<<<< HEAD
+      <paths name="radian">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+=======
+>>>>>>> 2cc20c9749f936d4dbcbd422b7ecf8f93639ee61
       <paths name="views">
         <serverdata>
           <mappings>
