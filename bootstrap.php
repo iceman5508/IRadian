@@ -20,8 +20,6 @@ require_once 'core/IRadian/IRadian.php';
 //load in API classes
 require_once 'core/API/api.php';
 
-//include config file
-require_once 'iConfig.php';
 
 //function for loading all library functions
 function loadFunctions(){
@@ -39,8 +37,8 @@ function loadFunctions(){
      * @param $classname - the class name
      * @throws Exception
      */
-    function __autoload($classname){
-
+if(!function_exists('classAutoLoader')){
+    function classAutoLoader($classname){
         $parts = explode('\\', $classname);
         $classname = end($parts);
 
@@ -63,10 +61,15 @@ function loadFunctions(){
         else if(file_exists( LIBS.'/classes/'.$classname.'.php')){
             require_once  LIBS.'/classes/'.$classname.'.php';
         }
-
-
     }
+}
+spl_autoload_register('classAutoLoader');
 
+
+
+
+//include config file
+require_once 'iConfig.php';
 
 loadFunctions();
 

@@ -55,7 +55,7 @@ require_once '../bootstrap.php';
          * that will exist across all application
          */
         public function globals(){
-<<<<<<< HEAD
+
 
             $request = new \IEngine\ibase\iRequest();
             $url = \IEngine\ibase\iWeb::projectUrl();
@@ -65,8 +65,7 @@ require_once '../bootstrap.php';
 
 
 
-=======
->>>>>>> 2cc20c9749f936d4dbcbd422b7ecf8f93639ee61
+
             $this->globals = [
 
             ];

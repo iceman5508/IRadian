@@ -9,6 +9,7 @@ namespace IEngine\ibase;
  */
 class iWeb
 {
+
     /**
      * Return the http request header
      * @return mixed
@@ -179,11 +180,10 @@ class iWeb
         return sprintf(
             "%s://%s%s",
             isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] != 'off' ? 'https' : 'http',
-<<<<<<< HEAD
+
            self::projectPath(),
-=======
-            self::projectPath(),
->>>>>>> 2cc20c9749f936d4dbcbd422b7ecf8f93639ee61
+
+
             '/'
         );
     }
